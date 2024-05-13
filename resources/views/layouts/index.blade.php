@@ -3,7 +3,7 @@
 
 <head>
     <title>@yield('title') | AL-Mani Food Products</title>
-    <meta name="description" content="AL-Mani Food Products produce and deliver premium offerings, including cookies, rusk toast, cup cakes, puffed rice, snacks, semai, noodles, drinks, chips, spices, and culinary products. Developed by A. H. M. Azimul Haque.">
+    <meta name="description" content="Halal food japan Beef Store - Mainichi Halal Food Shop. Developed by A. H. M. Azimul Haque.">
     <meta name="keywords" content="AL-Mani Food Products">
     <meta charset="utf-8">
     <meta name="author" content="A. H. M. Azimul Haque">
