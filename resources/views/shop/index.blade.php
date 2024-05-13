@@ -123,7 +123,7 @@
                   <div class="subcategory_list_box shadow-light" style="border-bottom: 4px solid {{ $colornow  }}">
                       <div class="pricing-title" style="background: {{ $colornow  }};">
                           <h3>
-                            <a href="{{ route('product.categoryw', [$subcategory->id, generate_token(100)]) }}">
+                            <a href="{{ route('product.categorywise', [$subcategory->id, generate_token(100)]) }}">
                               {{ $category->name }}
                             </a>
                           </h3>
