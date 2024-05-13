@@ -4,7 +4,7 @@
 <head>
     <title>@yield('title') | Halal Food Japan Beef Store</title>
     <meta name="description" content="Halal food japan Beef Store - Mainichi Halal Food Shop. Developed by A. H. M. Azimul Haque.">
-    <meta name="keywords" content="AL-Mani Food Products">
+    <meta name="keywords" content="Mainichi Halal Food Shop">
     <meta charset="utf-8">
     <meta name="author" content="A. H. M. Azimul Haque">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
@@ -120,7 +120,7 @@
                     <h5>About Us</h5>
                     <!-- end headline -->
                     <!-- text -->
-                    <p class="footer-text">Start your journey with <b>AL-Mani Food Products</b> and we will keep providing you with the best products available, in shaa Allah!</p>
+                    <p class="footer-text">Start your journey with <b>Mainichi Halal Food Shop</b> and we will keep providing you with the best products available, in shaa Allah!</p>
                     <!-- end text -->
                 </div>
                 <div class="col-md-2 col-sm-3 col-xs-4 footer-link2 col-md-offset-3">
@@ -131,7 +131,7 @@
                 </div>
                 <div class="col-md-2 col-sm-3 col-xs-4  footer-link4">
                     <!-- headline -->
-                    <h5>AL-Mani Food Products</h5>
+                    <h5>Mainichi Halal Food Shop</h5>
                     <!-- end headline -->
                     <!-- link -->
                     <ul>
