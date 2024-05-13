@@ -409,8 +409,8 @@ class ProductController extends Controller
                   <p class='text-muted'>".$product->description."</p>
                   <div class='clearfix'>
                     <div class='price'>
-                      ৳ ".$product->price."
-                      <small class='oldprice'>৳ <strike>".$product->oldprice."</strike></small>
+                      ¥ ".$product->price."
+                      <small class='oldprice'>¥ <strike>".$product->oldprice."</strike></small>
                     </div>
                     <button onclick='s_addToCart(".$product->id.")' id='s_addToCart".$product->id."' class='btn btn-success btn-block btn-sm' role='button' data-title='".$product->title."'><i class='fa fa-shopping-cart' aria-hidden='true'></i> ব্যাগে যোগ করুন</button>
                   </div>
