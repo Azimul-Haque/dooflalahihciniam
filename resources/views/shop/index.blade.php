@@ -63,6 +63,8 @@
         <div class="row">
             <div class="col-md-8 col-sm-12">@include('partials._slider')</div>
             <div class="col-md-4 col-sm-12">
+              <br/>
+              <br/>
               <center>
                 <h2>Mainichi Halal Food Shop</h2>
                 <p class="text-med width-90 center-col margin-seven no-margin-bottom">
