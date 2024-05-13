@@ -62,7 +62,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 ">@include('partials._slider')</div>
-            <div class="col-md-4">
+            <div class="col-md-4 center-col">
               <h2>AL-Mani Food Products</h2>
               <p class="text-med width-90 center-col margin-seven no-margin-bottom">
                 AL-Mani Food Products aspires to establish itself as the epitome of global excellence in the food industry. Our vision entails achieving international acclaim for unparalleled quality and innovation.
