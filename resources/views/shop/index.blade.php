@@ -73,7 +73,7 @@
         </div>
     </div>
   </section>
-  @include('partials._slider')
+  {{-- @include('partials._slider')
 
   <!-- about section -->
   <section class="wow fadeIn">
@@ -88,7 +88,7 @@
               </div>
           </div>
       </div>
-  </section>
+  </section> --}}
   <!-- end about section -->
   <!-- product section -->
   <section class="padding-three bg-gray">
