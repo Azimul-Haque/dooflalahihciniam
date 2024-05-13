@@ -122,7 +122,11 @@
                 <div class="col-md-3 hidden-sm hidden-xs">
                   <div class="subcategory_list_box shadow-light" style="border-bottom: 4px solid {{ $colornow  }}">
                       <div class="pricing-title" style="background: {{ $colornow  }};">
-                          <h3>{{ $category->name }}</h3>
+                          <h3>
+                            <a href="{{ route('product.subcategorywise', [$subcategory->id, generate_token(100)]) }}">
+                              {{ $category->name }}
+                            </a>
+                          </h3>
                       </div>
                       <ul class="subcategory_list_ul">
                         @foreach($category->subcategories as $subcategory)
