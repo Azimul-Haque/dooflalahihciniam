@@ -64,9 +64,9 @@
             <div class="col-md-8 col-sm-12">@include('partials._slider')</div>
             <div class="col-md-4 col-sm-12">
               <center>
-                <h2>AL-Mani Food Products</h2>
+                <h2>Mainichi Halal Food Shop</h2>
                 <p class="text-med width-90 center-col margin-seven no-margin-bottom">
-                  AL-Mani Food Products aspires to establish itself as the epitome of global excellence in the food industry. Our vision entails achieving international acclaim for unparalleled quality and innovation.
+                  Mainichi Halal Food Shop aspires to establish itself as the epitome of global excellence in the food industry. Our vision entails achieving international acclaim for unparalleled quality and innovation.
                 </p>
               </center>
             </div>
