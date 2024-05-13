@@ -61,8 +61,12 @@
   <section class="wow fadeIn">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 center-col">
-                
+            <div class="col-md-8 center-col">@include('partials._slider')</div>
+            <div class="col-md-6 center-col">
+              <h2>AL-Mani Food Products</h2>
+              <p class="text-med width-90 center-col margin-seven no-margin-bottom">
+                AL-Mani Food Products aspires to establish itself as the epitome of global excellence in the food industry. Our vision entails achieving international acclaim for unparalleled quality and innovation.
+              </p>
             </div>
         </div>
     </div>
