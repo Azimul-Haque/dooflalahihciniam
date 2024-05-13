@@ -47,7 +47,7 @@
   <table>
     <tr>
       <td class="calibri_normal">
-        Customer Name: <span style="font-family: 'kalpurush', sans-serif;">{{ $order->user->name }}</span><br/>
+        Customer Name: {{ $order->user->name }}<br/>
         Customer ID: {{ $order->user->code }}<br/>
         Contact No: {{ $order->user->phone }}<br/>
         Email Address: {{ $order->user->email }}<br/>
