@@ -3,7 +3,7 @@
 
 <head>
     <title>@yield('title') | Mainichi Halal Food Shop</title>
-    <meta name="description" content="Halal food japan Beef Store - Mainichi Halal Food Shop. Developed by A. H. M. Azimul Haque.">
+    <meta name="description" content="Halal Food Japan Beef Store - Mainichi Halal Food Shop. Developed by A. H. M. Azimul Haque.">
     <meta name="keywords" content="Mainichi Halal Food Shop">
     <meta charset="utf-8">
     <meta name="author" content="A. H. M. Azimul Haque">
