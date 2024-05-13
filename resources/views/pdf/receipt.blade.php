@@ -104,7 +104,7 @@
 
   <h4 align="center" style="font-family: Calibri;">
     If you have any questions about this invoice, please contact<br/>
-    [+8800000000000, finefood@simgroupd-bd.com]
+    [04-7481-4515, finefood@simgroupd-bd.com]
   </h4>
   
 
