@@ -71,6 +71,7 @@
                   Mainichi Halal Food Shop aspires to establish itself as the epitome of global excellence in the food industry. Our vision entails achieving international acclaim for unparalleled quality and innovation.
                 </p>
               </center>
+              <br/>
             </div>
         </div>
     </div>
