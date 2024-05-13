@@ -73,7 +73,7 @@
         <th class="calibri_normal" width="40%">Product</th>
         <th class="calibri_normal">Quantity</th>
         <th class="calibri_normal">Price</th>
-        <th class="calibri_normal" width="30%"><strong>Total</strong></th>
+        <th class="calibri_normal" width="30%">Total</th>
       </tr>
     </thead>
     <tbody>
@@ -91,7 +91,7 @@
           SUBTOTAL ¥ {{ $order->cart->totalPrice - $order->cart->deliveryCharge + $order->cart->discount }}<br/>
           Delivery Charge ¥ {{ $order->cart->deliveryCharge }}<br/>
           Discount ¥ {{ $order->cart->discount }}<br/>
-          <big>TOTAL ¥ {{ $order->cart->totalPrice }}</big>
+          <big><strong>TOTAL ¥ {{ $order->cart->totalPrice }}</strong></big>
         </td>
       </tr>
     </tbody>
