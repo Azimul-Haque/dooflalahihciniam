@@ -31,6 +31,8 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="google-site-verification" content="hG6zSbHNlZzqpReVDwBBhXUimK0gdvg4YHC185Nl1-A" />
 
+    <meta name="og:image" content="">
+
     <!-- animation -->
     
     <!-- animation -->
