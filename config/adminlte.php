@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'AL-Mani Food',
+    'title' => 'Mainichi Food',
 
     'title_prefix' => '',
 
@@ -30,7 +30,7 @@ return [
     |
     */
 
-    'logo' => '<b>AL-Mani</b>Food',
+    'logo' => '<b>Mainichi</b>Food',
 
     'logo_mini' => '<b>A</b>M',
 
