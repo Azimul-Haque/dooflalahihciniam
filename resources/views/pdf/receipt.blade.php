@@ -79,7 +79,7 @@
     <tbody>
       @foreach($order->cart->items as $item)
       <tr>
-        <td>{{ $item['item']['title'] }}</td>
+        <td class="calibri_normal">{{ $item['item']['title'] }}</td>
         <td align="center" class="calibri_normal">{{ $item['qty'] }}</td>
         <td align="right" class="calibri_normal">¥ <span class="calibri_normal">{{ $item['item']['price'] }}</span></td>
         <td align="right" class="calibri_normal">¥ <span class="calibri_normal">{{ $item['price'] }}</span></td>
