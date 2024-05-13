@@ -42,7 +42,7 @@
                   <div class="big-text">
                     <p>Welcome to Mainichi Halal Food Shop!</p>
 
-                    <p>These terms and conditions outline the rules and regulations for the use of Mainichi Halal Food Shop's Website, located at https://almanifood.com.</p>
+                    <p>These terms and conditions outline the rules and regulations for the use of Mainichi Halal Food Shop's Website, located at https://mainichihalalfood.com.</p>
 
                     <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use Mainichi Halal Food Shop if you do not agree to take all of the terms and conditions stated on this page.</p>
 
