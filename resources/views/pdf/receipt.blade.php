@@ -81,8 +81,8 @@
       <tr>
         <td>{{ $item['item']['title'] }}</td>
         <td align="center" class="calibri_normal">{{ $item['qty'] }}</td>
-        <td align="right">¥ <span class="calibri_normal">{{ $item['item']['price'] }}</span></td>
-        <td align="right">¥ <span class="calibri_normal">{{ $item['price'] }}</span></td>
+        <td align="right"><span class="calibri_normal">¥ {{ $item['item']['price'] }}</span></td>
+        <td align="right"><span class="calibri_normal">¥ {{ $item['price'] }}</span></td>
       </tr>
       @endforeach
       <tr>
