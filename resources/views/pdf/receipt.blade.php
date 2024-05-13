@@ -73,7 +73,7 @@
         <th class="calibri_normal" width="40%">Product</th>
         <th class="calibri_normal">Quantity</th>
         <th class="calibri_normal">Price</th>
-        <th class="calibri_normal" width="30%">Total</th>
+        <th class="calibri_normal" width="30%"><strong>Total</strong></th>
       </tr>
     </thead>
     <tbody>
