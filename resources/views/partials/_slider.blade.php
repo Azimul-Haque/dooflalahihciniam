@@ -1,5 +1,5 @@
 <!-- slider -->
-<section id="slider" class="no-padding content-top-margin">
+<section id="slider" class="">
     <div id="owl-demo" class="owl-carousel owl-theme owl-half-slider dark-pagination">
         @foreach($sliders as $slider)
         <div class="item owl-bg-img" style="background-image:url('images/slider/{{ $slider->image }}');">
