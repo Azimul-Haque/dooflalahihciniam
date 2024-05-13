@@ -41,7 +41,7 @@
                             <p class="text-med black-text letter-spacing-1 margin-ten no-margin-bottom text-uppercase font-weight-600 xs-margin-top-five">Contact No.</p>
                             <p class="black-text no-margin-bottom"><strong><i class="fa fa-phone black-text"></i></strong>Phone: <a href="tel:04-7481-4515">04-7481-4515</a></p>
                             <p class="black-text no-margin-bottom"><strong><i class="fa fa-phone black-text"></i></strong>Fax: <a href="tel:04-7481-4516">04-7481-4516</a></p>
-                            <p class="black-text no-margin-bottom"><strong><i class="fa fa-phone black-text"></i></strong><a href="tel:080-9212-9030">+8800000000000</a></p>
+                            <p class="black-text no-margin-bottom"><strong><i class="fa fa-phone black-text"></i></strong>Mobile: <a href="tel:090-1703-9984">090-1703-9984</a></p>
                         </div>
                     </div>
                 </div>
