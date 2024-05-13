@@ -104,7 +104,7 @@
 
   <h4 align="center" style="font-family: Calibri;">
     If you have any questions about this invoice, please contact<br/>
-    [04-7481-4515, finefood@simgroupd-bd.com]
+    [04-7481-4515, info@mainichihalalfood.com]
   </h4>
   
 
