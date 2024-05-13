@@ -58,7 +58,7 @@
   {{-- <div id="preloader">
       <div id="status">&nbsp;</div>
   </div> --}}
-  <section class="wow fadeIn ">
+  <section class="wow fadeIn content-top-margin">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-sm-12" style="max-height: 300px;">@include('partials._slider')</div>
