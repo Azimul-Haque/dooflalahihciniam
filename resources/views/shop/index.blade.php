@@ -58,6 +58,9 @@
   {{-- <div id="preloader">
       <div id="status">&nbsp;</div>
   </div> --}}
+  <section class="wow fadeIn">
+    
+  </section>
   @include('partials._slider')
 
   <!-- about section -->
