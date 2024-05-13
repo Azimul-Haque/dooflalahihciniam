@@ -59,7 +59,7 @@
       <div id="status">&nbsp;</div>
   </div> --}}
   <section class="wow fadeIn">
-    <div class="container">
+    <div class="">
         <div class="row">
             <div class="col-md-8 ">@include('partials._slider')</div>
             <div class="col-md-4">
