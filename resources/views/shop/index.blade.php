@@ -76,7 +76,7 @@
   
   <!-- end about section -->
   <!-- product section -->
-  <section class="padding-three bg-gray" style="margin-top: -120px!important;">
+  <section class="padding-three bg-gray" style="margin-top: -100px!important;">
       <div class="container">
           <div class="row">
               <!-- section title -->
