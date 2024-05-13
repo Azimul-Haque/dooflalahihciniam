@@ -41,7 +41,7 @@
     <small class="calibri_normal" style="font-size: 14px;">Email: info@mainichihalalfood.com, Phone: 04-7481-4515</small>
   </h2>
   <h2 align="center" class="calibri_normal" style="color: #397736; border-bottom: 1px solid #397736;">
-    INVOICE
+    <strong>INVOICE</strong>
   </h2>
 
   <table>
