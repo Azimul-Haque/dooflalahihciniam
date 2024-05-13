@@ -61,7 +61,7 @@
   <section class="wow fadeIn">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 ">@include('partials._slider')</div>
+            <div class="col-md-8" style="height: 300;">@include('partials._slider')</div>
             <div class="col-md-4">
               <center>
                 <h2>AL-Mani Food Products</h2>
