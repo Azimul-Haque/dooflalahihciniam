@@ -1,4 +1,4 @@
-@extends('layouts.index')
+@extends('layouts.ogani')
 
 @section('title', 'Halal Food Store in Japan')
 
