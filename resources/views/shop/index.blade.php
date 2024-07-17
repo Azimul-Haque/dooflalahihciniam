@@ -6,6 +6,10 @@
 
 @endsection
 
+@section('content')
+
+@endsection
+
 
 
 
