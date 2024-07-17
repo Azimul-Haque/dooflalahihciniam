@@ -1,4 +1,4 @@
-<!-- Page Preloder -->
+Page Preloder -->
     <!-- <div id="preloder">
         <div class="loader"></div>
     </div> -->
@@ -219,10 +219,10 @@
                     <div class="hero__search">
                         <div class="hero__search__form">
                             <form action="#">
-                                <div class="hero__search__categories">
+                                {{-- <div class="hero__search__categories">
                                     All Categories
                                     <span class="arrow_carrot-down"></span>
-                                </div>
+                                </div> --}}
                                 <input type="text" placeholder="What do yo u need?">
                                 <button type="submit" class="site-btn">SEARCH</button>
                             </form>
@@ -244,4 +244,4 @@
             </div>
         </div>
     </section>
-    <!-- Hero Section End -->
+    <!-- Hero Section End
