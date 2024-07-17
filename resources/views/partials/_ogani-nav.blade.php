@@ -190,9 +190,6 @@
 
     <!-- Hero Section Begin -->
     <section class="hero @if(Request::is('/')) @else hero-normal @endif" style="margin-top: 15px;">
-        {{-- এখানে কাজ আছে, hero-normal index পেজে থাকবেনা... --}}
-        {{-- এখানে কাজ আছে, hero-normal index পেজে থাকবেনা... --}}
-        {{-- এখানে কাজ আছে, hero-normal index পেজে থাকবেনা... --}}
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
