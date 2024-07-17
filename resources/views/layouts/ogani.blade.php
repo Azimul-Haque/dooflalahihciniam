@@ -96,7 +96,7 @@
         @yield('content')
     </main>
 
-    
+    @include('partials._ogani-footer')
 
     <!-- Js Plugins -->
     <script src="{{ asset('vendor/ogani/js/jquery-3.3.1.min.js') }}"></script>
