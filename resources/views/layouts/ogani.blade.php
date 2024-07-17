@@ -59,9 +59,9 @@
         }
 
         .header__menu ul {
-            list-style: none;
+            /*list-style: none;
             margin: 0;
-            padding: 0;
+            padding: 0;*/
             /*display: flex;*/
         }
 
