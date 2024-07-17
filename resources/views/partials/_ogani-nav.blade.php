@@ -104,7 +104,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="{{ asset('iamges/logo.png') }}" alt=""></a>
+                        <a href="./index.html"><img src="{{ asset('images/logo.png') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 d-none d-lg-block">
@@ -146,7 +146,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6">
                         <div class="header__logo">
-                            <a href="./index.html"><img src="{{ asset('iamges/logo.png') }}" alt=""></a>
+                            <a href="./index.html"><img src="{{ asset('images/logo.png') }}" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 d-none d-lg-block">
