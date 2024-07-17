@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
- test
+
 @endsection
 
 @section('js')
