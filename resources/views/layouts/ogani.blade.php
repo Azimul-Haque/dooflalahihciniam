@@ -58,21 +58,9 @@
             z-index: 9999;
         }
 
-        .header__menu ul {
-            /*list-style: none;
-            margin: 0;
-            padding: 0;*/
-            /*display: flex;*/
-        }
-
         .header__menu ul li {
             margin-right: 20px;
         }
-
-        /*.header__menu ul li a {
-            text-decoration: none;
-            color: #333;
-        }*/
     </style>
     <script type="text/javascript">
         window.addEventListener('scroll', function() {
