@@ -93,7 +93,9 @@
     
     @include('partials._ogani-nav')
 
-    @yield('content')
+    <div style="min-height: 400px;">
+        @yield('content')
+    </div>
 
     @include('partials._ogani-footer')
 
