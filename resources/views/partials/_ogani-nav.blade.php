@@ -16,7 +16,7 @@
             </ul>
             <div class="header__cart__price">item: <span>$150.00</span></div>
         </div>
-        <div class="humberger__menu__widget">
+        {{-- <div class="humberger__menu__widget">
             <div class="header__top__right__language">
                 <img src="{{ asset('vendor/ogani/img/language.png') }}" alt="">
                 <div>English</div>
@@ -29,7 +29,7 @@
             <div class="header__top__right__auth">
                 <a href="#"><i class="fa fa-user"></i> Login</a>
             </div>
-        </div>
+        </div> --}}
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
                 <li class="active"><a href="./index.html">Home</a></li>
