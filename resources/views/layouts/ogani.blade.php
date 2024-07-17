@@ -71,7 +71,7 @@
 
         .header__menu ul li a {
             text-decoration: none;
-            color: #333;
+            /*color: #333;*/
         }
     </style>
     <script type="text/javascript">
