@@ -2,13 +2,16 @@
 
 @section('title', 'Halal Food Store in Japan')
 
+@section('css')
+
+@endsection
+
 
 
 
 
 @section('css')
   <script type="text/javascript" src="{{ asset('vendor/hcode/js/jquery.min.js') }}"></script>
-
   <style type="text/css">
       body {
           overflow: hidden;
