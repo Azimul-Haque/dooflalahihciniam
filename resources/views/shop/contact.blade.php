@@ -1,4 +1,4 @@
-@extends('layouts.ogani')
+@extends('layouts.index')
 
 @section('title', 'Contact')
 
