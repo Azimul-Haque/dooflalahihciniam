@@ -69,10 +69,10 @@
             margin-right: 20px;
         }
 
-        .header__menu ul li a {
+        /*.header__menu ul li a {
             text-decoration: none;
-            /*color: #333;*/
-        }
+            color: #333;
+        }*/
     </style>
     <script type="text/javascript">
         window.addEventListener('scroll', function() {
