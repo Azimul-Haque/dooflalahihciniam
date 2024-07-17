@@ -111,7 +111,7 @@
                 <div class="col-lg-6 col-md-6 d-none d-lg-block">
                     <nav class="header__menu">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="{{ route('product.index') }}">Home</a></li>
                             <li class="active"><a href="./shop-grid.html">Shop</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
@@ -153,7 +153,7 @@
                     <div class="col-lg-6 col-md-6 d-none d-lg-block">
                         <nav class="header__menu">
                             <ul>
-                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="{{ route('product.index') }}">Home</a></li>
                                 <li class="active"><a href="./shop-grid.html">Shop</a></li>
                                 <li><a href="#">Pages</a>
                                     <ul class="header__menu__dropdown">
