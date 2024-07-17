@@ -1,4 +1,4 @@
-Page Preloder -->
+<!-- Page Preloder -->
     <!-- <div id="preloder">
         <div class="loader"></div>
     </div> -->
@@ -244,4 +244,4 @@ Page Preloder -->
             </div>
         </div>
     </section>
-    <!-- Hero Section End
+    <!-- Hero Section End -->
