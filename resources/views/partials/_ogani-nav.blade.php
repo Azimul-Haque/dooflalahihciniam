@@ -48,7 +48,7 @@
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
-        <div class="header__top__right__social">
+        {{-- <div class="header__top__right__social">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -59,7 +59,7 @@
                 <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
                 <li>Free Shipping for all Order of $99</li>
             </ul>
-        </div>
+        </div> --}}
     </div>
     <!-- Humberger End -->
 
