@@ -67,9 +67,10 @@
                           $contact_num2 = rand(1,20);
                           $contact_sum_result_hidden = $contact_num1 + $contact_num2;
                         @endphp
-                        
+
                         <input type="hidden" name="contact_sum_result_hidden" value="{{ $contact_sum_result_hidden }}">
                         <input type="text" name="contact_sum_result" id="" class="form-control" placeholder="{{ $contact_num1 }} + {{ $contact_num2 }} = ?" required="">
+                        {!! app('captcha')->display() !!}
                         
                         <button id="contact-us-button" type="submit" class="highlight-button-dark btn btn-small button xs-margin-bottom-five"><i class="fa fa-paper-plane"></i> Send</button>
                     {!! Form::close() !!}
