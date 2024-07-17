@@ -107,7 +107,14 @@
     <script src="{{ asset('vendor/ogani/js/mixitup.min.js') }}"></script>
     <script src="{{ asset('vendor/ogani/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('vendor/ogani/js/main.js') }}"></script>
-
+    @include('partials._messages')
+    @yield('js')
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+          $('[title]').tooltip();
+      });
+    </script>
 
 
 </body>
