@@ -62,7 +62,8 @@ class ProductController extends Controller
         'phone'                => 'sometimes',
         'email'                => 'required',
         'message'                => 'required',
-        'contact_sum_result'   => 'required'
+        'contact_sum_result'   => 'required',
+        'g-recaptcha-response' => 'required'
       ]);
 
       if($request->contact_sum_result_hidden == $request->contact_sum_result) {
