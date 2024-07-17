@@ -92,6 +92,10 @@
     
     @include('partials._ogani-nav')
 
+    <main style="min-height: 400px;">
+        @yield('content')
+    </main>
+
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
         <div class="container">
