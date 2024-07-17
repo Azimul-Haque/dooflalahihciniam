@@ -96,8 +96,6 @@
         @yield('content')
     </main>
 
-    
-
     <!-- Footer Section Begin -->
     <footer class="footer spad">
         <div class="container">
