@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/ogani/css/owl.carousel.min.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('vendor/ogani/css/slicknav.min.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('vendor/ogani/css/style.css') }}" type="text/css">
+    @yield('css')
     <style type="text/css">
         .fixed-header {
             display: none;
