@@ -233,8 +233,8 @@
                             <span>All Categories</span>
                         </div>
                         <ul>
-                            @foreach($categories as $category)
-                                <li><a href="#">Fresh Meat</a></li>
+                            @foreach($categories as )
+                                <li><a href="#">{{ $category->name }}</a></li>
                             @endforeach
                             
                             <li><a href="#">Vegetables</a></li>
