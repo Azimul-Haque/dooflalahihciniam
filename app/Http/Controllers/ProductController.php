@@ -39,6 +39,17 @@ class ProductController extends Controller
                   ->withSliders($sliders);
     }
 
+    public function getShop() {
+      
+      // $products = Product::where('isAvailable', '!=', '0')
+      //                    ->orderBy('id', 'desc')
+      //                    ->paginate(10);
+      $sliders = Slider::orderBy('id', 'asc')->get();
+
+      return view('shop.index')
+                  ->withSliders($sliders);
+    }
+
     public function getIndexAdhoc() {
       
       return redirect()->route('product.index');
