@@ -28,9 +28,7 @@
                             <li><a href="#">Register</a></li>
                             <li><a href="#">Login</a></li>
                             <li><a href="#">Cart</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Innovation</a></li>
-                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Faq</a></li>
                         </ul>
                     </div>
                 </div>
