@@ -20,7 +20,7 @@
                         <ul>
                             <li><a href="#">About Us</a></li>
                             <li><a href="route('index.privacy') }}">Privacy Policy</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
                             <li><a href="#">Our Sitemap</a></li>
                         </ul>
                         <ul>
