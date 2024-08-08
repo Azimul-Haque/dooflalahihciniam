@@ -54,9 +54,8 @@
                         </ul>
                     </li>
                 @else
-
+                    <li><a href="{{ route('user.login') }}">Login</a></li>
                 @endif
-                <li><a href="{{ route('user.login') }}">Login</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
