@@ -25,7 +25,7 @@
                             <li><a href="#">Our Sitemap</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">Register</a></li>
+                            <li><a href="{{ route('user.register') }}">Register</a></li>
                             <li><a href="#">Login</a></li>
                             <li><a href="#">Cart</a></li>
                             <li><a href="#">Faq</a></li>
