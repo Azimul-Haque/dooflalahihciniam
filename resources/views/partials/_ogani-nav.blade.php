@@ -149,7 +149,7 @@
                     <div class="header__cart">
                         <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i> <span>{{ Session::has('cart') ? Session::get('cart')->totalQty : '0' }}</span></a></li>
+                            <li><a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i> <span>{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span></a></li>
                         </ul>
                         <div class="header__cart__price"><span>¥150.00</span></div>
                     </div>
