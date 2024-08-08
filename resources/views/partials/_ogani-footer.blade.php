@@ -19,7 +19,7 @@
                         <h6>Useful Links</h6>
                         <ul>
                             <li><a href="#">About Us</a></li>
-                            <li><a href="route('index.privacy-policy') }}">Privacy Policy</a></li>
+                            <li><a href="route('index.privacy') }}">Privacy Policy</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Our Sitemap</a></li>
                         </ul>
