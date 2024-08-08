@@ -15,6 +15,11 @@ Route::get('/', [
     'as' => 'product.index'
 ]);
 
+Route::get('/', [
+    'uses' => 'ProductController@getShop',
+    'as' => 'product.shop'
+]);
+
 Route::get('/category/{id}/{random_string}', [
     'uses' => 'ProductController@getCategoryWise',
     'as' => 'product.categorywise'
