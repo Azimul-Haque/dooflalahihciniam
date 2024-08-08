@@ -153,7 +153,7 @@
                     <div class="col-lg-6 col-md-6 d-none d-lg-block">
                         <nav class="header__menu">
                             <ul>
-                                <li @if(request() ) class="active" @endif><a href="{{ route('product.index') }}">Home</a></li>
+                                <li @if(Request::is('/')) class="active" @endif><a href="{{ route('product.index') }}">Home</a></li>
                                 <li><a href="{{ route('product.index') }}">Shop</a></li>
                                 <li><a href="#">Pages</a>
                                     <ul class="header__menu__dropdown">
