@@ -72,7 +72,7 @@ Route::get('/terms', [
 
 Route::get('/refund', [
     'uses' => 'ProductController@getTerms',
-    'as' => 'index.terms'
+    'as' => 'index.refund'
 ]);
 
 Route::get('/search', [
