@@ -151,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="filter__item">
+                    {{-- <div class="filter__item">
                         <div class="row">
                             <div class="col-lg-4 col-md-5">
                                 <div class="filter__sort">
@@ -174,7 +174,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
                             <div class="product__item">
