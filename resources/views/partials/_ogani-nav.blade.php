@@ -233,7 +233,10 @@
                             <span>All Categories</span>
                         </div>
                         <ul>
-                            <li><a href="#">Fresh Meat</a></li>
+                            @foreach($categories as $category)
+                                <li><a href="#">Fresh Meat</a></li>
+                            @endforeach
+                            
                             <li><a href="#">Vegetables</a></li>
                             <li><a href="#">Fruit & Nut Gifts</a></li>
                             <li><a href="#">Fresh Berries</a></li>
