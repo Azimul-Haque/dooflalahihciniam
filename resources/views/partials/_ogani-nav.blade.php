@@ -234,7 +234,7 @@
                         </div>
                         <ul>
                             @foreach($categories as $category)
-                                <li><a href="{{ route('product.categorywise', [$category->id, generate_token(5)]) }}">{{ $category->name }}</a></li>
+                                <li><a href="{{ route('product.categorywise', [$category->id, generate_token(50)]) }}">{{ $category->name }}</a></li>
                             @endforeach
                         </ul>
                     </div>
