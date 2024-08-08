@@ -54,7 +54,7 @@
                                         <div class="product__discount__item__text">
                                             <span>Dried Fruit</span>
                                             <h5><a href="#">Raisin’n’nuts</a></h5>
-                                            <div class="product__item__price">$30.00 <span>$36.00</span></div>
+                                            <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@
                                         <div class="product__discount__item__text">
                                             <span>Vegetables</span>
                                             <h5><a href="#">Vegetables’package</a></h5>
-                                            <div class="product__item__price">$30.00 <span>$36.00</span></div>
+                                            <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@
                                         <div class="product__discount__item__text">
                                             <span>Dried Fruit</span>
                                             <h5><a href="#">Mixed Fruitss</a></h5>
-                                            <div class="product__item__price">$30.00 <span>$36.00</span></div>
+                                            <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -108,7 +108,7 @@
                                         <div class="product__discount__item__text">
                                             <span>Dried Fruit</span>
                                             <h5><a href="#">Raisin’n’nuts</a></h5>
-                                            <div class="product__item__price">$30.00 <span>$36.00</span></div>
+                                            <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@
                                         <div class="product__discount__item__text">
                                             <span>Dried Fruit</span>
                                             <h5><a href="#">Raisin’n’nuts</a></h5>
-                                            <div class="product__item__price">$30.00 <span>$36.00</span></div>
+                                            <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@
                                         <div class="product__discount__item__text">
                                             <span>Dried Fruit</span>
                                             <h5><a href="#">Raisin’n’nuts</a></h5>
-                                            <div class="product__item__price">$30.00 <span>$36.00</span></div>
+                                            <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -187,7 +187,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h5>¥30.00</h5>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +202,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h5>¥30.00</h5>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +217,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h5>¥30.00</h5>
                                 </div>
                             </div>
                         </div>
@@ -232,7 +232,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h5>¥30.00</h5>
                                 </div>
                             </div>
                         </div>
@@ -247,7 +247,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h5>¥30.00</h5>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +262,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h5>¥30.00</h5>
                                 </div>
                             </div>
                         </div>
@@ -277,7 +277,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h5>¥30.00</h5>
                                 </div>
                             </div>
                         </div>
@@ -292,7 +292,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h5>¥30.00</h5>
                                 </div>
                             </div>
                         </div>
@@ -307,7 +307,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h5>¥30.00</h5>
                                 </div>
                             </div>
                         </div>
@@ -322,7 +322,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h5>¥30.00</h5>
                                 </div>
                             </div>
                         </div>
@@ -337,7 +337,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h5>¥30.00</h5>
                                 </div>
                             </div>
                         </div>
@@ -352,7 +352,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h5>¥30.00</h5>
                                 </div>
                             </div>
                         </div>
