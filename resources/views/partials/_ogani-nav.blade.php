@@ -133,15 +133,15 @@
                             {{-- <li><a href="./blog.html">Blog</a></li> --}}
                             <li><a href="{{ route('index.contact') }}">Contact</a></li>
                             @if(Auth::user())
-                                                <li><a href="#">User</a>
-                                                    <ul class="header__menu__dropdown">
-                                                        <li><a href="./shop-details.html">Profile</a></li>
-                                                        <li><a href="./shoping-cart.html">Logout</a></li>
-                                                    </ul>
-                                                </li>
-                                            @else
-                                                <li><a href="{{ route('user.login') }}">Login</a></li>
-                                            @endif
+                                <li><a href="#">User</a>
+                                    <ul class="header__menu__dropdown">
+                                        <li><a href="./shop-details.html">Profile</a></li>
+                                        <li><a href="./shoping-cart.html">Logout</a></li>
+                                    </ul>
+                                </li>
+                            @else
+                                <li><a href="{{ route('user.login') }}">Login</a></li>
+                            @endif
                         </ul>
                     </nav>
                 </div>
@@ -183,7 +183,16 @@
                                 </li>
                                 {{-- <li><a href="./blog.html">Blog</a></li> --}}
                                 <li><a href="{{ route('index.contact') }}">Contact</a></li>
-                                <li><a href="{{ route('user.login') }}">Login</a></li>
+                                @if(Auth::user())
+                                    <li><a href="#">User</a>
+                                        <ul class="header__menu__dropdown">
+                                            <li><a href="./shop-details.html">Profile</a></li>
+                                            <li><a href="./shoping-cart.html">Logout</a></li>
+                                        </ul>
+                                    </li>
+                                @else
+                                    <li><a href="{{ route('user.login') }}">Login</a></li>
+                                @endif
                             </ul>
                         </nav>
                     </div>
