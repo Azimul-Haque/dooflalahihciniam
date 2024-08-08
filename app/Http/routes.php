@@ -15,7 +15,7 @@ Route::get('/', [
     'as' => 'product.index'
 ]);
 
-Route::get('/', [
+Route::get('/shop', [
     'uses' => 'ProductController@getShop',
     'as' => 'product.shop'
 ]);
