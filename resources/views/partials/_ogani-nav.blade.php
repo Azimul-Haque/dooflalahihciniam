@@ -45,7 +45,7 @@
                 {{-- <li><a href="./blog.html">Blog</a></li> --}}
                 <li><a href="{{ route('index.contact') }}">Contact</a></li>
                 @if(Auth::user())
-                    <li><a href="#">User s</a>
+                    <li><a href="#">Users</a>
                         <ul class="header__menu__dropdown">
                             <li><a href="{{ route('user.profile', Auth::user()->unique_key) }}">Profile</a></li>
                             <li><a href="{{ route('user.logout') }}">Logout</a></li>
@@ -133,7 +133,7 @@
                             {{-- <li><a href="./blog.html">Blog</a></li> --}}
                             <li><a href="{{ route('index.contact') }}">Contact</a></li>
                             @if(Auth::user())
-                                <li><a href="#">User s</a>
+                                <li><a href="#">Users</a>
                                     <ul class="header__menu__dropdown">
                                         <li><a href="{{ route('user.profile', Auth::user()->unique_key) }}">Profile</a></li>
                                         <li><a href="{{ route('user.logout') }}">Logout</a></li>
@@ -184,7 +184,7 @@
                                 {{-- <li><a href="./blog.html">Blog</a></li> --}}
                                 <li><a href="{{ route('index.contact') }}">Contact</a></li>
                                 @if(Auth::user())
-                                    <li><a href="#">User s</a>
+                                    <li><a href="#">Users</a>
                                         <ul class="header__menu__dropdown">
                                             <li><a href="{{ route('user.profile', Auth::user()->unique_key) }}">Profile</a></li>
                                             <li><a href="{{ route('user.logout') }}">Logout</a></li>
