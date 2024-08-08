@@ -48,7 +48,7 @@
                     <li><a href="#">User</a>
                         <ul class="header__menu__dropdown">
                             <li><a href="./shop-details.html">Profile</a></li>
-                            <li><a href="./shoping-cart.html">Logout</a></li>
+                            <li><a href="{{ route('user.logout') }}">Logout</a></li>
                         </ul>
                     </li>
                 @else
@@ -136,7 +136,7 @@
                                 <li><a href="#">User</a>
                                     <ul class="header__menu__dropdown">
                                         <li><a href="./shop-details.html">Profile</a></li>
-                                        <li><a href="./shoping-cart.html">Logout</a></li>
+                                        <li><a href="{{ route('user.logout') }}">Logout</a></li>
                                     </ul>
                                 </li>
                             @else
@@ -187,7 +187,7 @@
                                     <li><a href="#">User</a>
                                         <ul class="header__menu__dropdown">
                                             <li><a href="./shop-details.html">Profile</a></li>
-                                            <li><a href="./shoping-cart.html">Logout</a></li>
+                                            <li><a href="{{ route('user.logout') }}">Logout</a></li>
                                         </ul>
                                     </li>
                                 @else
