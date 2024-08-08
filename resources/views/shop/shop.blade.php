@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-5">
-                    
+                    @include('partials._ogani-shop-left-menu')
                 </div>
                 <div class="col-lg-9 col-md-7">
                     <div class="product__discount">
