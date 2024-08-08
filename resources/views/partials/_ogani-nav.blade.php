@@ -47,7 +47,7 @@
                 @if(Auth::user())
                     <li><a href="#">User</a>
                         <ul class="header__menu__dropdown">
-                            <li><a href="./shop-details.html">Profile</a></li>
+                            <li><a href="{{ route('user.profile', Auth::user()->unique_key) }}">Profile</a></li>
                             <li><a href="{{ route('user.logout') }}">Logout</a></li>
                         </ul>
                     </li>
@@ -135,7 +135,7 @@
                             @if(Auth::user())
                                 <li><a href="#">User</a>
                                     <ul class="header__menu__dropdown">
-                                        <li><a href="./shop-details.html">Profile</a></li>
+                                        <li><a href="{{ route('user.profile', Auth::user()->unique_key) }}">Profile</a></li>
                                         <li><a href="{{ route('user.logout') }}">Logout</a></li>
                                     </ul>
                                 </li>
@@ -186,7 +186,7 @@
                                 @if(Auth::user())
                                     <li><a href="#">User</a>
                                         <ul class="header__menu__dropdown">
-                                            <li><a href="./shop-details.html">Profile</a></li>
+                                            <li><a href="{{ route('user.profile', Auth::user()->unique_key) }}">Profile</a></li>
                                             <li><a href="{{ route('user.logout') }}">Logout</a></li>
                                         </ul>
                                     </li>
