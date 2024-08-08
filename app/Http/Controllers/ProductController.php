@@ -476,8 +476,8 @@ class ProductController extends Controller
     public function clear()
     {
         // Artisan::call('optimize');
-        Artisan::call('cache:clear');
-        Artisan::call('view:clear');
+        // Artisan::call('cache:clear');
+        // Artisan::call('view:clear');
         // Artisan::call('key:generate');
         // Artisan::call('route:cache');
         // Artisan::call('config:cache');
