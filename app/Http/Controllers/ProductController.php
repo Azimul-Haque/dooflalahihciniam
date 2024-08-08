@@ -481,7 +481,7 @@ class ProductController extends Controller
         // Artisan::call('key:generate');
         // Artisan::call('route:cache');
         // Artisan::call('config:cache');
-        Session::flush();
+        // Session::flush();
         echo 'Config and Route Cached. All Cache Cleared';
     }
 }
