@@ -44,7 +44,6 @@ class ProductController extends Controller
       // $products = Product::where('isAvailable', '!=', '0')
       //                    ->orderBy('id', 'desc')
       //                    ->paginate(10);
-      $sliders = Slider::orderBy('id', 'asc')->get();
 
       return view('shop.index')
                   ->withSliders($sliders);
