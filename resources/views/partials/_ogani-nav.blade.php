@@ -164,7 +164,7 @@
                                     </ul>
                                 </li>
                                 {{-- <li><a href="./blog.html">Blog</a></li> --}}
-                                <li><a href="{{ route('inde{{ route('index.contact') }}">Contact</a></li>
+                                <li><a href="{{ route('index.contact') }}">Contact</a></li>
                                 <li><a href="{{ route('user.login') }}">Login</a></li>
                             </ul>
                         </nav>
