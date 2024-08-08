@@ -33,8 +33,8 @@
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
                 <li @if(Request::is('/')) class="active" @endif><a href="{{ route('product.index') }}">Home</a></li>
-                <li @if(Request::is('/shop')) class="active" @endif><a href="{{ route('product.shop') }}">Shop</a></li>
-                <li @if(Request::is('/categories')) class="active" @endif><a href="#">Categories</a>
+                <li @if(Request::is('shop')) class="active" @endif><a href="{{ route('product.shop') }}">Shop</a></li>
+                <li @if(Request::is('categories')) class="active" @endif><a href="#">Categories</a>
                     <ul class="header__menu__dropdown">
                         <li><a href="./shop-details.html">Shop Details</a></li>
                         <li><a href="./shoping-cart.html">Shoping Cart</a></li>
@@ -112,8 +112,8 @@
                     <nav class="header__menu">
                         <ul>
                             <li @if(Request::is('/')) class="active" @endif><a href="{{ route('product.index') }}">Home</a></li>
-                            <li @if(Request::is('/shop')) class="active" @endif><a href="{{ route('product.shop') }}">Shop</a></li>
-                            <li @if(Request::is('/categories')) class="active" @endif><a href="#">Categories</a>
+                            <li @if(Request::is('shop')) class="active" @endif><a href="{{ route('product.shop') }}">Shop</a></li>
+                            <li @if(Request::is('categories')) class="active" @endif><a href="#">Categories</a>
                                 <ul class="header__menu__dropdown">
                                     <li><a href="./shop-details.html">Shop Details</a></li>
                                     <li><a href="./shoping-cart.html">Shopping Cart</a></li>
@@ -154,8 +154,8 @@
                         <nav class="header__menu">
                             <ul>
                                 <li @if(Request::is('/')) class="active" @endif><a href="{{ route('product.index') }}">Home</a></li>
-                                <li @if(Request::is('/shop')) class="active" @endif><a href="{{ route('product.shop') }}">Shop</a></li>
-                                <li @if(Request::is('/categories')) class="active" @endif><a href="#">Categories</a>
+                                <li @if(Request::is('shop')) class="active" @endif><a href="{{ route('product.shop') }}">Shop</a></li>
+                                <li @if(Request::is('categories')) class="active" @endif><a href="#">Categories</a>
                                     <ul class="header__menu__dropdown">
                                         <li><a href="./shop-details.html">Shop Details</a></li>
                                         <li><a href="./shoping-cart.html">Shopping Cart</a></li>
