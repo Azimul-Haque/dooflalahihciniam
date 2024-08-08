@@ -158,7 +158,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="header__cart__price"><a>¥150.00</a></div>
+                        <div class="header__cart__price"><a href="{{ route('product.shoppingcart') }}">¥150.00</a></div>
                     </div>
                 </div>
             </div>
