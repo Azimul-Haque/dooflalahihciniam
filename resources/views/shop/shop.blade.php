@@ -207,7 +207,7 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="{{ asset('img/product/discount/pd-1.jpg') }}">
+                                            data-setbg="{{ asset('vendor/ogani/img/product/discount/pd-1.jpg') }}">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
@@ -225,7 +225,7 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="{{ asset('img/product/discount/pd-2.jpg') }}">
+                                            data-setbg="{{ asset('vendor/ogani/img/product/discount/pd-2.jpg') }}">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
@@ -243,7 +243,7 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="{{ asset('img/product/discount/pd-3.jpg') }}">
+                                            data-setbg="{{ asset('vendor/ogani/img/product/discount/pd-3.jpg') }}">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
@@ -261,7 +261,7 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="{{ asset('img/product/discount/pd-4.jpg') }}">
+                                            data-setbg="{{ asset('vendor/ogani/img/product/discount/pd-4.jpg') }}">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
@@ -279,7 +279,7 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="{{ asset('img/product/discount/pd-5.jpg') }}">
+                                            data-setbg="{{ asset('vendor/ogani/img/product/discount/pd-5.jpg') }}">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
@@ -297,7 +297,7 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="{{ asset('img/product/discount/pd-6.jpg') }}">
+                                            data-setbg="{{ asset('vendor/ogani/img/product/discount/pd-6.jpg') }}">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
