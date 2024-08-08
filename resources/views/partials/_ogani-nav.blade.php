@@ -48,7 +48,7 @@
                     <li><a href="#">User</a>
                         <ul class="header__menu__dropdown">
                             <li><a href="./shop-details.html">Profile</a></li>
-                            <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                            <li><a href="./shoping-cart.html">Logout</a></li>
                             <li><a href="./checkout.html">Check Out</a></li>
                             <li><a href="./blog-details.html">Blog Details</a></li>
                         </ul>
