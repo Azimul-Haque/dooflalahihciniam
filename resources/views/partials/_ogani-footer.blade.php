@@ -26,7 +26,7 @@
                         </ul>
                         <ul>
                             <li><a href="{{ route('user.register') }}">Register</a></li>
-                            <li><a href="{{ route('user.login') }}">Login</a></li>
+                            <li><a href="{{ route('user.login') }}">Customer Login</a></li>
                             <li><a href="#">Cart</a></li>
                             <li><a href="#">Faq</a></li>
                         </ul>
