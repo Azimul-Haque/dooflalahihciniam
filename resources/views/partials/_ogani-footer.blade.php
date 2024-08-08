@@ -19,9 +19,7 @@
                         <h6>Useful Links</h6>
                         <ul>
                             <li><a href="#">About Us</a></li>
-                            <li><a href="#">About Our Shop</a></li>
-                            <li><a href="#">Secure Shopping</a></li>
-                            <li><a href="#">Delivery infomation</a></li>
+                            <li><a href="route('inde') }}">Privacy Policy</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Our Sitemap</a></li>
                         </ul>
