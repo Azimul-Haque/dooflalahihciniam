@@ -39,7 +39,6 @@
                         @foreach($categories as $category)
                             <li><a href="{{ route('product.categorywise', [$category->id, generate_token(50)]) }}">{{ $category->name }}</a></li>
                         @endforeach
-                        <li><a href="./blog-details.html">Blog Details</a></li>
                     </ul>
                 </li>
                 {{-- <li><a href="./blog.html">Blog</a></li> --}}
