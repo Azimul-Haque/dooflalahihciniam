@@ -58,7 +58,7 @@
                         <div class="footer__copyright__text">
                             <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | App Lab Bangladesh</p>
                         </div>
-                        {{-- <div class="footer__copyright__payment"><img src="{{ asset('vendor/ogani/img/payment-item.png') }}" alt=""></div> --}}
+                        <div class="footer__copyright__payment"><img src="{{ asset('vendor/ogani/img/payment-item.png') }}" alt=""></div>
                     </div>
                 </div>
             </div>
