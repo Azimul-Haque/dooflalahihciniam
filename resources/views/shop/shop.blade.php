@@ -1,6 +1,6 @@
 @extends('layouts.ogani')
 
-@section('title', 'Halal Food Store in Japan')
+@section('title', 'Shop')
 
 @section('css')
 
