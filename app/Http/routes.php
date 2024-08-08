@@ -430,4 +430,4 @@ Route::post('password/reset', ['as' => 'auth.password.reset', 'uses' => 'Auth\Pa
 Route::get('/home', ['as'=>'index.homeadhoc','uses'=>'ProductController@getIndexAdhoc']); // reset password redirect adhoc solve
 
 // Clear Route
-Route::get('/clear', ['as'=>'clear','uses'=>'IndexController@clear']);
+// Route::get('/clear', ['as'=>'clear','uses'=>'IndexController@clear']);
