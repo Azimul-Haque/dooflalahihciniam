@@ -36,9 +36,9 @@
                 <li @if(Request::is('shop')) class="active" @endif><a href="{{ route('product.shop') }}">Shop</a></li>
                 <li @if(Request::is('categories')) class="active" @endif><a href="#">Categories</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="./shop-details.html">Shop Details</a></li>
-                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
+                        @foreach($categories as $category)
+                            <li><a href="{{ route('product.categorywise', [$category->id, generate_token(50)]) }}">{{ $category->name }}</a></li>
+                        @endforeach
                         <li><a href="./blog-details.html">Blog Details</a></li>
                     </ul>
                 </li>
