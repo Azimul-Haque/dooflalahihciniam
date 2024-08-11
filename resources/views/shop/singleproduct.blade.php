@@ -85,9 +85,9 @@
                           <img data-imgbigurl="{{ asset('images/product-images/' . $image->image) }}"
                               src="{{ asset('images/product-images/' . $image->image) }}" alt="{{ $product->title }}">
                         @endforeach
-                          {{-- <img data-imgbigurl="{{ asset('img/product/details/product-details-3.jpg') }}"
+                          <img data-imgbigurl="{{ asset('img/product/details/product-details-3.jpg') }}"
                               src="img/product/details/thumb-2.jpg" alt="">
-                          <img data-imgbigurl="img/product/details/product-details-5.jpg"
+                          {{-- <img data-imgbigurl="img/product/details/product-details-5.jpg"
                               src="img/product/details/thumb-3.jpg" alt="">
                           <img data-imgbigurl="img/product/details/product-details-4.jpg"
                               src="img/product/details/thumb-4.jpg" alt=""> --}}
