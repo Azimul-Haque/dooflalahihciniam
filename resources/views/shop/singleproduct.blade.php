@@ -186,7 +186,7 @@
                               <div class="product__details__tab__desc">
                                   <h6>Products Description</h6>
                                   <p>
-                                    {{ $product->description }}
+                                    {!! $product->description !!}
                                   </p>
                               </div>
                           </div>
