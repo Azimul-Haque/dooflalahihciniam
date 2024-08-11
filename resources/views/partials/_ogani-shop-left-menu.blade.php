@@ -105,7 +105,7 @@
                         </div>
                         <div class="latest-product__item__text">
                             <h6>Crab Pool Security</h6>
-                            <span>$30.00</span>
+                            <span>¥30.00</span>
                         </div>
                     </a>
                     <a href="#" class="latest-product__item">
@@ -114,7 +114,7 @@
                         </div>
                         <div class="latest-product__item__text">
                             <h6>Crab Pool Security</h6>
-                            <span>$30.00</span>
+                            <span>¥30.00</span>
                         </div>
                     </a>
                     <a href="#" class="latest-product__item">
@@ -123,7 +123,7 @@
                         </div>
                         <div class="latest-product__item__text">
                             <h6>Crab Pool Security</h6>
-                            <span>$30.00</span>
+                            <span>¥30.00</span>
                         </div>
                     </a>
                 </div>
@@ -134,7 +134,7 @@
                         </div>
                         <div class="latest-product__item__text">
                             <h6>Crab Pool Security</h6>
-                            <span>$30.00</span>
+                            <span>¥30.00</span>
                         </div>
                     </a>
                     <a href="#" class="latest-product__item">
@@ -143,7 +143,7 @@
                         </div>
                         <div class="latest-product__item__text">
                             <h6>Crab Pool Security</h6>
-                            <span>$30.00</span>
+                            <span>¥30.00</span>
                         </div>
                     </a>
                     <a href="#" class="latest-product__item">
@@ -152,7 +152,7 @@
                         </div>
                         <div class="latest-product__item__text">
                             <h6>Crab Pool Security</h6>
-                            <span>$30.00</span>
+                            <span>¥30.00</span>
                         </div>
                     </a>
                 </div>
