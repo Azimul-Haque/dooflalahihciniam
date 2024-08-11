@@ -155,7 +155,7 @@
                           </div>
                       </a>
                     @endforeach
-                    <a href="#" class="latest-product__item">
+                    {{-- <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
                             <img src="{{ asset('vendor/ogani/img/latest-product/lp-1.jpg') }}" alt="">
                         </div>
@@ -181,7 +181,7 @@
                             <h6>Crab Pool Security</h6>
                             <span>¥30.00</span>
                         </div>
-                    </a>
+                    </a> --}}
                 </div>
             </div>
         </div>
