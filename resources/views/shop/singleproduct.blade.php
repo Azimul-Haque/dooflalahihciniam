@@ -197,7 +197,7 @@
                                       <div class="col-md-6 col-sm-12 review-main">
                                         @foreach($product->productreviews as $review)
                                           <div class="review">
-                                              <p class="letter-spacing-2 text-uppercase review-name"><strong>{{ $review->user->name }}</strong> <small>{{ date('F d, Y', strtotime($review->created_at)) }}</small></p>
+                                              <p class="letter-spacing-2 text-uppercase review-name"><strong>{{ $review->user->name }}</strong> | <small>{{ date('F d, Y', strtotime($review->created_at)) }}</small></p>
                                               <p>
                                                 @if($review->rating >= 1)
                                                   <i class="fa fa-star black-text"></i>
