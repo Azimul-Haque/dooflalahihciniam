@@ -239,7 +239,7 @@
                                                   <input type="hidden" name="product_id" value="{{ $product->id }}"><br/>
                                                   <!-- end input -->
                                                   <!-- input  -->
-                                                  <label class="rating">Rating</label>
+                                                  {{-- <label class="rating">Rating</label> --}}
                                                   <select class="form-control" name="rating" required="" style="width: 100%; font-size: 16px; padding-left: 20px; color: #1c1c1c; height: 46px; border: 1px solid #ededed;">
                                                     <option value="" selected="" disabled="">Select a Value</option>
                                                     <option value="1">1</option>
