@@ -229,7 +229,10 @@
                                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                                 <li>
                                     <a href="#"><i class="fa fa-shopping-bag"></i>
-                                        <span id="totalInBagScroll">{{ Session::get('cart')->totalQty }}</span>
+                                        <span id="totalInBagScroll">
+                                            
+                                            {{ Session::get('cart')->totalQty }}
+                                        </span>
                                     </a>
                                 </li>
                             </ul>
