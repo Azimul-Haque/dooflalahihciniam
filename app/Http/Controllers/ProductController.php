@@ -182,6 +182,7 @@ class ProductController extends Controller
     }
 
     public function getCategoryWise($id, $random_string) {
+      $subcat = Category::findOrFail($id);
       $products = Product::where('isAvailable', '!=', '0')
                          ->where('category_id', $id)
                          ->paginate(10);
