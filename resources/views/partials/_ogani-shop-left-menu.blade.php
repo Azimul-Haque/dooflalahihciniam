@@ -48,7 +48,7 @@
                                         @endif
                                         >
                                             <a href="{{ route('product.subcategorywise', [$subcategory->id, generate_token(100)]) }}">
-                                                {{ $subcategory->name }}<span> /// {{ $totalproductofthissubcat }}</span>
+                                                {{ $subcategory->name }}<span></span>
                                             </a>
                                         </li>
                                     @endif
