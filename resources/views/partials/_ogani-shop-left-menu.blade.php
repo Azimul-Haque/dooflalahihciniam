@@ -39,7 +39,7 @@
                                         }
                                       }
                                     @endphp
-                                    {{-- @if($subcategory->isAvailable == 1 && $totalproductofthissubcat > 0) --}}
+                                    @if($subcategory->isAvailable == 1 && $totalproductofthissubcat > 0)
                                         <li
                                         @if(!empty($subcategoryid))
                                             @if($subcategoryid == $subcategory->id)
@@ -51,7 +51,7 @@
                                                 {{ $subcategory->name }}<span> /// {{ $totalproductofthissubcat }}</span>
                                             </a>
                                         </li>
-                                    {{-- @endif --}}
+                                    @endif
                                 @endforeach
                             </ul>
                         </li>
