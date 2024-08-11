@@ -232,6 +232,15 @@
                                         }
                                         totalInBagMobile = totalInBagMobile + 1;
                                         $("#totalInBagMobile").text(totalInBagMobile);
+                                        
+                                        var totalInBagScroll = parseInt($("#totalInBagScroll").text());
+                                        if(isNaN(totalInBagScroll)) {
+                                          totalInBagScroll = 0;
+                                        } else {
+                                          totalInBagScroll = totalInBagScroll;
+                                        }
+                                        totalInBagScroll = totalInBagScroll + 1;
+                                        $("#totalInBagScroll").text(totalInBagScroll);
                                       }
                                   });
                                 });
