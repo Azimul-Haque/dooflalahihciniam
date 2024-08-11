@@ -235,7 +235,7 @@
                                               <!-- comment form -->
                                               {!! Form::open(['route' => 'product.storeproductreview', 'method' => 'POST']) !!}
                                                   <!-- input -->
-                                                  <input type="text" name="name" value="{{ Auth::user()->name }}" placeholder="Name" readonly="">
+                                                  <input type="text" name="name" value="{{ Auth::user()->name }}" placeholder="Name" readonly="" style="width: 100%; font-size: 16px; padding-left: 20px; color: #1c1c1c; height: 46px; border: 1px solid #ededed;">
                                                   <input type="hidden" name="product_id" value="{{ $product->id }}">
                                                   <!-- end input -->
                                                   <!-- input  -->
