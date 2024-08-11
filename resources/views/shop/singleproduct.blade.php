@@ -240,7 +240,7 @@
                                                   <!-- end input -->
                                                   <!-- input  -->
                                                   <label class="rating">Rating</label>
-                                                  <select class="form-control" name="rating" required="" style="width: 100%; font-size: 14px; padding-left: 20px; color: #1c1c1c; height: 100px; border: 1px solid #ededed;">
+                                                  <select class="form-control" name="rating" required="" style="width: 100%; font-size: 16px; padding-left: 20px; color: #1c1c1c; height: 46px; border: 1px solid #ededed;">
                                                     <option value="" selected="" disabled="">Select a Value</option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
