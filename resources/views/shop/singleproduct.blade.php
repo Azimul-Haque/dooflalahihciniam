@@ -382,14 +382,14 @@
               totalInBagMobile = totalInBagMobile + parseInt($('#productQty').val());
               $("#totalInBagMobile").text(totalInBagMobile);
 
-              var totalInBagMobile = parseInt($("#totalInBagMobile").text());
-              if(isNaN(totalInBagMobile)) {
-                totalInBagMobile = 0;
+              var totalInBagScroll = parseInt($("#totalInBagScroll").text());
+              if(isNaN(totalInBagScroll)) {
+                totalInBagScroll = 0;
               } else {
-                totalInBagMobile = totalInBagMobile;
+                totalInBagScroll = totalInBagScroll;
               }
-              totalInBagMobile = totalInBagMobile + parseInt($('#productQty').val());
-              $("#totalInBagMobile").text(totalInBagMobile);
+              totalInBagScroll = totalInBagScroll + parseInt($('#productQty').val());
+              $("#totalInBagScroll").text(totalInBagScroll);
             }
         });
       });
