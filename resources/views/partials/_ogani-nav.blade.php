@@ -146,7 +146,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 col-5">
                     <div class="header__cart">
                         <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>122</span></a></li>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                             <li>
                                 <a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i>
                                     @if(Session::has('cart'))
