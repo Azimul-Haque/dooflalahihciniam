@@ -11,6 +11,8 @@
         </div>
         <div class="humberger__menu__cart">
             <ul>
+                {{-- mobile view --}}
+                {{-- mobile view --}}
                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                 <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
             </ul>
