@@ -189,9 +189,9 @@
                                   <div class="product__item__text">
                                       @php
                                           $text = $product->title;
-                                          $slug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $text));
+                                          $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $text));
                                       @endphp
-                                      <h6><a href="{{ route('product.getsingleproduct', [$product->id, generate_token(100)]) }}">{{ $product->title }}</a></h6>
+                                      <h6><a href="{{ route('product.getsingleproduct', [$product->id, $pslug]) }}">{{ $product->title }}</a></h6>
                                       <h5>¥ {{ $product->price }}</h5>
                                   </div>
                               </div>
