@@ -316,7 +316,7 @@
               </div>
 
               @php
-                  $reltext = $product->title;
+                  $reltext = $relproduct->title;
                   $rellug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $reltext));
               @endphp
               <div class="col-lg-3 col-md-4 col-sm-6">
