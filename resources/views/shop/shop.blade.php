@@ -184,46 +184,6 @@
                                           {{-- <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                           <li><a href="#"><i class="fa fa-retweet"></i></a></li> --}}
                                           <li><a id="addToCart{{ $product->id }}" href="#!"><i class="fa fa-shopping-cart"></i></a></li>
-                                          <script type="text/javascript">
-                                            $(document).ready(function(){
-                                                $("#addToCart{{ $product->id }}").click(function(){
-                                                  console.log('Item ID: {{ $product->id }}');
-                                                  $.ajax({
-                                                      url: "/addtocart/{{ $product->id }}",
-                                                      type: "GET",
-                                                      data: {},
-                                                      success: function (data) {
-                                                        var response = data;
-                                                        console.log(response);
-                                                        if(response == 'success') {
-                                                          if($(window).width() > 768) {
-                                                            toastr.success('{{ $product->title }} added to your bag', 'SUCCESS').css('width','400px');
-                                                          } else {
-                                                            toastr.success('{{ $product->title }} added to your bag', 'SUCCESS').css('width', ($(window).width()-25)+'px');
-                                                          }
-                                                        }
-                                                        var totalInBag = parseInt($("#totalInBag").text());
-                                                        if(isNaN(totalInBag)) {
-                                                          totalInBag = 0;
-                                                        } else {
-                                                          totalInBag = totalInBag;
-                                                        }
-                                                        totalInBag = totalInBag + 1;
-                                                        $("#totalInBag").text(totalInBag);
-                                                        
-                                                        var totalInBagMobile = parseInt($("#totalInBagMobile").text());
-                                                        if(isNaN(totalInBagMobile)) {
-                                                          totalInBagMobile = 0;
-                                                        } else {
-                                                          totalInBagMobile = totalInBagMobile;
-                                                        }
-                                                        totalInBagMobile = totalInBagMobile + 1;
-                                                        $("#totalInBagMobile").text(totalInBagMobile);
-                                                      }
-                                                  });
-                                                });
-                                            });
-                                          </script>
                                       </ul>
                                   </div>
                                   <div class="product__item__text">
@@ -236,6 +196,46 @@
                                   </div>
                               </div>
                           </div>
+                          <script type="text/javascript">
+                            $(document).ready(function(){
+                                $("#addToCart{{ $product->id }}").click(function(){
+                                  console.log('Item ID: {{ $product->id }}');
+                                  $.ajax({
+                                      url: "/addtocart/{{ $product->id }}",
+                                      type: "GET",
+                                      data: {},
+                                      success: function (data) {
+                                        var response = data;
+                                        console.log(response);
+                                        if(response == 'success') {
+                                          if($(window).width() > 768) {
+                                            toastr.success('{{ $product->title }} added to your bag', 'SUCCESS').css('width','400px');
+                                          } else {
+                                            toastr.success('{{ $product->title }} added to your bag', 'SUCCESS').css('width', ($(window).width()-25)+'px');
+                                          }
+                                        }
+                                        var totalInBag = parseInt($("#totalInBag").text());
+                                        if(isNaN(totalInBag)) {
+                                          totalInBag = 0;
+                                        } else {
+                                          totalInBag = totalInBag;
+                                        }
+                                        totalInBag = totalInBag + 1;
+                                        $("#totalInBag").text(totalInBag);
+                                        
+                                        var totalInBagMobile = parseInt($("#totalInBagMobile").text());
+                                        if(isNaN(totalInBagMobile)) {
+                                          totalInBagMobile = 0;
+                                        } else {
+                                          totalInBagMobile = totalInBagMobile;
+                                        }
+                                        totalInBagMobile = totalInBagMobile + 1;
+                                        $("#totalInBagMobile").text(totalInBagMobile);
+                                      }
+                                  });
+                                });
+                            });
+                          </script>
                         @endforeach
                         
                         
