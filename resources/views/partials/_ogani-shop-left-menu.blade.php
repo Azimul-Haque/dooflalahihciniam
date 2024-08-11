@@ -25,7 +25,7 @@
                     @if($category->products->count() > 0 && $totalproductofthiscat > 0)
                         <li>
                             <a href="{{ route('product.categorywise', [$category->id, generate_token(100)]) }}">
-                                {{ $category->name }}<span>///{{ $category->products->count() }}</span>
+                                {{ $category->name }}<span></span>
                             </a>
                             <ul style="margin-left: 30px;">
                                 @foreach($category->subcategories as $subcategory)
@@ -48,7 +48,7 @@
                                         @endif
                                         >
                                             <a href="{{ route('product.subcategorywise', [$subcategory->id, generate_token(100)]) }}">
-                                                {{ $subcategory->name }}<span> /// {{ $totalproductofthissubcat }}</span>
+                                                {{ $subcategory->name }}
                                             </a>
                                         </li>
                                     @endif
