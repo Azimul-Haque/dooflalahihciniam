@@ -49,7 +49,8 @@ class ProductController extends Controller
       $newarrivals = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
       return view('shop.shop')
-                  ->withProducts($products);
+                  ->withProducts($products)
+                  ->withNewarrivals($newarrivals);
     }
 
     public function getIndexAdhoc() {
