@@ -3,6 +3,12 @@
         <h4>Categories</h4>
         <ul>
             @foreach($categories as $category)
+                @php
+                    use Illuminate\Support\Str;
+
+                    $text = $category->name;
+                    $slug = Str::slug($text);
+                @endphp
                 <li><a href="{{ route('product.categorywise', [$category->id, $category->name]) }}">{{ $category->name }}</a></li>
             @endforeach
         </ul>
