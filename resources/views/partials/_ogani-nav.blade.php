@@ -15,7 +15,7 @@
                 {{-- mobile view --}}
                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                 <li>
-                    <a href="#"><i class="fa fa-shopping-bag"></i>
+                    <a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i>
                         @if(Session::has('cart'))
                             <span id="totalInBagMobile">{{ Session::get('cart')->totalQty }}</span>
                         @endif
@@ -228,7 +228,7 @@
                                 {{-- normal pc view SCROLL --}}
                                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                                 <li>
-                                    <a href="#"><i class="fa fa-shopping-bag"></i>
+                                    <a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i>
                                         <span id="totalInBagScroll">
                                             @if(Session::has('cart'))
                                                 {{ Session::get('cart')->totalQty }}
