@@ -8,8 +8,8 @@
                     $slug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $text));
                 @endphp
                 {{-- <li><a href="{{ route('product.categorywise', [$category->id, $slug]) }}">{{ $category->name }}</a></li> --}}
-                
-               @if($category->products->count() > 0)
+
+                @if($category->products->count() > 0)
                     @php
                       $totalproductofthiscat = 0;
                       foreach($category->subcategories as $subcategory) {
@@ -56,7 +56,7 @@
                             </ul>
                         </li>
                     @endif
-               @endif
+                @endif
             @endforeach
         </ul>
     </div>
