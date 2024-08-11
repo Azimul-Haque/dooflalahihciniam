@@ -235,8 +235,8 @@
                                               <!-- comment form -->
                                               {!! Form::open(['route' => 'product.storeproductreview', 'method' => 'POST']) !!}
                                                   <!-- input -->
-                                                  <input type="text" name="name" value="{{ Auth::user()->name }}" placeholder="Name" readonly="" style="width: 100%; font-size: 16px; padding-left: 20px; color: #1c1c1c; height: 46px; border: 1px solid #ededed;">
-                                                  <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                                  <input type="text" name="name" value="{{ Auth::user()->name }}" placeholder="Name" readonly="" style="width: 100%; font-size: 16px; padding-left: 20px; color: #1c1c1c; height: 46px; border: 1px solid #ededed;"><br/>
+                                                  <input type="hidden" name="product_id" value="{{ $product->id }}"><br/>
                                                   <!-- end input -->
                                                   <!-- input  -->
                                                   <label class="rating">Rating</label>
@@ -247,7 +247,7 @@
                                                     <option value="3">3</option>
                                                     <option value="4">4</option>
                                                     <option value="5">5</option>
-                                                  </select>
+                                                  </select><br/>
                                                   <!-- end input -->
                                                   <!-- textarea  -->
                                                   <textarea name="comment" placeholder="Write your comment" required="" style="width: 100%; font-size: 16px; padding-left: 20px; color: #1c1c1c; height: 46px; border: 1px solid #ededed;"></textarea>
