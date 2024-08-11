@@ -195,6 +195,7 @@ class ProductController extends Controller
     }
 
     public function getSubcategoryWise($id, $random_string) {
+      $catorsub = Category::findOrFail($id);
       $products = Product::where('isAvailable', '!=', '0')
                          ->where('subcategory_id', $id)
                          ->paginate(10);
@@ -203,6 +204,7 @@ class ProductController extends Controller
                   ->withProducts($products)
                   ->withNewarrivals($newarrivals)
                   ->withCatorsubid($id)
+                  ->withCatorsub($catorsub)
                   ->withSubcategoryid($id); // for active class
     }
 
