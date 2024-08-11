@@ -41,6 +41,7 @@
                       }
                     @endphp
                     @if($category->products->count() > 0 && $totalproductofthiscat > 0)
+                        <i class="fas fa-plus toggle"></i>
                         <li class="branch">
                             <a href="{{ route('product.categorywise', [$category->id, generate_token(100)]) }}">
                                 {{ $category->name }}<span></span>
