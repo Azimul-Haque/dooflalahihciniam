@@ -190,7 +190,7 @@
                                   </p>
                               </div>
                           </div>
-                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                          <div class="tab-pane" id="tabs-2" role="tabpanel">
                               <div class="product__details__tab__desc">
                                   <h6>Products Infomation</h6>
                                   <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
@@ -206,7 +206,7 @@
                                       Proin eget tortor risus.</p>
                               </div>
                           </div>
-                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                          <div class="tab-pane" id="tabs-3" role="tabpanel">
                               <div class="product__details__tab__desc">
                                   <h6>Products Infomation</h6>
                                   <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
