@@ -156,13 +156,9 @@
                           <li><b>Weight</b> <span>0.5 kg</span></li>
                           <li><b>Share on</b>
                               <div class="share">
-                                  <a href="#"><i class="fa fa-facebook"></i></a>
-                                  <a href="#"><i class="fa fa-twitter"></i></a>
-                                  <a href="#"><i class="fa fa-instagram"></i></a>
-                                  <a href="#"><i class="fa fa-pinterest"></i></a>
-
                                   <a href="https://www.facebook.com/sharer/sharer.php?u={{ Request::url() }}" onclick="window.open(this.href,'newwindow', 'width=500,height=400'); return false;"><i class="fa fa-facebook"></i></a>
                                   <a href="https://twitter.com/intent/tweet?url={{ Request::url() }}" onclick="window.open(this.href,'newwindow', 'width=500,height=400'); return false;"><i class="fa fa-twitter"></i></a>
+                                  <a href="#"><i class="fa fa-instagram"></i></a>
                                   <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ Request::url()}}&title=IIT%20Alumni%20Association&summary={{ $product->title }}&source=Killa%20Consultancy" onclick="window.open(this.href,'newwindow', 'width=500,height=400');  return false;"><i class="fa fa-linkedin"></i></a>
                               </div>
                           </li>
