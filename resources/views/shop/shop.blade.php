@@ -197,6 +197,7 @@
                               </div>
                           </div>
                           <script type="text/javascript">
+                            <script src="http://localhost:8000/vendor/ogani/js/jquery-3.3.1.min.js"></script>
                             $(document).ready(function(){
                                 $("#addToCart{{ $product->id }}").click(function(){
                                   console.log('Item ID: {{ $product->id }}');
