@@ -42,9 +42,10 @@ class ProductController extends Controller
 
     public function getShop() {
       
-      // $products = Product::where('isAvailable', '!=', '0')
-      //                    ->orderBy('id', 'desc')
-      //                    ->paginate(10);
+      $products = Product::where('isAvailable', '!=', '0')
+                         ->orderBy('id', 'desc')
+                         ->take(50)
+                         ->paginate(10);
 
       return view('shop.shop');
                   // ->withSliders($sliders);
