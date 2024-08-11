@@ -124,7 +124,12 @@
                           </div>
                           <div class="latest-product__item__text">
                               <h6>{{ $product->title }}</h6>
-                              <span>¥30.00</span>
+                              <span>
+                                  @if($product->oldprice > 0)
+                                    <del>¥ {{ $product->oldprice }}</del>
+                                  @endif
+                                  ¥ {{ $product->price }}
+                              </span>
                           </div>
                       </a>
                     @endforeach
