@@ -187,7 +187,7 @@
                                       </ul>
                                   </div>
                                   <div class="product__item__text">
-                                      <h6><a href="#">Crab Pool Security</a></h6>
+                                      <h6><a href="#">{{ $product->title }}</a></h6>
                                       <h5>¥30.00</h5>
                                   </div>
                               </div>
