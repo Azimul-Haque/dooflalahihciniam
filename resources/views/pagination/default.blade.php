@@ -11,7 +11,7 @@
 </div>
 
 <div class="pagination">
-    <a href="{{ $paginator->url(1) }}" class="{{ ($paginator->currentPage() == 1) ? 'disabled' : '' }}"><img src="{{ asset('vendor/hcode/images/arrow-pre-small.png') }}" alt=""/></a>
+    <a href="{{ $paginator->url(1) }}" class="{{ ($paginator->currentPage() == 1) ? 'disabled' : '' }}"><i class="fa fa-long-arrow-right"></i></a>
     
     @for ($i = 1; $i <= $paginator->lastPage(); $i++)
         @php
