@@ -142,7 +142,16 @@
                       <a href="#" class="primary-btn">ADD TO CARD</a>
                       <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
                       <ul>
-                          <li><b>Availability</b> <span>In Stock</span></li>
+                          <li>
+                            <b>Availability</b>
+                            <span>
+                              @if($product->isAvailable == 1)
+                                In Stock / Shipping Available
+                              @else
+                                Out of Stock / Shipping Unavailable
+                              @endif
+                            </span>
+                          </li>
                           <li><b>Shipping</b> <span>01 day shipping. <samp>Free pickup today</samp></span></li>
                           <li><b>Weight</b> <span>0.5 kg</span></li>
                           <li><b>Share on</b>
