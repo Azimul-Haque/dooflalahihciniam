@@ -233,7 +233,6 @@
                                             @if(Session::has('cart'))
                                                 {{ Session::get('cart')->totalQty }}
                                             @endif
-                                            
                                         </span>
                                     </a>
                                 </li>
