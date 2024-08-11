@@ -20,11 +20,11 @@
             }
         @endphp
         @if ($from < $i && $i < $to)
-            <a href="{{ $paginator->url($i) }}" class="{{ ($paginator->currentPage() == $i) ? ' active' : '' }}">{{ $i }}</a>
+            <a href="{{ $paginator->url($i) }}">{{ $i }}</a>
         @endif
         
     @endfor
-    
+
     <a href="{{ $paginator->url($paginator->currentPage()+1) }}"><i class="fa fa-long-arrow-right"></i></a>
 </div>
 
