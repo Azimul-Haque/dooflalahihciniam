@@ -142,7 +142,9 @@
                       <a href="#" class="primary-btn">ADD TO CARD</a>
                       @if(Auth::check())
                         <a href="{{ route('product.addtowishlist', [$product->id, Auth::user()->id]) }}" class="heart-icon">
-                          @if()
+                          @php
+                            echo Auth::user()->wishlists;
+                          @endphp
                           <span class="icon_heart_alt"></span>
                         </a>
                       @else
