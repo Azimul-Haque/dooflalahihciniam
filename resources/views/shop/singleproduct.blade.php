@@ -193,17 +193,76 @@
                           <div class="tab-pane" id="tabs-2" role="tabpanel">
                               <div class="product__details__tab__desc">
                                   <h6>Reviews</h6>
-                                  <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                                      Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus.
-                                      Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam
-                                      sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo
-                                      eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.
-                                      Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent
-                                      sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac
-                                      diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante
-                                      ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                                      Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                                      Proin eget tortor risus.</p>
+                                  <div class="row">
+                                      <div class="col-md-6 col-sm-12 review-main">
+                                        @foreach($product->productreviews as $review)
+                                          <div class="review">
+                                              <p class="letter-spacing-2 text-uppercase review-name"><strong>{{ $review->user->name }},</strong> {{ date('F d, Y', strtotime($review->created_at)) }}</p>
+                                              <p>
+                                                @if($review->rating >= 1)
+                                                  <i class="fa fa-star black-text"></i>
+                                                @else
+                                                  <i class="fa fa-star-o black-text"></i>
+                                                @endif
+                                                @if($review->rating >= 2)
+                                                  <i class="fa fa-star black-text"></i>
+                                                @else
+                                                  <i class="fa fa-star-o black-text"></i>
+                                                @endif
+                                                @if($review->rating >= 3)
+                                                  <i class="fa fa-star black-text"></i>
+                                                @else
+                                                  <i class="fa fa-star-o black-text"></i>
+                                                @endif
+                                                @if($review->rating >= 4)
+                                                  <i class="fa fa-star black-text"></i>
+                                                @else
+                                                  <i class="fa fa-star-o black-text"></i>
+                                                @endif
+                                                @if($review->rating >= 5)
+                                                  <i class="fa fa-star black-text"></i>
+                                                @else
+                                                  <i class="fa fa-star-o black-text"></i>
+                                                @endif
+                                              </p>
+                                              <p>{{ $review->comment }}</p>
+                                          </div>
+                                        @endforeach
+                                      </div>
+                                      <div class="col-md-5 col-sm-12 col-md-offset-1 blog-single-full-width-form sm-margin-top-seven">
+                                          <div class="blog-comment-form">
+                                              @if(Auth::check())
+                                              <!-- comment form -->
+                                              {!! Form::open(['route' => 'product.storeproductreview', 'method' => 'POST']) !!}
+                                                  <!-- input -->
+                                                  <input type="text" name="name" value="{{ Auth::user()->name }}" placeholder="Name" readonly="">
+                                                  <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                                  <!-- end input -->
+                                                  <!-- input  -->
+                                                  <label class="rating">Rating</label>
+                                                  <select class="form-control" name="rating" required="">
+                                                    <option value="" selected="" disabled="">Select a Value</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                  </select>
+                                                  <!-- end input -->
+                                                  <!-- textarea  -->
+                                                  <textarea name="comment" placeholder="Write your comment" required=""></textarea>
+                                                  <!-- end textarea  -->
+                                                  <!-- button  -->
+                                                  <input type="submit" name="send message" value="LEAVE RATING" class="highlight-button-black-border btn btn-small xs-no-margin-bottom">
+                                                  <!-- end button  -->
+                                              {!! Form::close() !!}
+                                              <!-- end comment form -->
+                                              @else
+                                              <a href="{{ url('login') }}" class="highlight-button-black-border btn btn-small xs-no-margin-bottom" title="You need to login to Write a Review">Login to Write Review</a>
+                                              @endif
+                                          </div>
+                                      </div>
+                                  </div>
                               </div>
                           </div>
                           <div class="tab-pane" id="tabs-3" role="tabpanel">
