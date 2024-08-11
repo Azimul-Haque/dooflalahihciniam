@@ -192,6 +192,10 @@
                                 <li @if(Request::is('categories')) class="active" @endif><a href="#">Categories ▽</a>
                                     <ul class="header__menu__dropdown">
                                         @foreach($categories as $category)
+                                            @php
+                                                $text = $category->name;
+                                                $slug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $text));
+                                            @endphp
                                             <li><a href="{{ route('product.categorywise', [$category->id, generate_token(50)]) }}">{{ $category->name }}</a></li>
                                         @endforeach
                                     </ul>
