@@ -444,6 +444,7 @@
             }
             totalInBag = totalInBag + 1;
             $("#totalInBag").text(totalInBag);
+            
             var totalInBagMobile = parseInt($("#totalInBagMobile").text());
             if(isNaN(totalInBagMobile)) {
               totalInBagMobile = 0;
@@ -452,6 +453,15 @@
             }
             totalInBagMobile = totalInBagMobile + 1;
             $("#totalInBagMobile").text(totalInBagMobile);
+
+            var totalInBagScroll = parseInt($("#totalInBagScroll").text());
+            if(isNaN(totalInBagScroll)) {
+              totalInBagScroll = 0;
+            } else {
+              totalInBagScroll = totalInBagScroll;
+            }
+            totalInBagScroll = totalInBagScroll + 1;
+            $("#totalInBagScroll").text(totalInBagScroll);
           }
       });
   }
