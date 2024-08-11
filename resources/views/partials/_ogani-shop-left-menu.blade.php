@@ -8,6 +8,56 @@
                     $slug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $text));
                 @endphp
                 <li><a href="{{ route('product.categorywise', [$category->id, $slug]) }}">{{ $category->name }}</a></li>
+                    @foreach($categories as $category)
+                       @if($category->products->count() > 0)
+                            @php
+                              $totalproductofthiscat = 0;
+                              foreach($category->subcategories as $subcategory) {
+                                if($subcategory->isAvailable == 1) {
+                                  foreach ($subcategory->products as $product) {
+                                    if($product->isAvailable == 1) {
+                                      $totalproductofthiscat = $totalproductofthiscat + 1;
+                                    }
+                                  }
+                                }
+                              }
+                            @endphp
+                            @if($category->products->count() > 0 && $totalproductofthiscat > 0)
+                                <li>
+                                    <a href="{{ route('product.categorywise', [$category->id, generate_token(100)]) }}">
+                                        {{ $category->name }}<span>{{ $category->products->count() }}</span>
+                                    </a>
+                                    <ul class="subcategory-list">
+                                        @foreach($category->subcategories as $subcategory)
+                                            @php
+                                              $totalproductofthissubcat = 0;
+                                              if($subcategory->isAvailable == 1) {
+                                                foreach ($subcategory->products as $product) {
+                                                  if($product->isAvailable == 1) {
+                                                    $totalproductofthissubcat = $totalproductofthissubcat + 1;
+                                                  }
+                                                }
+                                              }
+                                            @endphp
+                                            @if($subcategory->isAvailable == 1 && $totalproductofthissubcat > 0)
+                                                <li
+                                                @if(!empty($subcategoryid))
+                                                    @if($subcategoryid == $subcategory->id)
+                                                    class="active"
+                                                    @endif
+                                                @endif
+                                                >
+                                                    <a href="{{ route('product.subcategorywise', [$subcategory->id, generate_token(100)]) }}">
+                                                        {{ $subcategory->name }}<span>{{ $totalproductofthissubcat }}</span>
+                                                    </a>
+                                                </li>
+                                            @endif
+                                        @endforeach
+                                    </ul>
+                                </li>
+                            @endif
+                       @endif
+                    @endforeach
             @endforeach
         </ul>
     </div>
