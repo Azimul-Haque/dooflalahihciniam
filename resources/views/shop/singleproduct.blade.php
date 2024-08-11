@@ -93,11 +93,11 @@
                   <div class="product__details__text">
                       <h3>{{ $product->title }}</h3>
                       <div class="product__details__rating">
+                          {{-- <i class="fa fa-star"></i>
                           <i class="fa fa-star"></i>
                           <i class="fa fa-star"></i>
                           <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star-half-o"></i>
+                          <i class="fa fa-star-half-o"></i> --}}
                           @if($product->productreviews->count() > 0)
                             @php
                               $avgrating = $product->productreviews->sum('rating') / $product->productreviews->count();
