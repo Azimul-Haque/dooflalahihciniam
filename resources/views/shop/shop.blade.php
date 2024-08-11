@@ -192,8 +192,8 @@
                                           $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
                                       @endphp
                                       <h6><a href="{{ route('product.getsingleproduct', [$product->id, $pslug]) }}">{{ $product->title }}</a></h6>
-                                      <h5>¥ {{ $product->price }}</h5>
-                                      
+                                      <h5>¥ {{ $product->price }}</h5> <del>¥ {{ $product->oldprice }}</del>
+
                                   </div>
                               </div>
                           </div>
