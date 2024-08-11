@@ -329,7 +329,7 @@
                           </ul>
                       </div>
                       <div class="product__item__text">
-                          <h6><a href="{{ route('product.getsingleproduct', [$relproduct->id, $relslug]) }}">Crab Pool Security</a></h6>
+                          <h6><a href="{{ route('product.getsingleproduct', [$relproduct->id, $relslug]) }}">{{ $relproduct->title }}</a></h6>
                           <h5>$30.00</h5>
                       </div>
                   </div>
