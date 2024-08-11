@@ -8,7 +8,7 @@
     <a href="#">2</a>
     <a href="#">3</a>
     <a href="#"><i class="fa fa-long-arrow-right"></i></a>
-    <a href="{{ $paginator->url($paginator->currentPage()+1) }}"><img src="{{ asset('vendor/hcode/images/arrow-next-small.png') }}" alt="" /></a>
+    <a href="{{ $paginator->url($paginator->currentPage()+1) }}"></a>
 </div>
 
 <div class="pagination">
