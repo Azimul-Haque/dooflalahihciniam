@@ -53,7 +53,7 @@
           <div class="row">
               <div class="col-lg-12 text-center">
                   <div class="breadcrumb__text">
-                      <h5>Organi Shop</h5>
+                      {{-- <h2>Organi Shop</h2> --}}
                       <div class="breadcrumb__option">
                           <a href="{{ route('product.index') }}">Home</a>
                           <span>Shop</span>
