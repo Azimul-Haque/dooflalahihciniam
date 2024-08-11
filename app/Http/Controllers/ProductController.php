@@ -124,7 +124,7 @@ class ProductController extends Controller
       $relatedproducts = Product::where('isAvailable', '!=', '0')
                          ->where('category_id', $product->category_id)
                          ->inRandomOrder()
-                         ->get()->take(10);
+                         ->get()->take(4);
       $newarrivals = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(5);
 
       return view('shop.singleproduct')
