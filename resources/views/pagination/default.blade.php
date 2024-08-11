@@ -1,4 +1,4 @@
-@php
+{{-- @php
     $link_limit = 7;
 @endphp
 
@@ -25,7 +25,7 @@
 
     <a href="{{ $paginator->url($paginator->currentPage()+1) }}"><i class="fa fa-long-arrow-right"></i></a>
 </div>
-@endif
+@endif --}}
 
 
 
@@ -33,7 +33,7 @@
 
 
 
-{{-- @php
+@php
     $link_limit = 7;
 @endphp
 
@@ -61,4 +61,4 @@
     
     <a href="{{ $paginator->url($paginator->currentPage()+1) }}" class="{{ ($paginator->currentPage() == $paginator->lastPage()) ? ' disabled' : '' }}"><img src="{{ asset('vendor/hcode/images/arrow-next-small.png') }}" alt="" /></a>
 </div>
-@endif --}}
+@endif
