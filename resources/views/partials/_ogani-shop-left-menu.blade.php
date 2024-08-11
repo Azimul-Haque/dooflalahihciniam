@@ -99,6 +99,22 @@
             <h4>Latest Products</h4>
             <div class="latest-product__slider owl-carousel">
                 <div class="latest-prdouct__slider__item">
+                    @foreach($newarrivals as $product)
+                      <li class="clearfix">
+                          <a href="{{ route('product.getsingleproduct', [$product->id, generate_token(100)]) }}">
+                            <img src="{{ asset('images/product-images/'.$product->productimages->first()->image) }}" alt="{{ $product->title }}">
+                          </a>
+                          <div class="widget-posts-details">
+                            <a href="{{ route('product.getsingleproduct', [$product->id, generate_token(100)]) }}">
+                              {{ $product->title }}
+                            </a> 
+                            @if($product->oldprice > 0)
+                              <del>¥ {{ $product->oldprice }}</del>
+                            @endif
+                            ¥ {{ $product->price }}
+                          </div>
+                      </li>
+                    @endforeach
                     <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
                             <img src="{{ asset('vendor/ogani/img/latest-product/lp-1.jpg') }}" alt="">
