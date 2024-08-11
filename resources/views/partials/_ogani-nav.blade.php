@@ -230,8 +230,10 @@
                                 <li>
                                     <a href="#"><i class="fa fa-shopping-bag"></i>
                                         <span id="totalInBagScroll">
+                                            @if(Session::has('cart'))
+                                                {{ Session::get('cart')->totalQty }}
+                                            @endif
                                             
-                                            {{ Session::get('cart')->totalQty }}
                                         </span>
                                     </a>
                                 </li>
