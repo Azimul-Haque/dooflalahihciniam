@@ -317,7 +317,7 @@
 
               @php
                   $reltext = $relproduct->title;
-                  $rellug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $reltext));
+                  $relslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $reltext));
               @endphp
               <div class="col-lg-3 col-md-4 col-sm-6">
                   <div class="product__item">
@@ -329,7 +329,7 @@
                           </ul>
                       </div>
                       <div class="product__item__text">
-                          <h6><a href="#">Crab Pool Security</a></h6>
+                          <h6><a href="{{ route('product.getsingleproduct', [$relproduct->id, $relslug]) }}">Crab Pool Security</a></h6>
                           <h5>$30.00</h5>
                       </div>
                   </div>
