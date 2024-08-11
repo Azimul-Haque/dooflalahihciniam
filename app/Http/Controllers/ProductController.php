@@ -47,8 +47,8 @@ class ProductController extends Controller
                          ->take(50)
                          ->paginate(10);
 
-      return view('shop.shop');
-                  // ->withSliders($sliders);
+      return view('shop.shop')
+                  ->withProducts($products);
     }
 
     public function getIndexAdhoc() {
