@@ -141,8 +141,8 @@
                       </div>
                       <a href="#" class="primary-btn">ADD TO CARD</a>
                       @if(Auth::check())
-                        <a title="Add to Wishlist" href="{{ route('product.addtowishlist', [$product->id, Auth::user()->id]) }}" class="text-uppercase text-small vertical-align-middle"><i class="fa fa-heart-o black-text"></i> Add to wishlist</a>
-                        <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                        <a href="" class="text-uppercase text-small vertical-align-middle"><i class="fa fa-heart-o black-text"></i> Add to wishlist</a>
+                        <a href="{{ route('product.addtowishlist', [$product->id, Auth::user()->id]) }}" class="heart-icon"><span class="icon_heart_alt"></span></a>
                       @else
                         <a title="You need to Login to Add this product in your WishList" href="{{ url('login') }}" class="text-uppercase text-small vertical-align-middle"><i class="fa fa-heart-o black-text"></i> Add to wishlist</a>
                       @endif
