@@ -207,11 +207,9 @@
                                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                                 <li>
                                     <a href="#"><i class="fa fa-shopping-bag"></i>
-                                        <span>
-                                            @if(Session::has('cart'))
-                                                <span id="totalInBag">{{ Session::get('cart')->totalQty }}</span>
-                                            @endif
-                                        </span>
+                                        @if(Session::has('cart'))
+                                            <span id="totalInBag">{{ Session::get('cart')->totalQty }}</span>
+                                        @endif
                                     </a>
                                 </li>
                             </ul>
