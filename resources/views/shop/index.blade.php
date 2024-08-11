@@ -29,12 +29,12 @@
                   </div>
                   <div class="col-lg-3">
                       <div class="categories__item set-bg" data-setbg="{{ asset('vendor/ogani/img/categories/cat-4.jpg') }}">
-                          <h5><a href="#">drink fruits</a></h5>
+                          <h5><a href="#">Fruit Drinks</a></h5>
                       </div>
                   </div>
                   <div class="col-lg-3">
                       <div class="categories__item set-bg" data-setbg="{{ asset('vendor/ogani/img/categories/cat-5.jpg') }}">
-                          <h5><a href="#">drink fruits</a></h5>
+                          <h5><a href="#">Meat Items</a></h5>
                       </div>
                   </div>
               </div>

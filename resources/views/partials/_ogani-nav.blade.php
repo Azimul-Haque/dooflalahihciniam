@@ -260,13 +260,60 @@
                     </div>
 
                     @if(Request::is('/')) 
-                        <div class="hero__item set-bg" data-setbg="{{ asset('vendor/ogani/img/hero/banner.jpg') }}">
+                        {{-- <div class="hero__item set-bg" data-setbg="{{ asset('vendor/ogani/img/hero/banner.jpg') }}">
                             <div class="hero__text">
-                                <span>FRUIT FRESH</span>
+                                <span>ALWAYS FRESH</span>
                                 <h2>Vegetable <br />100% Organic</h2>
-                                <p>Free Pickup and Delivery Available</p>
-                                <a href="#" class="primary-btn">SHOP NOW</a>
+                                <p>Fresh & Halal Food | Your right Choice</p>
+                                <a href="{{ route('product.shop') }}" class="primary-btn">SHOP NOW</a>
                             </div>
+                        </div> --}}
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <div class="hero__item set-bg" data-setbg="{{ asset('vendor/ogani/img/hero/banner.jpg') }}">
+                                  <div class="hero__text">
+                                      <span>ALWAYS FRESH</span>
+                                      <h2>Vegetable <br />100% Organic</h2>
+                                      <p>Fresh & Halal Food | Your right Choice</p>
+                                      <a href="{{ route('product.shop') }}" class="primary-btn">SHOP NOW</a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="hero__item set-bg" data-setbg="{{ asset('vendor/ogani/img/hero/banner.jpg') }}">
+                                  <div class="hero__text">
+                                      <span>ALWAYS FRESH</span>
+                                      <h2>Vegetable <br />100% Organic</h2>
+                                      <p>Fresh & Halal Food | Your right Choice</p>
+                                      <a href="{{ route('product.shop') }}" class="success-btn">SHOP NOW</a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="hero__item set-bg" data-setbg="{{ asset('vendor/ogani/img/hero/banner.jpg') }}">
+                                  <div class="hero__text">
+                                      <span>ALWAYS FRESH</span>
+                                      <h2>Vegetable <br />100% Organic</h2>
+                                      <p>Fresh & Halal Food | Your right Choice</p>
+                                      <a href="{{ route('product.shop') }}" class="warning-btn">SHOP NOW</a>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                          {{-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a> --}}
                         </div>
                     @endif
                 </div>

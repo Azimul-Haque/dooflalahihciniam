@@ -1,6 +1,6 @@
 <div class="sidebar">
     <div class="sidebar__item">
-        <h4>Department</h4>
+        <h4>Categories</h4>
         <ul>
             <li><a href="#">Fresh Meat</a></li>
             <li><a href="#">Vegetables</a></li>
