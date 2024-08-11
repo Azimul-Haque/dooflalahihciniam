@@ -264,14 +264,14 @@
                     </div>
 
                     @if(Request::is('/')) 
-                        {{-- <div class="hero__item set-bg" data-setbg="{{ asset('vendor/ogani/img/hero/banner.jpg') }}">
+                        <div class="hero__item set-bg" data-setbg="{{ asset('vendor/ogani/img/hero/banner.jpg') }}">
                             <div class="hero__text">
                                 <span>ALWAYS FRESH</span>
                                 <h2>Vegetable <br />100% Organic</h2>
                                 <p>Fresh & Halal Food | Your right Choice</p>
                                 <a href="{{ route('product.shop') }}" class="primary-btn">SHOP NOW</a>
                             </div>
-                        </div> --}}
+                        </div>
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                           <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
