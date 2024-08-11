@@ -32,6 +32,7 @@ class ProductController extends Controller
       
       $products = Product::where('isAvailable', '!=', '0')
                          ->orderBy('id', 'desc')
+                         ->take(50)
                          ->paginate(10);
       $sliders = Slider::orderBy('id', 'asc')->get();
 
