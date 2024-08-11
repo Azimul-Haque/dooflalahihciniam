@@ -4,14 +4,14 @@
 
 @if ($paginator->lastPage() > 1)
 <div class="product__pagination">
-    <a href="{{ $paginator->url(1) }}">1</a>
+    <a href="{{ $paginator->url(1) }}"><i class="fa fa-long-arrow-right"></i></a>
     <a href="#">2</a>
     <a href="#">3</a>
     <a href="#"><i class="fa fa-long-arrow-right"></i></a>
 </div>
 
 <div class="pagination">
-    <a href="{{ $paginator->url(1) }}" class="{{ ($paginator->currentPage() == 1) ? 'disabled' : '' }}"><i class="fa fa-long-arrow-right"></i></a>
+    <a href="{{ $paginator->url(1) }}" class="{{ ($paginator->currentPage() == 1) ? 'disabled' : '' }}"></a>
     
     @for ($i = 1; $i <= $paginator->lastPage(); $i++)
         @php
