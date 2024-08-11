@@ -248,6 +248,7 @@
                             });
                           </script>
                         @endforeach
+                    </div>
                     {{-- <div class="product__pagination">
                         <a href="#">1</a>
                         <a href="#">2</a>
