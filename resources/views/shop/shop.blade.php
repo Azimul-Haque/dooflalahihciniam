@@ -187,7 +187,7 @@
                                       </ul>
                                   </div>
                                   <div class="product__item__text">
-                                      <h6><a href="#">{{ $product->title }}</a></h6>
+                                      <h6><a href="{{ route('product.getsingleproduct', [$product->id, generate_token(100)]) }}">{{ $product->title }}</a></h6>
                                       <h5>¥ {{ $product->price }}</h5>
                                   </div>
                               </div>
