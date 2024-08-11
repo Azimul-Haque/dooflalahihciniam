@@ -1,6 +1,24 @@
 <div class="sidebar">
     <div class="sidebar__item">
         <h4>Categories</h4>
+        <ul class="tree list-unstyled">
+                <li class="branch">
+                    <i class="fas fa-plus toggle"></i>
+                    <a href="#">Parent 1</a>
+                    <ul class="nested list-unstyled">
+                        <li><a href="#">Child 1</a></li>
+                        <li><a href="#">Child 2</a></li>
+                    </ul>
+                </li>
+                <li class="branch">
+                    <i class="fas fa-plus toggle"></i>
+                    <a href="#">Parent 2</a>
+                    <ul class="nested list-unstyled">
+                        <li><a href="#">Child 3</a></li>
+                        <li><a href="#">Child 4</a></li>
+                    </ul>
+                </li>
+            </ul>
         <ul>
             @foreach($categories as $category)
                 @php
