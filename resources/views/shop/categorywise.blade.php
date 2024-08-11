@@ -1,201 +1,435 @@
-@extends('layouts.index')
+@extends('layouts.ogani')
 
-@section('title', 'Category Wise')
+@section('title', 'Shop')
 
 @section('css')
-  <script type="text/javascript" src="{{ asset('vendor/hcode/js/jquery.min.js') }}"></script>
-  @if(strpos(Request::url(), 'subcategory') !== false)
-    <link rel="canonical" href="{{ route('product.subcategorywise', [$catorsubid, 'WBKGCVSjko3geyK8txZ1WpRaIgHhmBGmxeghPuNfgqk0iDljd6KzVLXX']) }}" />
-  @else
-    <link rel="canonical" href="{{ route('product.categorywise', [$catorsubid, 'WBKGCVSjko3geyK8txZ1WpRaIgHhmBGmxeghPuNfgqk0iDljd6KzVLXX']) }}" />
-  @endif
+
 @endsection
 
 @section('content')
-  <!-- product section -->
-  <section class="content-top-margin page-title page-title-small bg-gray">
-      <div class="container">
-          <div class="row">
-              <!-- section title -->
-              <div class="col-md-6 col-sm-6">
-                  <span class="text-large letter-spacing-2 black-text font-weight-600 agency-title">Products</span>
-              </div>
-              <!-- end section title -->
-              <!-- section highlight text -->
-              <div class="col-md-6 col-sm-6 text-right xs-text-left">
-              </div>
-              <!-- end section highlight text -->
-          </div>
-      </div>
-  </section>
 
-  <!-- content section -->
-  <section class="padding-three">
-      <div class="container">
-          <div class="row">
-              <div class="col-sm-9 col-sm-push-3">
-                  {{-- <div class="shorting clearfix xs-margin-top-three">
-                      <div class="col-md-8 col-sm-7 grid-nav">
-                          <a href="shop-with-sidebar-list.html"><i class="fa fa-bars"></i></a>
-                          <a href="shop-with-sidebar.html"><i class="fa fa-th"></i></a>
-                          <p class="text-uppercase letter-spacing-1 sm-display-none">Showing 1–12 of 22 results</p>
-                      </div>
-                      <div class="col-md-3 col-sm-5 pull-right">
-                          <div class="select-style input-round med-input shop-shorting no-border">
-                              <select>
-                                  <option value="">Select sort by</option>
-                                  <option value="">By popularity</option>
-                                  <option value="">By rating</option>
-                                  <option value="">Price: low to high</option>
-                                  <option value="">Price: high to low</option>
-                              </select>
-                          </div>
-                      </div>
-                  </div> --}}
-                  <div class="product-listing margin-three">
-                      @foreach($products as $product)
-                      <!-- shop item -->
-                      <div class="col-md-6 col-sm-6">
-                          <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                              <a href="{{ route('product.getsingleproduct', [$product->id, generate_token(100)]) }}"><img src="{{ asset('images/product-images/'.$product->productimages->first()->image) }}" alt="{{ $product->title }}"></a>
-                              <span class="product-name text-uppercase"><a href="{{ route('product.getsingleproduct', [$product->id, generate_token(100)]) }}" class="bg-white">{{ $product->title }}</a></span>
-                              <span class="price black-text">
-                                @if($product->oldprice > 0)
-                                  <del>¥ {{ $product->oldprice }}</del>
-                                @endif
-                                ¥ {{ $product->price }}
-                              </span>
-                              {{-- <span class="onsale onsale-style-2">Sale</span> --}}
-                              <div class="quick-buy">
-                                  <div class="product-share">
-                                      {{-- <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                      <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a> --}}
-                                      <button id="addToCart{{ $product->id }}" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg" data-setbg="{{ asset('vendor/ogani/img/breadcrumb.jpg') }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Organi Shop</h2>
+                    <div class="breadcrumb__option">
+                        <a href="{{ route('product.index') }}">Home</a>
+                        <span>Shop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+
+ <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-5">
+                    @include('partials._ogani-shop-left-menu')
+                </div>
+                <div class="col-lg-9 col-md-7">
+                    <div class="product__discount">
+                        <div class="section-title product__discount__title">
+                            <h2>Sale Off</h2>
+                        </div>
+                        <div class="row">
+                            <div class="product__discount__slider owl-carousel">
+                                <div class="col-lg-4">
+                                    <div class="product__discount__item">
+                                        <div class="product__discount__item__pic set-bg"
+                                            data-setbg="{{ asset('vendor/ogani/img/product/discount/pd-1.jpg') }}">
+                                            <div class="product__discount__percent">-20%</div>
+                                            <ul class="product__item__pic__hover">
+                                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__discount__item__text">
+                                            <span>Dried Fruit</span>
+                                            <h5><a href="#">Raisin’n’nuts</a></h5>
+                                            <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product__discount__item">
+                                        <div class="product__discount__item__pic set-bg"
+                                            data-setbg="{{ asset('vendor/ogani/img/product/discount/pd-2.jpg') }}">
+                                            <div class="product__discount__percent">-20%</div>
+                                            <ul class="product__item__pic__hover">
+                                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__discount__item__text">
+                                            <span>Vegetables</span>
+                                            <h5><a href="#">Vegetables’package</a></h5>
+                                            <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product__discount__item">
+                                        <div class="product__discount__item__pic set-bg"
+                                            data-setbg="{{ asset('vendor/ogani/img/product/discount/pd-3.jpg') }}">
+                                            <div class="product__discount__percent">-20%</div>
+                                            <ul class="product__item__pic__hover">
+                                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__discount__item__text">
+                                            <span>Dried Fruit</span>
+                                            <h5><a href="#">Mixed Fruitss</a></h5>
+                                            <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product__discount__item">
+                                        <div class="product__discount__item__pic set-bg"
+                                            data-setbg="{{ asset('vendor/ogani/img/product/discount/pd-4.jpg') }}">
+                                            <div class="product__discount__percent">-20%</div>
+                                            <ul class="product__item__pic__hover">
+                                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__discount__item__text">
+                                            <span>Dried Fruit</span>
+                                            <h5><a href="#">Raisin’n’nuts</a></h5>
+                                            <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product__discount__item">
+                                        <div class="product__discount__item__pic set-bg"
+                                            data-setbg="{{ asset('vendor/ogani/img/product/discount/pd-5.jpg') }}">
+                                            <div class="product__discount__percent">-20%</div>
+                                            <ul class="product__item__pic__hover">
+                                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__discount__item__text">
+                                            <span>Dried Fruit</span>
+                                            <h5><a href="#">Raisin’n’nuts</a></h5>
+                                            <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product__discount__item">
+                                        <div class="product__discount__item__pic set-bg"
+                                            data-setbg="{{ asset('vendor/ogani/img/product/discount/pd-6.jpg') }}">
+                                            <div class="product__discount__percent">-20%</div>
+                                            <ul class="product__item__pic__hover">
+                                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__discount__item__text">
+                                            <span>Dried Fruit</span>
+                                            <h5><a href="#">Raisin’n’nuts</a></h5>
+                                            <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-5">
+                                {{-- <div class="filter__sort">
+                                    <span>Sort By</span>
+                                    <select>
+                                        <option value="0">Default</option>
+                                        <option value="0">Default</option>
+                                    </select>
+                                </div> --}}
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="filter__found">
+                                    <h6><span>16</span> Products found</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-3">
+                               {{--  <div class="filter__option">
+                                    <span class="icon_grid-2x2"></span>
+                                    <span class="icon_ul"></span>
+                                </div> --}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        @foreach($products as $product)
+                          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                              <div class="product__item">
+                                  <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-1.jpg') }}">
+                                      <ul class="product__item__pic__hover">
+                                          {{-- <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-retweet"></i></a></li> --}}
+                                          <li><a id="addToCart{{ $product->id }}" href="#!"><i class="fa fa-shopping-cart"></i></a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="product__item__text">
+                                      @php
+                                          $ptext = $product->title;
+                                          $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
+                                      @endphp
+                                      <h6><a href="{{ route('product.getsingleproduct', [$product->id, $pslug]) }}">{{ $product->title }}</a></h6>
+                                      <h5>¥ {{ $product->price }} <small><del>¥ {{ $product->oldprice }}</del></small></h5> 
+
                                   </div>
                               </div>
                           </div>
-                      </div>
-                      <!-- end shop item -->
-                      <script type="text/javascript">
-                        $(document).ready(function(){
-                            $("#addToCart{{ $product->id }}").click(function(){
-                              console.log('Item ID: {{ $product->id }}');
-                              $.ajax({
-                                  url: "/addtocart/{{ $product->id }}",
-                                  type: "GET",
-                                  data: {},
-                                  success: function (data) {
-                                    var response = data;
-                                    console.log(response);
-                                    if(response == 'success') {
-                                      if($(window).width() > 768) {
-                                        toastr.success('{{ $product->title }} added to your bag', 'SUCCESS').css('width','400px');
-                                      } else {
-                                        toastr.success('{{ $product->title }} added to your bag', 'SUCCESS').css('width', ($(window).width()-25)+'px');
+                          <script src="http://localhost:8000/vendor/ogani/js/jquery-3.3.1.min.js"></script>
+                          <script type="text/javascript">
+                            $(document).ready(function(){
+                                $("#addToCart{{ $product->id }}").click(function(){
+                                  console.log('Item ID: {{ $product->id }}');
+                                  $.ajax({
+                                      url: "/addtocart/{{ $product->id }}",
+                                      type: "GET",
+                                      data: {},
+                                      success: function (data) {
+                                        var response = data;
+                                        console.log(response);
+                                        if(response == 'success') {
+                                          if($(window).width() > 768) {
+                                            toastr.success('{{ $product->title }} added to your bag', 'SUCCESS').css('width','400px');
+                                          } else {
+                                            toastr.success('{{ $product->title }} added to your bag', 'SUCCESS').css('width', ($(window).width()-25)+'px');
+                                          }
+                                        }
+                                        var totalInBag = parseInt($("#totalInBag").text());
+                                        if(isNaN(totalInBag)) {
+                                          totalInBag = 0;
+                                        } else {
+                                          totalInBag = totalInBag;
+                                        }
+                                        totalInBag = totalInBag + 1;
+                                        $("#totalInBag").text(totalInBag);
+                                        
+                                        var totalInBagMobile = parseInt($("#totalInBagMobile").text());
+                                        if(isNaN(totalInBagMobile)) {
+                                          totalInBagMobile = 0;
+                                        } else {
+                                          totalInBagMobile = totalInBagMobile;
+                                        }
+                                        totalInBagMobile = totalInBagMobile + 1;
+                                        $("#totalInBagMobile").text(totalInBagMobile);
+
+                                        var totalInBagScroll = parseInt($("#totalInBagScroll").text());
+                                        if(isNaN(totalInBagScroll)) {
+                                          totalInBagScroll = 0;
+                                        } else {
+                                          totalInBagScroll = totalInBagScroll;
+                                        }
+                                        totalInBagScroll = totalInBagScroll + 1;
+                                        $("#totalInBagScroll").text(totalInBagScroll);
                                       }
-                                    }
-                                    var totalInBag = parseInt($("#totalInBag").text());
-                                    if(isNaN(totalInBag)) {
-                                      totalInBag = 0;
-                                    } else {
-                                      totalInBag = totalInBag;
-                                    }
-                                    totalInBag = totalInBag + 1;
-                                    $("#totalInBag").text(totalInBag);
-                                    
-                                    var totalInBagMobile = parseInt($("#totalInBagMobile").text());
-                                    if(isNaN(totalInBagMobile)) {
-                                      totalInBagMobile = 0;
-                                    } else {
-                                      totalInBagMobile = totalInBagMobile;
-                                    }
-                                    totalInBagMobile = totalInBagMobile + 1;
-                                    $("#totalInBagMobile").text(totalInBagMobile);
-                                  }
-                              });
+                                  });
+                                });
                             });
-                        });
-                      </script>
-                      @endforeach
-                  </div>
-                  <!-- pagination -->
-                  <div class="margin-three">
-                    @include('pagination.default', ['paginator' => $products])
-                  </div>
-                  <hr/>
-                  <!-- end pagination -->
-              </div>
-
-              <!-- sidebar  -->
-              <div class="col-sm-3 col-sm-pull-9 sidebar">
-                  
-                  <!-- category and subcategory widget  -->
-                  @include('partials/shop-sidebar')
-                  <!-- category and subcategory widget  -->
-
-                  <!-- newarrivals widget  -->
-                  @include('partials/shop-newarrivals')
-                  <!-- newarrivals widget  -->
-              </div>
-              <!-- end sidebar  -->
-          </div>
-      </div>
-  </section>
-  <!-- end content section -->
+                          </script>
+                        @endforeach
+                        
+                        
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-2.jpg') }}">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h5>¥30.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-3.jpg') }}">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h5>¥30.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-4.jpg') }}">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h5>¥30.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-5.jpg') }}">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h5>¥30.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-6.jpg') }}">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h5>¥30.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-7.jpg') }}">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h5>¥30.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-8.jpg') }}">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h5>¥30.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-9.jpg') }}">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h5>¥30.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-10.jp') }}g">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h5>¥30.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-11.jp') }}g">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h5>¥30.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-12.jp') }}g">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h5>¥30.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__pagination">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Section End -->
+  
 @endsection
 
 @section('js')
-<script type="text/javascript">
-  $('#search-content').on('keyup', function () {
-      //history.pushState(null, null, '/search');
-      $("#products_list").hide();
-      $("#searched_list").show();
-      if($('#search-content').val().length == 0) {
-        $("#products_list").show();
-        $("#searched_list").hide();
-      }
-      $value = $(this).val().trim();;
-      $.ajax({
-          url: "{{ URL::to('search') }}",
-          type: "GET",
-          data: {'search':$value},
-          success: function (data) {
-            $("#searched_list").html(data);
-          }
-      });
-  });
-  function s_addToCart(id) {
-      console.log('Item ID:'+id);
-      $title = $('#s_addToCart'+id).data('title');
-      console.log('Item Title:'+$title);
-      $.ajax({
-          url: "/addtocart/"+id,
-          type: "GET",
-          data: {},
-          success: function (data) {
-            var response = data;
-            console.log(response);
-            if(response == 'success') {
-              toastr.success($title+' added to your bag', 'SUCCESS').css('width','400px');
-            }
-            var totalInBag = parseInt($("#totalInBag").text());
-            if(isNaN(totalInBag)) {
-              totalInBag = 0;
-            } else {
-              totalInBag = totalInBag;
-            }
-            totalInBag = totalInBag + 1;
-            $("#totalInBag").text(totalInBag);
-            var totalInBagMobile = parseInt($("#totalInBagMobile").text());
-            if(isNaN(totalInBagMobile)) {
-              totalInBagMobile = 0;
-            } else {
-              totalInBagMobile = totalInBagMobile;
-            }
-            totalInBagMobile = totalInBagMobile + 1;
-            $("#totalInBagMobile").text(totalInBagMobile);
-          }
-      });
-  }
-</script>
+
 @endsection
