@@ -422,7 +422,7 @@
                         <a href="#">3</a>
                         <a href="#"><i class="fa fa-long-arrow-right"></i></a>
                     </div>
-                    {{ $products->links() }}
+                    {{ $products->links('view.pagination.default') }}
                 </div>
             </div>
         </div>
