@@ -321,7 +321,7 @@
               @endphp
               <div class="col-lg-3 col-md-4 col-sm-6">
                   <div class="product__item">
-                      <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
+                      <div class="product__item__pic set-bg" data-setbg="{{ asset('images/product-images/'.$relproduct->productimages->first()->image) }}">
                           <ul class="product__item__pic__hover">
                               <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                           </ul>
