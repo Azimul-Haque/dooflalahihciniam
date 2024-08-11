@@ -198,7 +198,7 @@
                                         @foreach($product->productreviews as $review)
                                           <div class="review">
                                               <p class="letter-spacing-2 text-uppercase review-name"><strong>{{ $review->user->name }}</strong> | <small>{{ date('F d, Y', strtotime($review->created_at)) }}</small></p>
-                                              <span>
+                                              <p>
                                                 @if($review->rating >= 1)
                                                   <i class="fa fa-star black-text"></i>
                                                 @else
@@ -224,7 +224,7 @@
                                                 @else
                                                   <i class="fa fa-star-o black-text"></i>
                                                 @endif
-                                              </span>
+                                              </p>
                                               <span>{{ $review->comment }}</span>
                                           </div>
                                         @endforeach
