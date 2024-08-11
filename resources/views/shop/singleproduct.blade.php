@@ -46,6 +46,11 @@
 @endsection
 
 @section('content')
+
+{{-- facebook comment plugin --}}
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0&appId=517942969045216&autoLogAppEvents=1"></script>
+{{-- facebook comment plugin --}}
   
   <!-- Breadcrumb Section Begin -->
   <section class="breadcrumb-section set-bg" data-setbg="{{ asset('vendor/ogani/img/breadcrumb.jpg') }}">
@@ -340,26 +345,7 @@
 
 
 
-  {{-- facebook comment plugin --}}
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0&appId=517942969045216&autoLogAppEvents=1"></script>
-  {{-- facebook comment plugin --}}
-  <!-- product section -->
-  <section class="content-top-margin page-title page-title-small bg-gray">
-      <div class="container">
-          <div class="row">
-              <!-- section title -->
-              <div class="col-md-12 col-sm-12">
-                  <span class="text-large letter-spacing-2 black-text font-weight-600 agency-title">Product | {{ $product->title }}</span>
-              </div>
-              <!-- end section title -->
-              <!-- section highlight text -->
-              <div class="col-md-6 col-sm-6 text-right xs-text-left">
-              </div>
-              <!-- end section highlight text -->
-          </div>
-      </div>
-  </section>
+
 
   <!-- content section -->
   <section class="padding-three">
