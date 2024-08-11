@@ -27,7 +27,7 @@
                             <a href="{{ route('product.categorywise', [$category->id, generate_token(100)]) }}">
                                 {{ $category->name }}<span>///{{ $category->products->count() }}</span>
                             </a>
-                            <ul style="margin-right: 20px;">
+                            <ul style="margin-left: 20px;">
                                 @foreach($category->subcategories as $subcategory)
                                     @php
                                       $totalproductofthissubcat = 0;
