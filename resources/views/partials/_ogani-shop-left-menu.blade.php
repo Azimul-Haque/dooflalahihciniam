@@ -4,8 +4,6 @@
         <ul>
             @foreach($categories as $category)
                 @php
-                    use Illuminate\Support\Str;
-
                     $text = $category->name;
                     $slug = \Illuminate\Support\Str::slug($text);
                 @endphp
