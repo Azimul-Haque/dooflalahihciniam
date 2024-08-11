@@ -99,7 +99,7 @@
             <h4>Latest Products</h4>
             <div class="latest-product__slider owl-carousel">
                 <div class="latest-prdouct__slider__item">
-                    @foreach($newarrivals as $product)
+                    @foreach($newarrivals->slice(0, 3) as $product)
                       {{-- <li class="clearfix">
                           <a href="">
                             <img src="{{ asset('images/product-images/'.$product->productimages->first()->image) }}" alt="{{ $product->title }}">
