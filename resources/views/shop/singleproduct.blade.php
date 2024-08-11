@@ -258,7 +258,7 @@
                                               {!! Form::close() !!}
                                               <!-- end comment form -->
                                               @else
-                                              <a href="{{ url('login') }}" class="highlight-button-black-border btn btn-small xs-no-margin-bottom" title="You need to login to Write a Review">Login to Write Review</a>
+                                              <a href="{{ url('login') }}" class="primary-btn" title="You need to login to Write a Review">Login to Write Review</a>
                                               @endif
                                           </div>
                                       </div>
