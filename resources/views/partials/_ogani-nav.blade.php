@@ -196,7 +196,7 @@
                                                 $text = $category->name;
                                                 $slug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $text));
                                             @endphp
-                                            <li><a href="{{ route('product.categorywise', [$category->id, generate_token(50)]) }}">{{ $category->name }}</a></li>
+                                            <li><a href="{{ route('product.categorywise', [$category->id, $slug]) }}">{{ $category->name }}</a></li>
                                         @endforeach
                                     </ul>
                                 </li>
