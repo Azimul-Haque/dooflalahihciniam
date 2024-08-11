@@ -114,7 +114,11 @@
                             ¥ {{ $product->price }}
                           </div>
                       </li>
-                      <a href="{{ route('product.getsingleproduct', [$product->id, generate_token(100)]) }}" class="latest-product__item">
+                      @php
+                          $ptext = $product->title;
+                          $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
+                      @endphp
+                      <a href="{{ route('product.getsingleproduct', [$product->id, $pslug]) }}" class="latest-product__item">
                           <div class="latest-product__item__pic">
                               <img src="{{ asset('vendor/ogani/img/latest-product/lp-1.jpg') }}" alt="">
                           </div>
