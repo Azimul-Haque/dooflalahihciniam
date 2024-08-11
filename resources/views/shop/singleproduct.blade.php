@@ -42,7 +42,7 @@
       $ptext = $product->title;
       $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
   @endphp
-  <link rel="canonical" href="{{ route('product.getsingleproduct', [$product->id, 'WBKGCVSjko3geyK8txZ1WpRaIgHhmBGmxeghPuNfgqk0iDljd6KzVLXX']) }}" />
+  <link rel="canonical" href="{{ route('product.getsingleproduct', [$product->id, $pslug]) }}" />
 @endsection
 
 @section('content')
