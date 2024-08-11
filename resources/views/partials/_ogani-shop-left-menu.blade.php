@@ -19,7 +19,7 @@
                     </ul>
                 </li>
             </ul>
-        <ul>
+        <ul class="tree list-unstyled">
             @foreach($categories as $category)
                 @php
                     $text = $category->name;
