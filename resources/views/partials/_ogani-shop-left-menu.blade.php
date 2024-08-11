@@ -1,37 +1,7 @@
-<style>
-    .tree .branch::before, .tree .branch::after {
-        content: "";
-        position: absolute;
-        left: -20px;
-        width: 20px;
-        border-top: 1px solid #ccc;
-    }
-
-    .tree .branch::before {
-        top: 10px;
-        height: calc(100% - 10px);
-        border-left: 1px solid #ccc;
-    }
-
-    .tree .toggle {
-        margin-right: 5px;
-        cursor: pointer;
-    }
-
-    .tree .nested {
-        display: none;
-        padding-left: 20px;
-    }
-
-    .tree .branch.open .nested {
-        display: block;
-    }
-</style>
 <div class="sidebar">
     <div class="sidebar__item">
         <h4>Categories</h4>
-        
-        <ul class="tree list-unstyled">
+        <ul>
             @foreach($categories as $category)
                 @php
                     $text = $category->name;
@@ -53,12 +23,11 @@
                       }
                     @endphp
                     @if($category->products->count() > 0 && $totalproductofthiscat > 0)
-                        <i class="fas fa-plus toggle"></i>
-                        <li class="branch">
+                        <li>
                             <a href="{{ route('product.categorywise', [$category->id, generate_token(100)]) }}">
                                 {{ $category->name }}<span></span>
                             </a>
-                            <ul style="margin-left: 30px;" class="nested list-unstyled">
+                            <ul style="margin-left: 30px;">
                                 @foreach($category->subcategories as $subcategory)
                                     @php
                                       $totalproductofthissubcat = 0;
@@ -267,13 +236,3 @@
         </div>
     </div>
 </div>
-
-<script>
-    $(document).ready(function() {
-        $('.tree .toggle').on('click', function() {
-            var $branch = $(this).closest('.branch');
-            $branch.toggleClass('open');
-            $(this).toggleClass('fa-plus fa-minus');
-        });
-    });
-</script>
