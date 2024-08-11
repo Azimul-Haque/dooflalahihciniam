@@ -178,7 +178,7 @@
                           </li>
                           <li class="nav-item">
                               <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
-                                  aria-selected="false">Information</a>
+                                  aria-selected="false">Facebook Comments</a>
                           </li>
                       </ul>
                       <div class="tab-content">
