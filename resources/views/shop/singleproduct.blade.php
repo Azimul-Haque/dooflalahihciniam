@@ -250,7 +250,7 @@
                                                   </select><br/><br/>
                                                   <!-- end input -->
                                                   <!-- textarea  -->
-                                                  <textarea name="comment" placeholder="Write your comment" required="" style="width: 100%; font-size: 46px; padding-left: 20px; color: #1c1c1c; height: 100px; border: 1px solid #ededed;"></textarea><br/>
+                                                  <textarea name="comment" placeholder="Write your comment" required="" style="width: 100%; font-size: 14px; padding-left: 20px; color: #1c1c1c; height: 100px; border: 1px solid #ededed;"></textarea><br/>
                                                   <!-- end textarea  -->
                                                   <!-- button  -->
                                                   <input type="submit" name="send message" value="LEAVE RATING" class="primary-btn">
