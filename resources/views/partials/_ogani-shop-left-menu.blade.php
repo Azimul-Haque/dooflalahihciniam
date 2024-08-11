@@ -4,8 +4,8 @@
         <ul>
             @foreach($categories as $category)
                 @php
-                    $text = $category->name;
-                    $slug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $text));
+                    $ctext = $category->name;
+                    $cslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ctext));
                 @endphp
                 {{-- <li><a href="{{ route('product.categorywise', [$category->id, $slug]) }}">{{ $category->name }}</a></li> --}}
 
@@ -24,7 +24,7 @@
                     @endphp
                     @if($category->products->count() > 0 && $totalproductofthiscat > 0)
                         <li>
-                            <a href="{{ route('product.categorywise', [$category->id, generate_token(100)]) }}">
+                            <a href="{{ route('product.categorywise', [$category->id, $cslug]) }}">
                                 {{ $category->name }}<span></span>
                             </a>
                             <ul style="margin-left: 30px;">
