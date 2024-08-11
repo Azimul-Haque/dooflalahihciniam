@@ -7,7 +7,6 @@
                     $ctext = $category->name;
                     $cslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ctext));
                 @endphp
-                {{-- <li><a href="{{ route('product.categorywise', [$category->id, $slug]) }}">{{ $category->name }}</a></li> --}}
 
                 @if($category->products->count() > 0)
                     @php
