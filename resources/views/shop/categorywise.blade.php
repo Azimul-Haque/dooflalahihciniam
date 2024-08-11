@@ -17,7 +17,7 @@
                     <h2>Organi Shop</h2>
                     <div class="breadcrumb__option">
                         <a href="{{ route('product.index') }}">Home</a>
-                        <span>Shop</span>
+                        <span>{{ $catorsub->name }}</span>
                     </div>
                 </div>
             </div>
