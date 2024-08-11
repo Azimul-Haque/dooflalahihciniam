@@ -45,7 +45,7 @@ class ProductController extends Controller
       $products = Product::where('isAvailable', '!=', '0')
                          ->orderBy('id', 'desc')
                          ->take(50)
-                         ->paginate(10);
+                         ->paginate(5);
       $newarrivals = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
       return view('shop.shop')
