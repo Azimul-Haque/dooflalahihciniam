@@ -142,12 +142,12 @@
                       <a href="#" class="primary-btn">ADD TO CARD</a>
                       @if(Auth::check())
                         <a href="{{ route('product.addtowishlist', [$product->id, Auth::user()->id]) }}" class="heart-icon">
-                          @php
-                            if(in_array($product->id, Auth::user()->wishlists->pluck('product_id')->toArray())) {
-                              echo 'Ache';
-                            }
-                          @endphp
-                          <span class="icon_heart_alt"></span>
+                          @if(in_array($product->id, Auth::user()->wishlists->pluck('product_id')->toArray()))
+                            <span class="icon_heart"></span>
+                          @else
+                            <span class="icon_heart_alt"></span>
+                          @endif
+                          
                         </a>
                       @else
                         <a title="You need to Login to Add this product in your WishList" href="{{ url('login') }}" class="heart-icon"><span class="icon_heart_alt"></span></a>
