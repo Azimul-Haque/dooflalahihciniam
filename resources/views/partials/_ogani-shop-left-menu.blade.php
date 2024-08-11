@@ -46,7 +46,7 @@
                             <a href="{{ route('product.categorywise', [$category->id, generate_token(100)]) }}">
                                 {{ $category->name }}<span></span>
                             </a>
-                            <ul style="margin-left: 30px;">
+                            <ul style="margin-left: 30px;" class="nested list-unstyled">
                                 @foreach($category->subcategories as $subcategory)
                                     @php
                                       $totalproductofthissubcat = 0;
