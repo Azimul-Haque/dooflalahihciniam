@@ -229,7 +229,7 @@
                                           </div>
                                         @endforeach
                                       </div>
-                                      <div class="col-md-5 col-sm-12 col-md-offset-1 blog-single-full-width-form sm-margin-top-seven">
+                                      <div class="col-md-6 col-sm-12 col-md-offset-1 blog-single-full-width-form sm-margin-top-seven">
                                           <div class="blog-comment-form">
                                               @if(Auth::check())
                                               <!-- comment form -->
