@@ -128,7 +128,7 @@
                               <i class="fa fa-star-o black-text"></i>
                             @endif
                           @endif
-                          <span>(18 reviews)</span>
+                          <span>({{ $product->productreviews->count() }} reviews)</span>
                       </div>
                       <div class="product__details__price">$50.00</div>
                       <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
