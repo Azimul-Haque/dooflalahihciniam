@@ -186,7 +186,7 @@
                     @endforeach
                 </div>
                 <div class="latest-prdouct__slider__item">
-                    @foreach($newarrivals->slice(2, 6) as $product)
+                    @foreach($newarrivals->slice(3, 3) as $product)
                       @php
                           $ptext = $product->title;
                           $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
