@@ -184,7 +184,7 @@
                       <div class="tab-content">
                           <div class="tab-pane active" id="tabs-1" role="tabpanel">
                               <div class="product__details__tab__desc">
-                                  <h6>Products Description</h6>
+                                  <h6>Products Information/Description</h6>
                                   <p>
                                     {!! $product->description !!}
                                   </p>
