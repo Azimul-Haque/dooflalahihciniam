@@ -267,3 +267,13 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        $('.tree .toggle').on('click', function() {
+            var $branch = $(this).closest('.branch');
+            $branch.toggleClass('open');
+            $(this).toggleClass('fa-plus fa-minus');
+        });
+    });
+</script>
