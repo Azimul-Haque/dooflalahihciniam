@@ -29,16 +29,7 @@
                             </a>
                             <ul style="margin-left: 30px;">
                                 @foreach($category->subcategories as $subcategory)
-                                    @php
-                                      $totalproductofthissubcat = 0;
-                                      if($subcategory->isAvailable == 1) {
-                                        foreach ($subcategory->products as $product) {
-                                          if($product->isAvailable == 1) {
-                                            $totalproductofthissubcat = $totalproductofthissubcat + 1;
-                                          }
-                                        }
-                                      }
-                                    @endphp
+                                    
                                     @if($subcategory->isAvailable == 1 && $totalproductofthissubcat > 0)
                                         <li
                                         @if(!empty($subcategoryid))
@@ -48,7 +39,7 @@
                                         @endif
                                         >
                                             <a href="{{ route('product.subcategorywise', [$subcategory->id, generate_token(100)]) }}">
-                                                {{ $subcategory->name }}<span></span>
+                                                {{ $subcategory->name }}
                                             </a>
                                         </li>
                                     @endif
