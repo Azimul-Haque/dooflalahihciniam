@@ -38,8 +38,8 @@
                                         }
                                       }
 
-                                      $ctext = $category->name;
-                                    $cslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ctext));
+                                      $sctext = $subcategory->name;
+                                      $scslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $sctext));
                                     @endphp
                                     @if($subcategory->isAvailable == 1 && $totalproductofthissubcat > 0)
                                         <li
