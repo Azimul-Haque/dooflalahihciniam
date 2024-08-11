@@ -193,7 +193,7 @@
                                       @endphp
                                       <h6><a href="{{ route('product.getsingleproduct', [$product->id, $pslug]) }}">{{ $product->title }}</a></h6>
                                       <h5>¥ {{ $product->price }}</h5>
-                                      <div class="product__item__price">¥30.00 <span>¥36.00</span></div>
+                                      
                                   </div>
                               </div>
                           </div>
