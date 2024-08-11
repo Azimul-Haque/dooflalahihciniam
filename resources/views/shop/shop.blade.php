@@ -416,12 +416,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product__pagination">
+                    {{-- <div class="product__pagination">
                         <a href="#">1</a>
                         <a href="#">2</a>
                         <a href="#">3</a>
                         <a href="#"><i class="fa fa-long-arrow-right"></i></a>
-                    </div>
+                    </div> --}}
                     {{-- {{ $products->links('pagination.default') }} --}}
                     @include('pagination.default', ['paginator' => $products])
                 </div>
