@@ -234,10 +234,10 @@
                                 @php
                                     use Illuminate\Support\Str;
 
-                                    $text = "Dal (Lentils/Pulses)";
+                                    $text = $category->name;
                                     $slug = Str::slug($text);
                                 @endphp
-                                <li><a href="{{ route('product.categorywise', [$category->id, $category->name]) }}">{{ $category->name }}</a></li>
+                                <li><a href="{{ route('product.categorywise', [$category->id, $slug]) }}">{{ $category->name }}</a></li>
                             @endforeach
                         </ul>
                     </div>
