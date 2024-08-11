@@ -294,6 +294,28 @@
               </div>
           </div>
           <div class="row">
+            @foreach($relatedproducts as $relproduct)
+              <!-- shop item -->
+              <div class="item">
+                  <div class="home-product text-center position-relative overflow-hidden">
+                      <a href="{{ route('product.getsingleproduct', [$relproduct->id, generate_token(100)]) }}"><img src="{{ asset('images/product-images/'.$relproduct->productimages->first()->image) }}" alt=""/></a>
+                      <span class="product-name text-uppercase"><a href="{{ route('product.getsingleproduct', [$relproduct->id, generate_token(100)]) }}">{{ $relproduct->title }}</a></span>
+                      <span class="price black-text">
+                        @if($relproduct->oldprice > 0)
+                        <del>¥ {{ $relproduct->oldprice }}</del>
+                        @endif
+                        ¥ {{ $relproduct->price }}
+                      </span>
+                      {{-- <div class="quick-buy">
+                          <div class="product-share">
+                              <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                              <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                          </div>
+                      </div> --}}
+                  </div>
+              </div>
+              <!-- end shop item -->
+            @endforeach
               <div class="col-lg-3 col-md-4 col-sm-6">
                   <div class="product__item">
                       <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
