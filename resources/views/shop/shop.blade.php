@@ -188,7 +188,7 @@
                                   </div>
                                   <div class="product__item__text">
                                       @php
-                                          $text = $category->name;
+                                          $text = $product->title;
                                           $slug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $text));
                                       @endphp
                                       <h6><a href="{{ route('product.getsingleproduct', [$product->id, generate_token(100)]) }}">{{ $product->title }}</a></h6>
