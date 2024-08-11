@@ -22,7 +22,7 @@
     }
   </style>
   <meta property="og:image" content="{{ asset('images/product-images/'.$product->productimages->first()->image) }}" />
-  <meta property="og:title" content="{{ $product->title }} | Al Amana Halal & Global Food"/>
+  <meta property="og:title" content="{{ $product->title }}"/>
   <meta property="og:description" content="¥ {{ $product->price }} | {{ substr(strip_tags($product->description), 0, 200) }}" />
   <meta property="og:type" content="article"/>
   <meta property="og:url" content="{{ Request::url() }}" />
