@@ -30,9 +30,9 @@ class ProductController extends Controller
 
     public function getIndex() {
       
-      // $products = Product::where('isAvailable', '!=', '0')
-      //                    ->orderBy('id', 'desc')
-      //                    ->paginate(10);
+      $products = Product::where('isAvailable', '!=', '0')
+                         ->orderBy('id', 'desc')
+                         ->paginate(10);
       $sliders = Slider::orderBy('id', 'asc')->get();
 
       return view('shop.index')
