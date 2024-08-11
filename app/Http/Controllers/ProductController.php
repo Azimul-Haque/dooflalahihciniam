@@ -203,8 +203,8 @@ class ProductController extends Controller
       return view('shop.categorywise')
                   ->withProducts($products)
                   ->withNewarrivals($newarrivals)
-                  ->withCatorsubid($id)
                   ->withCatorsub($catorsub)
+                  ->withCatorsubid($id)
                   ->withSubcategoryid($id); // for active class
     }
 
