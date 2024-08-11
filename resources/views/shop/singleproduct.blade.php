@@ -381,6 +381,15 @@
               }
               totalInBagMobile = totalInBagMobile + parseInt($('#productQty').val());
               $("#totalInBagMobile").text(totalInBagMobile);
+
+              var totalInBagMobile = parseInt($("#totalInBagMobile").text());
+              if(isNaN(totalInBagMobile)) {
+                totalInBagMobile = 0;
+              } else {
+                totalInBagMobile = totalInBagMobile;
+              }
+              totalInBagMobile = totalInBagMobile + parseInt($('#productQty').val());
+              $("#totalInBagMobile").text(totalInBagMobile);
             }
         });
       });
