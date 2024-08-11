@@ -1,3 +1,32 @@
+<style>
+        .tree .branch::before, .tree .branch::after {
+            content: "";
+            position: absolute;
+            left: -20px;
+            width: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        .tree .branch::before {
+            top: 10px;
+            height: calc(100% - 10px);
+            border-left: 1px solid #ccc;
+        }
+
+        .tree .toggle {
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .tree .nested {
+            display: none;
+            padding-left: 20px;
+        }
+
+        .tree .branch.open .nested {
+            display: block;
+        }
+    </style>
 <div class="sidebar">
     <div class="sidebar__item">
         <h4>Categories</h4>
