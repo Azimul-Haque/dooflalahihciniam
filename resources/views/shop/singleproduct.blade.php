@@ -76,8 +76,12 @@
                               src="{{ asset('images/product-images/' . $product->productimages->first()->image) }}" alt="{{ $product->title }}">
                       </div>
                       <div class="product__details__pic__slider owl-carousel">
+                        @foreach($product->productimages as $image)
+                          <a href="{{ asset('images/product-images/' . $image->image) }}"><img class="image-thumb-product" src="{{ asset('images/product-images/' . $image->image) }}" alt="" /></a>
                           <img data-imgbigurl="img/product/details/product-details-2.jpg"
                               src="img/product/details/thumb-1.jpg" alt="">
+                        @endforeach
+                          
                           <img data-imgbigurl="img/product/details/product-details-3.jpg"
                               src="img/product/details/thumb-2.jpg" alt="">
                           <img data-imgbigurl="img/product/details/product-details-5.jpg"
