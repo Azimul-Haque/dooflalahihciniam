@@ -130,7 +130,7 @@
                           @endif
                           <span>({{ $product->productreviews->count() }} reviews)</span>
                       </div>
-                      <div class="product__details__price">¥{{ $product->price }} <small>¥{{ $product->price }}</small></div>
+                      <div class="product__details__price">¥{{ $product->price }} <small>¥{{ $product->oldprice }}</small></div>
                       <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
                           vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
                           quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
