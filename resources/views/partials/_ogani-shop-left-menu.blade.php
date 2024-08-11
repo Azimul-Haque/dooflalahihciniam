@@ -49,7 +49,7 @@
                                             @endif
                                         @endif
                                         >
-                                            <a href="{{ route('product.subcategorywise', [$subcategory->id, generate_token(100)]) }}">
+                                            <a href="{{ route('product.subcategorywise', [$subcategory->id, $scslug]) }}">
                                                 {{ $subcategory->name }}
                                             </a>
                                         </li>
