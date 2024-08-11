@@ -91,7 +91,7 @@
               </div>
               <div class="col-lg-6 col-md-6">
                   <div class="product__details__text">
-                      <h3>Vetgetable’s Package</h3>
+                      <h3>{{ $product->title }}</h3>
                       <div class="product__details__rating">
                           <i class="fa fa-star"></i>
                           <i class="fa fa-star"></i>
