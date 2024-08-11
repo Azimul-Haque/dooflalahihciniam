@@ -143,7 +143,9 @@
                       @if(Auth::check())
                         <a href="{{ route('product.addtowishlist', [$product->id, Auth::user()->id]) }}" class="heart-icon">
                           @php
-                            if(in_array($product->id, Auth::user()->wishlists->pluck('id')->toArray));
+                            if(in_array($product->id, Auth::user()->wishlists->pluck('id')->toArray)) {
+                              echo 'Ache';
+                            }
                           @endphp
                           <span class="icon_heart_alt"></span>
                         </a>
