@@ -78,7 +78,7 @@
                       <div class="product__details__pic__slider owl-carousel">
                         @foreach($product->productimages as $image)
                           <img data-imgbigurl="{{ asset('images/product-images/' . $image->image) }}"
-                              src="{{ asset('images/product-images/' . $image->image) }}" alt="">
+                              src="{{ asset('images/product-images/' . $image->image) }}" alt="{{ $product->title }}">
                         @endforeach
                           {{-- <img data-imgbigurl="{{ asset('img/product/details/product-details-3.jpg') }}"
                               src="img/product/details/thumb-2.jpg" alt="">
