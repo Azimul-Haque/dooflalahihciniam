@@ -143,7 +143,7 @@
                       @if(Auth::check())
                         <a href="{{ route('product.addtowishlist', [$product->id, Auth::user()->id]) }}" class="heart-icon"><span class="icon_heart_alt"></span></a>
                       @else
-                        <a title="You need to Login to Add this product in your WishList" href="{{ url('login') }}" class="heart-icon"><i class="fa fa-heart-o black-text"></i> Add to wishlist</a>
+                        <a title="You need to Login to Add this product in your WishList" href="{{ url('login') }}" class="heart-icon"><span class="icon_heart_alt"></span></a>
                       @endif
                       
                       <ul>
