@@ -23,7 +23,7 @@
         
     @endfor
 
-    <a href="{{ $paginator->url($paginator->currentPage()+1) }}"><i class="fa fa-long-arrow-right"></i></a>
+    <a href="{{ $paginator->url($paginator->currentPage()+1) }}" style="{{ ($paginator->currentPage() == $paginator->lastPage()) ? 'pointer-events: none' : '' }}"><i class="fa fa-long-arrow-right"></i></a>
 </div>
 @endif
 
