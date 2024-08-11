@@ -225,7 +225,7 @@
                                                   <i class="fa fa-star-o black-text"></i>
                                                 @endif
                                               </p>
-                                              <span>{{ $review->comment }}</span>
+                                              <p>{{ $review->comment }}</p>
                                           </div>
                                         @endforeach
                                       </div>
