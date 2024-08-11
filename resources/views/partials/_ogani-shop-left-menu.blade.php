@@ -5,7 +5,7 @@
             @foreach($categories as $category)
                 @php
                     $text = $category->name;
-                    $slug = \Illuminate\Support\Str::slug(str_replace('/', '-', $text));
+                    $slug = (str_replace('/', '-', $text);
                     // $slug = preg_replace('/[^\w\d]+/', '-', $text);
                 @endphp
                 <li><a href="{{ route('product.categorywise', [$category->id, $slug]) }}">{{ $category->name }}</a></li>
