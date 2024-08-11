@@ -37,6 +37,9 @@
                                           }
                                         }
                                       }
+
+                                      $ctext = $category->name;
+                                    $cslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ctext));
                                     @endphp
                                     @if($subcategory->isAvailable == 1 && $totalproductofthissubcat > 0)
                                         <li
