@@ -32,7 +32,7 @@
   <meta property="fb:app_id" content="163879201229487">
   <meta property="og:type" content="article">
   <!-- Open Graph - Article -->
-  <meta name="article:section" content="Al Amana Halal & Global Food">
+  <meta name="article:section" content="Mainichi Halal Food">
   <meta name="article:published_time" content="{{ $product->created_at }}">
   <meta name="article:author" content="Ecom">
   <meta name="article:tag" content="Product">
