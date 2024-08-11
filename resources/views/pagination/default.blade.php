@@ -4,7 +4,7 @@
 
 @if ($paginator->lastPage() > 1)
 <div class="product__pagination">
-    <a href="{{ $paginator->url(1) }}" {{ ($paginator->currentPage() == 1) ? style="pointer-events: none" : '' }}><i class="fa fa-long-arrow-left"></i></a>
+    <a href="{{ $paginator->url(1) }}" {{ ($paginator->currentPage() == 1) ? 'style="pointer-events: none"' : '' }}><i class="fa fa-long-arrow-left"></i></a>
     @for ($i = 1; $i <= $paginator->lastPage(); $i++)
         @php
             $half_total_links = floor($link_limit / 2);
