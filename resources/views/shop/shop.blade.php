@@ -183,7 +183,7 @@
                                       <ul class="product__item__pic__hover">
                                           {{-- <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                           <li><a href="#"><i class="fa fa-retweet"></i></a></li> --}}
-                                          <li><button id="addToCart{{ $product->id }}" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></li>
+                                          <li><button id="addToCart{{ $product->id }}" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></li>
                                       </ul>
                                   </div>
                                   <div class="product__item__text">
