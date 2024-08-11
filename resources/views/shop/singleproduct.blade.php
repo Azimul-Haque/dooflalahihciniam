@@ -79,7 +79,7 @@
                         @foreach($product->productimages as $image)
                           <a href="{{ asset('images/product-images/' . $image->image) }}"><img class="image-thumb-product" src="{{ asset('images/product-images/' . $image->image) }}" alt="" /></a>
                           <img data-imgbigurl="{{ asset('images/product-images/' . $image->image) }}"
-                              src="img/product/details/thumb-1.jpg" alt="">
+                              src="{{ asset('images/product-images/' . $image->image) }}" alt="">
                         @endforeach
                           
                           <img data-imgbigurl="img/product/details/product-details-3.jpg"
