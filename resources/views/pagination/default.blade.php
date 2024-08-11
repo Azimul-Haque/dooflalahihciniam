@@ -3,6 +3,13 @@
 @endphp
 
 @if ($paginator->lastPage() > 1)
+<div class="product__pagination">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+</div>
+
 <div class="pagination">
     <a href="{{ $paginator->url(1) }}" class="{{ ($paginator->currentPage() == 1) ? 'disabled' : '' }}"><img src="{{ asset('vendor/hcode/images/arrow-pre-small.png') }}" alt=""/></a>
     
