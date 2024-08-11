@@ -247,7 +247,7 @@
                                                     <option value="3">3</option>
                                                     <option value="4">4</option>
                                                     <option value="5">5</option>
-                                                  </select><br/>
+                                                  </select><br/><br/>
                                                   <!-- end input -->
                                                   <!-- textarea  -->
                                                   <textarea name="comment" placeholder="Write your comment" required="" style="width: 100%; font-size: 16px; padding-left: 20px; color: #1c1c1c; height: 46px; border: 1px solid #ededed;"></textarea><br/>
