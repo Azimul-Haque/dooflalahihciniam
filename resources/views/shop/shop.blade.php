@@ -191,6 +191,9 @@
                                 </div>
                             </div>
                         </div>
+                        @foeach($products as $product)
+
+                        @endfoeach
                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/product/product-2.jpg') }}">
