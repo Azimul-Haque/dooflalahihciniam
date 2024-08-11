@@ -126,7 +126,7 @@
                               <h6>{{ $product->title }}</h6>
                               <span>
                                   @if($product->oldprice > 0)
-                                    <del>¥ {{ $product->oldprice }}</del>
+                                    <small><del>¥ {{ $product->oldprice }}</del></small>
                                   @endif
                                   ¥ {{ $product->price }}
                               </span>
