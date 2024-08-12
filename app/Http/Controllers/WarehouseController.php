@@ -276,7 +276,7 @@ class WarehouseController extends Controller
           if($request->hasFile('image'.$itrt)) {
               $image      = $request->file('image'.$itrt);
               $nowdatetime = Carbon::now();
-              $filename   = $product->imagetrackcode. 'image'. $itrt .'.' . $image->getClientOriginalExtension();
+              $filename   = $product->imagetrackcode. 'image'. $itrt .'.' . 'webp';
               $location   = public_path('images/product-images/'. $filename);
               Image::make($image)->resize(500, 500)->save($location);
               $productimage = new Productimage;
