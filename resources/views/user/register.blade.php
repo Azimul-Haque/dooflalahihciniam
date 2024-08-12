@@ -53,12 +53,12 @@
               {!! Form::open(['route' => 'user.register', 'method' => 'POST']) !!}
               <div class="row">
                   <div class="col-md-6">
-                      
+                      {!! Form::label('name', 'Name') !!}
+                      {!! Form::text('name', null, array('class' => 'form-control', 'required' => '')) !!}
                   </div>
               </div>
               
-                {!! Form::label('name', 'Name') !!}
-                {!! Form::text('name', null, array('class' => 'form-control', 'required' => '')) !!}
+                
 
                 {!! Form::label('phone', 'Phone No') !!}
                 {!! Form::text('phone', null, array('class' => 'form-control', 'required' => '', "onkeypress" => "if(this.value.length==11) return false;")) !!}{{-- onkeypress="if(this.value.length==11) return false;" --}}
