@@ -59,7 +59,7 @@
                   <th>Total Cost</th>
                   <th>Selling Price</th>
                   <th>Profit</th>
-                  <th width="10%">Action</th>
+                  <th >Action</th>
                 </tr>
               </thead>
               <tbody>
