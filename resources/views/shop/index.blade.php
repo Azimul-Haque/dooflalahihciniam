@@ -21,7 +21,7 @@
                       </div>
                   </div>
                   <div class="col-lg-3">
-                      <div class="categories__item set-bg" data-setbg="{{ asset('vendor/ogani/img/categories/cat-2.jpg') }}">
+                      <div class="categories__item set-bg" data-setbg="{{ asset('vendor/ogani/img/categories/cat-5.jpg') }}">
                           <h5><a href="#">Beef Item</a></h5>
                       </div>
                   </div>
