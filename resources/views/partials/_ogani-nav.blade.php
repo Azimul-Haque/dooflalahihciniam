@@ -16,9 +16,10 @@
                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                 <li>
                     <a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i>
-                        @if(Session::has('cart'))
-                            <span id="totalInBagMobile">{{ Session::get('cart')->totalQty }}</span>
-                        @endif
+                        <span id="totalInBagMobile">
+                            {{ Session::get('cart')->totalQty }}
+                        </span>
+                        
                     </a>
                 </li>
             </ul>
