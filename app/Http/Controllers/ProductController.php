@@ -341,7 +341,8 @@ class ProductController extends Controller
         $order->deliverylocation = 0;
         $nowdatetime = Carbon::now();
 
-        $order->payment_id = $nowdatetime->format('YmdHis') . random_string(5);
+        // $order->payment_id = $nowdatetime->format('YmdHis') . random_string(5);
+        $order->payment_id = random_string(6);
         Auth::user()->orders()->save($order);
 
         // if($request->fcode && $request->fcode != Auth::user()->code) {
