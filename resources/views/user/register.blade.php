@@ -49,7 +49,7 @@
         <div class="row">
           <div class="col-md-10 mx-auto">
             <div class="login-box">
-              <h2 style="text-align: center">REGISTER</h2>
+              <h2 style="text-align: center"><b>REGISTER</b></h2>
               <hr/>
               {!! Form::open(['route' => 'user.register', 'method' => 'POST']) !!}
               <div class="row">
