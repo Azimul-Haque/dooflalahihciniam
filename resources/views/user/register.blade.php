@@ -126,33 +126,7 @@
         <div class="container">
           <div class="row">
               <div class="col-md-6 col-md-offset-3">
-                <div class="login-box">
-                  <h1 style="text-align: center">Register</h1>
-                  {!! Form::open(['route' => 'user.register', 'method' => 'POST']) !!}
-                    {!! Form::label('name', 'Name') !!}
-                    {!! Form::text('name', null, array('class' => 'form-control', 'required' => '')) !!}
-
-                    {!! Form::label('phone', 'Phone No') !!}
-                    {!! Form::text('phone', null, array('class' => 'form-control', 'required' => '', "onkeypress" => "if(this.value.length==11) return false;")) !!}{{-- onkeypress="if(this.value.length==11) return false;" --}}
-
-                    {!! Form::label('email', 'Email') !!}
-                    {!! Form::text('email', null, array('class' => 'form-control', 'required' => '')) !!}
-
-                    {!! Form::label('address', 'Delivery Address') !!}
-                    {!! Form::textarea('address', null, array('class' => 'form-control address', 'required' => '')) !!}
-
-                    {!! Form::label('password', 'Password') !!}
-                    {!! Form::password('password', array('class' => 'form-control', 'required' => '')) !!}
-
-                    {!! Form::label('password_confirmation', 'Confirm Password') !!}
-                    {!! Form::password('password_confirmation' , array('class' => 'form-control', 'required' => '')) !!}
-
-                    {!! Form::label('captcha', 'Captcha') !!}
-                    {!! app('captcha')->display() !!}
-
-                    {!! Form::submit('Register', array('class' => 'highlight-button btn btn-block btn-small checkout-btn xs-width-100 xs-text-center', 'style' => 'margin-top:20px;')) !!}
-                  {!! Form::close() !!}
-                </div>
+                
               </div>
           </div>
         </div>
