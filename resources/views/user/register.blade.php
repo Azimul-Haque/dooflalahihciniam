@@ -69,10 +69,7 @@
                       {!! Form::label('address', 'Delivery Address') !!}
                       {!! Form::textarea('address', null, array('class' => 'form-control address', 'required' => '')) !!}
                   </div>
-                  <div class="col-md-6">
-                      {!! Form::label('phone', 'Phone No') !!}
-                      {!! Form::text('phone', null, array('class' => 'form-control', 'required' => '', "onkeypress" => "if(this.value.length==11) return false;")) !!}{{-- onkeypress="if(this.value.length==11) return false;" --}}
-                  
+                  <div class="col-md-6">                  
                       {!! Form::label('password', 'Password') !!}
                       {!! Form::password('password', array('class' => 'form-control', 'required' => '')) !!}
                   
