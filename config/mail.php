@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'in-v3.mailjet.com'),
+    'host' => env('MAIL_HOST', 'smtp.sendgrid.net'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'support@loyalovijatri.com', 'name' => 'Loyal অভিযাত্রী'],
+    'from' => ['address' => 'support@killabd.com', 'name' => 'Killa Consultancy'],
 
     /*
     |--------------------------------------------------------------------------
