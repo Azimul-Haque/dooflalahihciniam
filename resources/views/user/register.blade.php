@@ -49,25 +49,31 @@
         <div class="row">
           <div class="col-md-4 mx-auto">
             <div class="login-box">
-              <h2 style="text-align: center"><b>LOGIN</b></h2>
-              <form action="{{ route('user.login') }}" method="POST">
-                {{ csrf_field() }}
-                <div class="form-group">
-                  <label for="phoneoremail">Email or Phone Number</label>
-                  <input class="form-control" type="text" id="phoneoremail" name="phoneoremail">
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input class="form-control" type="password" id="password" name="password">
-                </div>
-                <div style="float: left; margin-top: 10px;">
-                  <a href="{{ route('user.register') }}">Register</a> | <a href="{{ url(config('adminlte.password_reset_url', 'password/reset')) }}">Forgot password?</a>
-                </div>
-                <div style="float: right;">
-                  <button type="submit" class="site-btn">Login</button>
-                </div><br/><br/>
-              </form>
-              
+              <h1 style="text-align: center">Register</h1>
+              {!! Form::open(['route' => 'user.register', 'method' => 'POST']) !!}
+                {!! Form::label('name', 'Name') !!}
+                {!! Form::text('name', null, array('class' => 'form-control', 'required' => '')) !!}
+
+                {!! Form::label('phone', 'Phone No') !!}
+                {!! Form::text('phone', null, array('class' => 'form-control', 'required' => '', "onkeypress" => "if(this.value.length==11) return false;")) !!}{{-- onkeypress="if(this.value.length==11) return false;" --}}
+
+                {!! Form::label('email', 'Email') !!}
+                {!! Form::text('email', null, array('class' => 'form-control', 'required' => '')) !!}
+
+                {!! Form::label('address', 'Delivery Address') !!}
+                {!! Form::textarea('address', null, array('class' => 'form-control address', 'required' => '')) !!}
+
+                {!! Form::label('password', 'Password') !!}
+                {!! Form::password('password', array('class' => 'form-control', 'required' => '')) !!}
+
+                {!! Form::label('password_confirmation', 'Confirm Password') !!}
+                {!! Form::password('password_confirmation' , array('class' => 'form-control', 'required' => '')) !!}
+
+                {!! Form::label('captcha', 'Captcha') !!}
+                {!! app('captcha')->display() !!}
+
+                {!! Form::submit('Register', array('class' => 'highlight-button btn btn-block btn-small checkout-btn xs-width-100 xs-text-center', 'style' => 'margin-top:20px;')) !!}
+              {!! Form::close() !!}
             </div>
           </div>
         </div>
