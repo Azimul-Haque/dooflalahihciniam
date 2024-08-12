@@ -57,7 +57,7 @@
                   <label for="password">Password</label>
                   <input class="form-control" type="password" id="password" name="password">
                 </div>
-                <div style="float: left; margin-top: 5px;">
+                <div style="margin-top: 5px;">
                   <a href="{{ route('user.register') }}">Register</a> | <a href="{{ url(config('adminlte.password_reset_url', 'password/reset')) }}">Forgot password?</a>
                 </div>
                 <a href="#!" type="submit" class="primary-btn" >Login</a>
