@@ -105,6 +105,12 @@
                         <input type="text" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="col-lg-6 col-md-6">
+                        @php
+                          $contact_num1 = rand(1,20);
+                          $contact_num2 = rand(1,20);
+                          $contact_sum_result_hidden = $contact_num1 + $contact_num2;
+                        @endphp
+                        <input type="hidden" name="contact_sum_result_hidden" value="{{ $contact_sum_result_hidden }}">
                         <input type="text" name="contact_sum_result" placeholder="{{ $contact_num1 }} + {{ $contact_num2 }} = ?" required="">
                     </div>
                     <div class="col-lg-12 text-center">
@@ -138,13 +144,7 @@
                         </div>
                         <textarea name="message" placeholder="Message"  required="">{{ old('message') }}</textarea>
                         
-                        @php
-                          $contact_num1 = rand(1,20);
-                          $contact_num2 = rand(1,20);
-                          $contact_sum_result_hidden = $contact_num1 + $contact_num2;
-                        @endphp
-
-                        <input type="hidden" name="contact_sum_result_hidden" value="{{ $contact_sum_result_hidden }}">
+                        
                         <input type="text" name="contact_sum_result" id="" class="form-control" >
                         {!! app('captcha')->display() !!}<br/>
                         
