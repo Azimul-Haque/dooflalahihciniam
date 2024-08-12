@@ -5,7 +5,8 @@
 @section('css')
 <style type="text/css">
   .login-box {
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
     -webkit-box-shadow: 3px 3px 10px 3px rgb(166 166 166 / 40%);
     -moz-box-shadow: 3px 3px 10px 3px rgba(166,166,166,0.4);
     box-shadow: 3px 3px 10px 3px rgb(166 166 166 / 40%);
