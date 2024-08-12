@@ -114,7 +114,7 @@
                         <input type="text" name="contact_sum_result" placeholder="{{ $contact_num1 }} + {{ $contact_num2 }} = ?" required="">
                     </div>
                     <div class="col-lg-12 text-center">
-                        <textarea placeholder="Your message"></textarea>
+                        <textarea placeholder="Your message" name="message"></textarea>
                         <center>{!! app('captcha')->display() !!}</center><br/>
                         <button type="submit" class="site-btn">SEND MESSAGE</button>
                     </div>
