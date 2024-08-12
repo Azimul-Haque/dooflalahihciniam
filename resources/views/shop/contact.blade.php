@@ -103,9 +103,9 @@
                     </div>
                     <div class="col-lg-12 text-center">
                         <textarea placeholder="Your message"></textarea>
+                        {!! app('captcha')->display() !!}<br/>
                         <button type="submit" class="site-btn">SEND MESSAGE</button>
                     </div>
-                    {!! app('captcha')->display() !!}<br/>
                 </div>
             {!! Form::close() !!}
         </div>
