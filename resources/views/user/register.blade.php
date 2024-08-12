@@ -74,24 +74,10 @@
                       {!! Form::text('phone', null, array('class' => 'form-control', 'required' => '', "onkeypress" => "if(this.value.length==11) return false;")) !!}{{-- onkeypress="if(this.value.length==11) return false;" --}}<br/>
                       {!! Form::label('address', 'Delivery Address') !!}
                       {!! Form::textarea('address', null, array('class' => 'form-control address', 'required' => '')) !!}
+
+                      {!! Form::submit('Register', array('class' => 'highlight-button btn btn-block btn-small checkout-btn xs-width-100 xs-text-center', 'style' => 'margin-top:20px;')) !!}
                   </div>
               </div>
-              
-                
-
-                
-
-                
-
-                
-
-                
-
-                
-
-                
-
-                {!! Form::submit('Register', array('class' => 'highlight-button btn btn-block btn-small checkout-btn xs-width-100 xs-text-center', 'style' => 'margin-top:20px;')) !!}
               {!! Form::close() !!}
             </div>
           </div>
