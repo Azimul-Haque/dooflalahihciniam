@@ -217,6 +217,12 @@ Route::put('/warehouse/unavailableproduct/{id}', [
     'middleware' => 'admin'
 ]);
 
+Route::put('/warehouse/featureorremove/{id}', [
+    'uses' => 'WarehouseController@putFeaturedProduct',
+    'as' => 'warehouse.featureorremove',
+    'middleware' => 'admin'
+]);
+
 Route::get('/warehouse/getdueorders/api', [
     'uses' => 'WarehouseController@getDueOrdersApi',
     'as' => 'warehouse.getdueordersapi',
