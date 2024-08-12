@@ -58,6 +58,9 @@
 
                       {!! Form::label('email', 'Email') !!}
                       {!! Form::text('email', null, array('class' => 'form-control', 'required' => '')) !!}
+
+                      {!! Form::label('password', 'Password') !!}
+                      {!! Form::password('password', array('class' => 'form-control', 'required' => '')) !!}
                   </div>
 
                   <div class="col-md-6">
@@ -76,8 +79,7 @@
 
                 
 
-                {!! Form::label('password', 'Password') !!}
-                {!! Form::password('password', array('class' => 'form-control', 'required' => '')) !!}
+                
 
                 {!! Form::label('password_confirmation', 'Confirm Password') !!}
                 {!! Form::password('password_confirmation' , array('class' => 'form-control', 'required' => '')) !!}
