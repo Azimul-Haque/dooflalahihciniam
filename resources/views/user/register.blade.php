@@ -50,12 +50,13 @@
           <div class="col-md-10 mx-auto">
             <div class="login-box">
               <h2 style="text-align: center">REGISTER</h2>
+              {!! Form::open(['route' => 'user.register', 'method' => 'POST']) !!}
               <div class="row">
                   <div class="col-md-6">
                       
                   </div>
               </div>
-              {!! Form::open(['route' => 'user.register', 'method' => 'POST']) !!}
+              
                 {!! Form::label('name', 'Name') !!}
                 {!! Form::text('name', null, array('class' => 'form-control', 'required' => '')) !!}
 
