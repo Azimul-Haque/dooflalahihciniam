@@ -105,7 +105,7 @@
                         <input type="text" name="email" placeholder="Your Email">
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" name="email" placeholder="Your Email">
+                        <input type="text" name="contact_sum_result" placeholder="Your Email">
                     </div>
                     <div class="col-lg-12 text-center">
                         <textarea placeholder="Your message"></textarea>
