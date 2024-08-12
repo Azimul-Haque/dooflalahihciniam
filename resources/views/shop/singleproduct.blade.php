@@ -105,7 +105,7 @@
                           <i class="fa fa-star"></i>
                           <i class="fa fa-star"></i>
                           <i class="fa fa-star-half-o"></i> --}}
-                          @if($product->productreviews->count() > 0)
+                          {{-- @if($product->productreviews->count() > 0)
                             @php
                               $avgrating = $product->productreviews->sum('rating') / $product->productreviews->count();
                             @endphp
@@ -134,6 +134,20 @@
                             @else
                               <i class="fa fa-star-o black-text"></i>
                             @endif
+                          @endif --}}
+                          @if($product->productreviews->count() > 0)
+                              @php
+                                  $avgrating = $product->productreviews->sum('rating') / $product->productreviews->count();
+                              @endphp
+                              @for($i = 1; $i <= 5; $i++)
+                                  @if($avgrating >= $i)
+                                      <i class="fa fa-star black-text"></i>
+                                  @elseif($avgrating >= $i - 0.5)
+                                      <i class="fa fa-star-half-o black-text"></i>
+                                  @else
+                                      <i class="fa fa-star-o black-text"></i>
+                                  @endif
+                              @endfor
                           @endif
                           <span>({{ $product->productreviews->count() }} reviews)</span>
                       </div>
