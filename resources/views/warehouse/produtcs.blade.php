@@ -79,14 +79,14 @@
                       <img style="max-height: 40px; border:1px solid #777" class="img-responsive" src="{{ asset('images/product-images/'.$product->productimages->first()['image']) }}">
                     </td>
                     <td>{{ $product->stock }}</td>
-                    <td>৳ {{ $product->buying_price }}</td>
-                    <td>৳ {{ $product->buying_price*$product->carrying_cost/100 }} ({{ $product->carrying_cost }}%)</td>
-                    <td>৳ {{ $product->buying_price*$product->vat/100 }} ({{ $product->vat }}%)</td>
-                    <td>৳ {{ $product->buying_price*$product->salary/100 }} ({{ $product->salary }}%)</td>
-                    <td>৳ {{ $product->buying_price*$product->wages/100 }} ({{ $product->wages }}%)</td>
-                    <td>৳ {{ $product->buying_price*$product->utility/100 }} ({{ $product->utility }}%)</td>
-                    <td>৳ {{ $product->buying_price*$product->others/100 }} ({{ $product->others }}%)</td>
-                    <td>৳ {{ $product->price - $product->profit }}</td>
+                    <td><small>৳ {{ $product->buying_price }}</small></td>
+                    <td><small>৳ {{ $product->buying_price*$product->carrying_cost/100 }} ({{ $product->carrying_cost }}%)</small></td>
+                    <td><small>৳ {{ $product->buying_price*$product->vat/100 }} ({{ $product->vat }}%)</small></td>
+                    <td><small>৳ {{ $product->buying_price*$product->salary/100 }} ({{ $product->salary }}%)</small></td>
+                    <td><small>৳ {{ $product->buying_price*$product->wages/100 }} ({{ $product->wages }}%)</small></td>
+                    <td><small>৳ {{ $product->buying_price*$product->utility/100 }} ({{ $product->utility }}%)</small></td>
+                    <td><small>৳ {{ $product->buying_price*$product->others/100 }} ({{ $product->others }}%)</small></td>
+                    <td><small>৳ {{ $product->price - $product->profit }}</small></td>
                     <td>
                       ৳ {{ $product->price }}<br/>
                       @if($product->oldprice > 0)
