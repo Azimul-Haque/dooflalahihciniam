@@ -61,7 +61,7 @@
 
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    {{-- <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148875857-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -69,7 +69,7 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-148875857-1');
-    </script>
+    </script> --}}
 </head>
 <body class="hold-transition @yield('body_class')">
 
