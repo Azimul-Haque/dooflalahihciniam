@@ -142,9 +142,9 @@
                       </div>
 
                       @if($product->isFeatured == 0)
-                      <a type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Make this product Featured"><i class="fa fa-tag" aria-hidden="true"></i></a>
+                      <a type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Make this product Featured"><i class="fa fa-tag" aria-hidden="true"></i></a>
                       @elseif($product->isFeatured == 1)
-                      <a type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Remove this product from Featured"><i class="fa fa-tag" aria-hidden="true"></i></a>
+                      <a type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Remove this product from Featured"><i class="fa fa-tag" aria-hidden="true"></i></a>
                       @endif
                       <!-- Modal -->
                       <div class="modal fade" id="makeFeatured{{ $product->id }}" role="dialog">
