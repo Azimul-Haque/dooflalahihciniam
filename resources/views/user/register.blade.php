@@ -73,7 +73,7 @@
                   </div>
                   <div class="col-md-6">
                       {!! Form::label('address', 'Delivery Address') !!}
-                      {!! Form::textarea('address', null, array('class' => 'form-control address', 'required' => '')) !!}<br/>
+                      {!! Form::textarea('address', null, array('class' => 'form-control address', 'required' => '', 'style' => 'max-height: 225px;')) !!}<br/>
                   </div>
                   <div class="col-md-6">
                       {!! Form::label('captcha', 'Captcha') !!}
