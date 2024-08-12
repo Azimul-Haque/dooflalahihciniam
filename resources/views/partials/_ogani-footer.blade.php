@@ -8,7 +8,7 @@
                             <a href="./index.html"><img src="{{ asset('images/logo.png') }}" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
+                            <li>Address: 1.15.3 Yachiyodai Higashi, Yachiyo-shi, Chiba Prefecture 276-0032, Japan</li>
                             <li>Phone: +65 11.188.888</li>
                             <li>Email: hello@colorlib.com</li>
                         </ul>
