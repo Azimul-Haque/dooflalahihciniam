@@ -170,9 +170,12 @@
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                             <li>
                                 <a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i>
-                                    @if(Session::has('cart'))
-                                        <span id="totalInBag">{{ Session::get('cart')->totalQty }}</span>
-                                    @endif
+                                    <span id="totalInBag">
+                                        @if(Session::has('cart'))
+                                            {{ Session::get('cart')->totalQty }}
+                                        @endif
+                                    </span>
+
                                 </a>
                             </li>
                         </ul>
