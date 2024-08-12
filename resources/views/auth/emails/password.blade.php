@@ -13,7 +13,7 @@
 	        Or,<br/>
 	        <a href="{{ $link = url('password/reset', $token).'?email='.urlencode($user->getEmailForPasswordReset()) }}" style="font-size: 13px; word-wrap: break-word;"> {{ $link }} </a>
 	      </p>
-	      <br/><br/>
+	      <br/>
 	      <p style="font-size: 12px; color: #ACACAC;">
 	        This is a auto-generated email from <b>Mainichi Halal Food</b>. This email arrived to you because you (or may be someone else!) have requested to reset the password associated with this email address. If you are getting this email by mistake, please ignore it.
 	      </p>
