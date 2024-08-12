@@ -31,6 +31,33 @@
   </section>
   <!-- Breadcrumb Section End -->
 
+  <!-- content section -->
+  <section class="content-section padding-three">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <div class="login-box">
+              <h1 style="text-align: center">Login</h1>
+              <form action="{{ route('user.login') }}" method="POST">
+                {{ csrf_field() }}
+                <div class="form-group">
+                  <label for="phoneoremail">Email or Phone Number</label>
+                  <input class="form-control" type="text" id="phoneoremail" name="phoneoremail">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input class="form-control" type="password" id="password" name="password">
+                </div>
+                <button type="submit" class="highlight-button btn btn-small no-margin pull-right checkout-btn xs-width-100 xs-text-center">Login</button>
+              </form>
+              <p><a href="{{ route('user.register') }}">Register</a> | <a href="{{ url(config('adminlte.password_reset_url', 'password/reset')) }}">Forgot password?</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- end content section -->
+
 
 @endsection
 
@@ -75,32 +102,7 @@
   </section>
   <!-- end head section -->
 
-  <!-- content section -->
-  <section class="content-section padding-three">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <div class="login-box">
-              <h1 style="text-align: center">Login</h1>
-              <form action="{{ route('user.login') }}" method="POST">
-                {{ csrf_field() }}
-                <div class="form-group">
-                  <label for="phoneoremail">Email or Phone Number</label>
-                  <input class="form-control" type="text" id="phoneoremail" name="phoneoremail">
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input class="form-control" type="password" id="password" name="password">
-                </div>
-                <button type="submit" class="highlight-button btn btn-small no-margin pull-right checkout-btn xs-width-100 xs-text-center">Login</button>
-              </form>
-              <p><a href="{{ route('user.register') }}">Register</a> | <a href="{{ url(config('adminlte.password_reset_url', 'password/reset')) }}">Forgot password?</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-  <!-- end content section -->
+  
 @endsection
 
 @section('js')
