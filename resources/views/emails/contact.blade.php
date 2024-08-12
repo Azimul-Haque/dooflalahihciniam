@@ -18,7 +18,7 @@
 	  <div style="border-top: 4px solid #00B2B2; padding: 10px; margin: 20px; max-width: 600px; background: #FFF; ">
 	    <center>
 	      <img src="{{ asset('images/logo.png') }}" style="width: 100px; height: auto;">
-	      {{-- <p style="font-size: 30px; color: #1B237D;"><b>Mainichi Halal</b>Food</p> --}}
+	      {{-- <p style="font-size: 30px; color: #1B237D;"><b>Mainichi</b> Halal Food</p> --}}
 	      <p style="font-size: 25px"><b>Contact Message</b></p>
 
 	      <table class="bordertable" border="1" style="width: 100%;">
