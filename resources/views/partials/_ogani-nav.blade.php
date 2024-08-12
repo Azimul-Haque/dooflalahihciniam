@@ -330,7 +330,7 @@
                               <div class="hero__item set-bg" data-setbg="{{ asset('vendor/ogani/img/hero/banner.jpg') }}">
                                   <div class="hero__text">
                                       <span>ALWAYS FRESH</span>
-                                      <h2>Vegetable <br />100% Organic</h2>
+                                      <h2>Beef <br />100% Halal</h2>
                                       <p>Fresh & Halal Food | Your right Choice</p>
                                       <a href="{{ route('product.shop') }}" class="success-btn">SHOP NOW</a>
                                   </div>
