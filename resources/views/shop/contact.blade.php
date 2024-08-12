@@ -114,24 +114,7 @@
     <section class="wow fadeIn">
         <div class="container">
             <div class="row">
-                <!-- office address -->
-                <div class="col-md-6 col-sm-6 xs-margin-bottom-ten">
-                    <div class="position-relative"><img src="{{ asset('images/abc.png') }}" alt=""/><a class="highlight-button-dark btn btn-very-small view-map no-margin bg-black white-text" href="https://www.google.co.in/maps" target="_blank">See on Map</a></div>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="text-med black-text letter-spacing-1 margin-ten no-margin-bottom text-uppercase font-weight-600 xs-margin-top-five">Email</p>
-                            <p><i class="fa fa-envelope black-text"></i> <a href="mailto:info@mainichihalalfood.com">info@mainichihalalfood.com</a></p>
-                        </div>
-                        <div class="col-md-6 xs-text-center">
-                            <p class="text-med black-text letter-spacing-1 margin-ten no-margin-bottom text-uppercase font-weight-600 xs-margin-top-five">Contact No.</p>
-                            <p class="black-text no-margin-bottom"><strong><i class="fa fa-phone black-text"></i></strong>Phone: <a href="tel:04-7481-4515">04-7481-4515</a></p>
-                            <p class="black-text no-margin-bottom"><strong><i class="fa fa-phone black-text"></i></strong>Fax: <a href="tel:04-7481-4516">04-7481-4516</a></p>
-                            <p class="black-text no-margin-bottom"><strong><i class="fa fa-phone black-text"></i></strong>Mobile: <a href="tel:090-1703-9984">090-1703-9984</a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end office address -->
+                
 
                 <div class="col-md-6 col-sm-6">
                     <span class="text-large letter-spacing-2 black-text font-weight-600 agency-title">Contact Form</span><br/><br/><br/>
