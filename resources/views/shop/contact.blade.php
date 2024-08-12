@@ -34,7 +34,6 @@
                         <span class="icon_phone"></span>
                         <h4>Phone</h4>
                         <p>
-                            04-7481-4515<br/>
                             04-7481-4515
                         </p>
                     </div>
