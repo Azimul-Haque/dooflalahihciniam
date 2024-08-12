@@ -141,9 +141,9 @@
                         </div>
                       </div>
 
-                      @if($product->isFeatured == 1)
+                      @if($product->isFeatured == 0)
                       <a type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Make this product Featured"><i class="fa fa-tag" aria-hidden="true"></i></a>
-                      @elseif($product->isFeatured == 0)
+                      @elseif($product->isFeatured == 1)
                       <a type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Remove this product from Featured"><i class="fa fa-tag" aria-hidden="true"></i></a>
                       @endif
                       <!-- Modal -->
@@ -155,10 +155,10 @@
                             <div class="modal-header modal-header-info">
                               <button type="button" class="close" data-dismiss="modal">×</button>
                               <h4 class="modal-title">আপনি কি নিশ্চিতভাবে এই পণ্যটিকে 
-                              @if($product->isFeatured == 1)
-                              অপ্রাপ্য
-                              @elseif($product->isFeatured == 0)
-                              প্রাপ্য
+                              @if($product->isFeatured == 0)
+                              ফিচার্ড
+                              @elseif($product->isFeatured == 1)
+                              ফিচার্ড থেকে রিমুভ
                               @endif
                             করতে চান?</h4>
                             </div>
