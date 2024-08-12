@@ -70,8 +70,9 @@
                           $ptext = $product->title;
                           $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
                       @endphp
-                      <a href="{{ route('product.getsingleproduct', [$product->title, $pslug]) }}" target="_blank"></a>
-                      {{ $product->title }}
+                      <a href="{{ route('product.getsingleproduct', [$product->title, $pslug]) }}" target="_blank">
+                      {{ $product->title }}</a>
+                      
                       <br/>
                       <small>{{ $product->category->name }} - {{ $product->subcategory->name }} <b>(Code: {{ $product->code }})</b></small>
                     </td>
