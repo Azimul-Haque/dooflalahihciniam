@@ -81,9 +81,6 @@
                       {!! Form::label('captcha', 'Captcha') !!}
                       {!! app('captcha')->display() !!}
                   </div>
-
-
-                  
                   <div class="col-md-6">
                       {!! Form::submit('Register', array('class' => 'site-btn', 'style' => 'margin-top:20px; width: 100%;')) !!}
                   </div>
