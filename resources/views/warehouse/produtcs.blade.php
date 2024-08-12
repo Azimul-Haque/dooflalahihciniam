@@ -174,10 +174,10 @@
                             </div>
                             <div class="modal-footer">
                               {!! Form::model($product, ['route' => ['warehouse.unavailableproduct', $product->id], 'method' => 'PUT']) !!}
-                                @if($product->isFeatured == 1)
-                                <button type="submit" class="btn btn-danger">অপ্রাপ্য করুন</button>
-                                @elseif($product->isFeatured == 0)
-                                <button type="submit" class="btn btn-success">প্রাপ্য করুন</button>
+                                @if($product->isFeatured == 0)
+                                <button type="submit" class="btn btn-danger">ফিচার্ড করুন</button>
+                                @elseif($product->isFeatured == 1)
+                                <button type="submit" class="btn btn-success">ফিচার্ড হতে সাধার ণ করুন</button>
                                 @endif
                                 <button type="button" class="btn btn-default" data-dismiss="modal">বন্ধ করুন</button>
                               {!! Form::close() !!}
