@@ -31,7 +31,7 @@
                       </div>
                   </div>
                   <div class="col-lg-3">
-                      <div class="categories__item set-bg" data-setbg="{{ asset('vendor/ogani/img/categories/cat-4.jpg') }}">
+                      <div class="categories__item set-bg" data-setbg="{{ asset('vendor/ogani/img/categories/cat-558.jpg') }}">
                           <h5><a href="{{ Request::url() . '/category/5/dal-lentils-pulses' }}">Dal (Lentils/Pulses)</a></h5>
                       </div>
                   </div>
