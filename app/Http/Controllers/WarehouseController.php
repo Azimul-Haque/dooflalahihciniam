@@ -412,6 +412,25 @@ class WarehouseController extends Controller
       return redirect()->route('warehouse.products');
     }
 
+    public function putFeaturedProduct(Request $request, $id) {
+      $product = Product::find($id);
+      if($product->isAvailable == 1) {
+        $product->isAvailable = 0;
+      } elseif($product->isAvailable == 0) {
+        $product->isAvailable = 1;
+      }
+      
+      $product->save();
+
+      if($product->isAvailable == 1) {
+        Session::flash('success', 'পণ্যটি সফলভাবে প্রাপ্য করা হয়েছে। এটি এখন পণ্য তালিকায় দেখা যাবে!');
+      } elseif($product->isAvailable == 0) {
+        Session::flash('success', 'পণ্যটি সফলভাবে অপ্রাপ্য করা হয়েছে। এটি আর পণ্য তালিকায় দেখা যাবে ন।!');
+      }
+      
+      return redirect()->route('warehouse.products');
+    }
+
     public function getDueOrdersApi() {
       $due_orders = '';
       if(Auth::check() && Auth::user()->role == 'admin') {
