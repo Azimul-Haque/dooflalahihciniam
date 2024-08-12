@@ -63,7 +63,7 @@
                           <li data-filter=".beef">Beef</li>
                           <li data-filter=".chicken">Chichen</li>
                           <li data-filter=".vegetables">Vegetables</li>
-                          <li data-filter=".fastfood">Fastfood</li>
+                          <li data-filter=".dal-lentils">Dal (Lentils/Pulses</li>
                       </ul>
                   </div>
               </div>
