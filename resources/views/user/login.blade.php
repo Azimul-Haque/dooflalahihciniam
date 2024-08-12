@@ -8,6 +8,28 @@
 
 @section('content')
 
+{{-- facebook comment plugin --}}
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0&appId=517942969045216&autoLogAppEvents=1"></script>
+{{-- facebook comment plugin --}}
+  
+  <!-- Breadcrumb Section Begin -->
+  <section class="breadcrumb-section set-bg" data-setbg="{{ asset('vendor/ogani/img/breadcrumb.jpg') }}">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <div class="breadcrumb__text">
+                      {{-- <h2>Organi Shop</h2> --}}
+                      <div class="breadcrumb__option">
+                        <a href="{{ route('product.index') }}">{{ $product->title }}</a>
+                        <span>Product</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Breadcrumb Section End -->
 
 
 @endsection
