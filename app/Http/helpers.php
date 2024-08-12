@@ -78,7 +78,7 @@
       if ($deliverylocation == 0)
           return 'Inside Dhaka';
       elseif($deliverylocation == 1020)
-          return 'Peri Pasta or Pizza Burg, Mirpur- 02 (Free pick-up)';
+          return '1.15.3 Yachiyodai Higashi, Yachiyo-shi, Chiba Prefecture 276-0032, Japan';
       elseif($deliverylocation == 2)
           return 'Outside of Dhaka';
   }
