@@ -76,7 +76,7 @@
                       {!! Form::label('address', 'Delivery Address') !!}
                       {!! Form::textarea('address', null, array('class' => 'form-control address', 'required' => '')) !!}
 
-                      {!! Form::submit('Register', array('class' => 'site-btn', 'style' => 'margin-top:20px; width: 100%;')) !!}
+                      {!! Form::submit('Register', array('class' => 'site-btn', 'style' => 'margin-top:20px; ')) !!}
                   </div>
               </div>
               {!! Form::close() !!}
