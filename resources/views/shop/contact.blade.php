@@ -75,7 +75,7 @@
             <div class="inside-widget">
                 <h4>New York</h4>
                 <ul>
-                    <li>Phone: +12-345-6789</li>
+                    <li>Phone: +81 090-1703-9984</li>
                     <li>Add: 16 Creek Ave. Farmingdale, NY</li>
                 </ul>
             </div>
