@@ -89,7 +89,7 @@ class ProductController extends Controller
                'from' => $request->email,
                'phone' => $request->phone,
                'message_data' => $request->message,
-               'subject' => 'Message from Al Amana Halal & Global Food Contact Form',
+               'subject' => 'Message from Mainichi Halal Food Contact Form',
            );
            Mail::send('emails.contact', $data, function($message) use ($data){
              $message->from($data['from'], 'Al Amana Halal & Global Food Contact');
