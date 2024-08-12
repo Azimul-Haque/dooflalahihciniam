@@ -27,7 +27,7 @@
                   </div>
                   <div class="col-lg-3">
                       <div class="categories__item set-bg" data-setbg="{{ asset('vendor/ogani/img/categories/cat-3.jpg') }}">
-                          <h5><a href="{{ Request::url() . '/category/10/canned-dried' }}">Vegetables</a></h5>
+                          <h5><a href="{{ Request::url() . '/category/8/green-vegetables' }}">Green Vegetables</a></h5>
                       </div>
                   </div>
                   <div class="col-lg-3">
