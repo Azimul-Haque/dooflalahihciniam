@@ -10,7 +10,7 @@
                         <ul>
                             <li><b>Address:</b> 1.15.3 Yachiyodai Higashi, Yachiyo-shi, Chiba Prefecture, Japan</li>
                             <li><b>Phone:</b> +81 04-7481-4515</li>
-                            <li>Email: info@mainichihalalfood.com</li>
+                            <li><b>Email:</b> info@mainichihalalfood.com</li>
                         </ul>
                     </div>
                 </div>
