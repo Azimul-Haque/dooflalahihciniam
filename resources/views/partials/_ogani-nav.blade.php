@@ -327,7 +327,7 @@
                               </div>
                             </div>
                             <div class="carousel-item">
-                              <div class="hero__item set-bg" data-setbg="{{ asset('vendor/ogani/img/hero/banner.jpg') }}">
+                              <div class="hero__item set-bg" data-setbg="{{ asset('vendor/ogani/img/hero/banner1.jpg') }}">
                                   <div class="hero__text">
                                       <span>ALWAYS FRESH</span>
                                       <h2>Beef <br />100% Halal</h2>
