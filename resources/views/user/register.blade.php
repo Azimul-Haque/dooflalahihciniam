@@ -47,7 +47,7 @@
   <section class="content-section padding-three">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 mx-auto">
+          <div class="col-md-10 mx-auto">
             <div class="login-box">
               <h1 style="text-align: center">Register</h1>
               {!! Form::open(['route' => 'user.register', 'method' => 'POST']) !!}
