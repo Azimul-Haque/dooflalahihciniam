@@ -140,6 +140,51 @@
                           </div>
                         </div>
                       </div>
+
+                      @if($product->isAvailable == 1)
+                      <a type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#makeUnavailable{{ $product->id }}" data-backdrop="static" title="Make this product unavailable"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                      @elseif($product->isAvailable == 0)
+                      <a type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#makeUnavailable{{ $product->id }}" data-backdrop="static" title="Make this product available"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                      @endif
+                      <!-- Modal -->
+                      <div class="modal fade" id="makeUnavailable{{ $product->id }}" role="dialog">
+                        <div class="modal-dialog">
+                        
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header modal-header-warning">
+                              <button type="button" class="close" data-dismiss="modal">×</button>
+                              <h4 class="modal-title">আপনি কি নিশ্চিতভাবে এই পণ্যটিকে 
+                              @if($product->isAvailable == 1)
+                              অপ্রাপ্য
+                              @elseif($product->isAvailable == 0)
+                              প্রাপ্য
+                              @endif
+                            করতে চান?</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>
+                                <center>
+                                  <h2>{{ $product->title }}</h2>
+                                  <h4>{{ $product->category->name }}</h4>
+                                  মূল্যঃ ৳ {{ $product->price }}<br/><br/>
+                                  <img style="max-height: 100px; border:1px solid #777" class="img-responsive" src="{{ asset('images/product-images/'.$product->productimages->first()['image']) }}">
+                                </center>
+                              </p>
+                            </div>
+                            <div class="modal-footer">
+                              {!! Form::model($product, ['route' => ['warehouse.unavailableproduct', $product->id], 'method' => 'PUT']) !!}
+                                @if($product->isAvailable == 1)
+                                <button type="submit" class="btn btn-danger">অপ্রাপ্য করুন</button>
+                                @elseif($product->isAvailable == 0)
+                                <button type="submit" class="btn btn-success">প্রাপ্য করুন</button>
+                                @endif
+                                <button type="button" class="btn btn-default" data-dismiss="modal">বন্ধ করুন</button>
+                              {!! Form::close() !!}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       {{-- <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a> --}}
                     </td>
                   </tr>
