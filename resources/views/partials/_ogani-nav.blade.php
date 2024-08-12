@@ -332,7 +332,7 @@
                                       <span>ALWAYS FRESH</span>
                                       <h2>Beef <br />100% Halal</h2>
                                       <p>Fresh & Halal Food | Your right Choice</p>
-                                      <a href="{{ route('product.shop') }}" class="success-btn">SHOP NOW</a>
+                                      <a href="{{ route('product.shop') }}" class="primary-btn">SHOP NOW</a>
                                   </div>
                               </div>
                             </div>
@@ -342,7 +342,7 @@
                                       <span>ALWAYS FRESH</span>
                                       <h2>Vegetable <br />100% Organic</h2>
                                       <p>Fresh & Halal Food | Your right Choice</p>
-                                      <a href="{{ route('product.shop') }}" class="warning-btn">SHOP NOW</a>
+                                      <a href="{{ route('product.shop') }}" class="primary-btn">SHOP NOW</a>
                                   </div>
                               </div>
                             </div>
