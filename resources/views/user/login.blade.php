@@ -3,9 +3,11 @@
 @section('title', 'Login')
 
 @section('css')
-
-.login-box
-  
+<style type="text/css">
+  .login-box {
+    
+  }
+</style>  
 @endsection
 
 @section('content')
