@@ -1,6 +1,6 @@
 @extends('layouts.ogani')
 
-@section('title', $product->title)
+@section('title', 'Login')
 
 @section('css')
   <script type="text/javascript" src="{{ asset('vendor/hcode/js/jquery.min.js') }}"></script>
