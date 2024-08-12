@@ -62,7 +62,7 @@
                 </div>
                 <div style="float: right;">
                   <a href="#!" type="submit" class="primary-btn">Login</a>
-                </div><br/>
+                </div><br/><br/>
               </form>
               
             </div>
