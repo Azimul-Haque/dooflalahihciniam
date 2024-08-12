@@ -73,7 +73,7 @@
         <div class="map-inside">
             <i class="icon_pin"></i>
             <div class="inside-widget">
-                <h4>New York</h4>
+                <h4>Mainichi Halal Food</h4>
                 <ul>
                     <li>Phone: +81 090-1703-9984</li>
                     <li>Add: 1.15.3 Yachiyodai Higashi, Yachiyo-shi, Chiba Prefecture 276-0032, Japan</li>
