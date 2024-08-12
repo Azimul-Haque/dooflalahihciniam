@@ -100,8 +100,8 @@
                                   <select id="deliverylocation{{ $dueorder->id }}" name="deliverylocation{{ $dueorder->id }}" class="form-control" required="">
                                     <option value="" selected="" disabled="">Select Location</option>
                                     <option value="0" @if($dueorder->deliverylocation == 0) selected="" @endif>Inside Dhaka</option>
-                                    <option value="1020" @if($dueorder->deliverylocation == 1020) selected="" @endif>Free Pick-up Point</option> {{-- apatoto --}}
-                                    <option value="2" @if($dueorder->deliverylocation == 2) selected="" @endif>Outside of Dhaka</option>
+                                    <option value="1020" @if($dueorder->deliverylocation == 1020) selected="" @endif>Free Pick-up from Shop</option> {{-- apatoto --}}
+                                    {{-- <option value="2" @if($dueorder->deliverylocation == 2) selected="" @endif>Outside of Dhaka</option> --}}
                                   </select>
                                 </div>
                                 <input type="hidden" name="hiddenDeliveryChargeOld{{ $dueorder->id }}" value="{{ $dueorder->cart->deliveryCharge }}">
