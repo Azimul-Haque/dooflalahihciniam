@@ -64,6 +64,9 @@
 
                       {!! Form::label('password_confirmation', 'Confirm Password') !!}
                       {!! Form::password('password_confirmation' , array('class' => 'form-control', 'required' => '')) !!}
+
+                      {!! Form::label('captcha', 'Captcha') !!}
+                      {!! app('captcha')->display() !!}
                   </div>
 
                   <div class="col-md-6">
@@ -86,8 +89,7 @@
 
                 
 
-                {!! Form::label('captcha', 'Captcha') !!}
-                {!! app('captcha')->display() !!}
+                
 
                 {!! Form::submit('Register', array('class' => 'highlight-button btn btn-block btn-small checkout-btn xs-width-100 xs-text-center', 'style' => 'margin-top:20px;')) !!}
               {!! Form::close() !!}
