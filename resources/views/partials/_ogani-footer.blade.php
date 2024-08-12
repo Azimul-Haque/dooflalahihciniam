@@ -8,7 +8,7 @@
                             <a href="./index.html"><img src="{{ asset('images/logo.png') }}" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 1.15.3 Yachiyodai Higashi, Yachiyo-shi, Chiba Prefecture, Japan</li>
+                            <li><b>Address:</b> 1.15.3 Yachiyodai Higashi, Yachiyo-shi, Chiba Prefecture, Japan</li>
                             <li>Phone: +81 04-7481-4515</li>
                             <li>Email: info@mainichihalalfood.com</li>
                         </ul>
