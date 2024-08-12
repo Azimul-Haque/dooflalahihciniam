@@ -185,7 +185,7 @@ class ProductController extends Controller
       $catorsub = Category::findOrFail($id);
       $products = Product::where('isAvailable', '!=', '0')
                          ->where('category_id', $id)
-                         ->paginate(10);
+                         ->paginate(16);
       $newarrivals = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(5);
       return view('shop.categorywise')
                 ->withProducts($products)
@@ -198,7 +198,7 @@ class ProductController extends Controller
       $catorsub = Category::findOrFail($id);
       $products = Product::where('isAvailable', '!=', '0')
                          ->where('subcategory_id', $id)
-                         ->paginate(10);
+                         ->paginate(16);
       $newarrivals = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(5);
       return view('shop.categorywise')
                   ->withProducts($products)
