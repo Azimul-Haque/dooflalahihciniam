@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'support@killabd.com', 'name' => 'Killa Consultancy'],
+    'from' => ['address' => 'support@mainichihalalfood.com', 'name' => 'Mainichi Halal Food'],
 
     /*
     |--------------------------------------------------------------------------
