@@ -68,7 +68,8 @@
                   <div class="col-md-6">
                       {!! Form::label('password_confirmation', 'Confirm Password') !!}
                       {!! Form::password('password_confirmation' , array('class' => 'form-control', 'required' => '')) !!}
-
+                  </div>
+                  <div class="col-md-6">
                       {!! Form::label('captcha', 'Captcha') !!}
                       {!! app('captcha')->display() !!}
                   </div>
@@ -76,6 +77,8 @@
                   <div class="col-md-6">
                       {!! Form::label('phone', 'Phone No') !!}
                       {!! Form::text('phone', null, array('class' => 'form-control', 'required' => '', "onkeypress" => "if(this.value.length==11) return false;")) !!}{{-- onkeypress="if(this.value.length==11) return false;" --}}
+                  </div>
+                  <div class="col-md-6">
                       {!! Form::label('address', 'Delivery Address') !!}
                       {!! Form::textarea('address', null, array('class' => 'form-control address', 'required' => '')) !!}
 
