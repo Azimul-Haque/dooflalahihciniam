@@ -5,7 +5,8 @@
 @section('css')
 <style type="text/css">
   .login-box {
-    
+    padding-top: 40px;
+    padding-bottom: 60px;
   }
 </style>  
 @endsection
