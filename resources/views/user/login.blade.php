@@ -64,7 +64,7 @@
                   <a href="{{ route('user.register') }}">Register</a> | <a href="{{ url(config('adminlte.password_reset_url', 'password/reset')) }}">Forgot password?</a>
                 </div>
                 <div style="float: right;">
-                  <a href="#!" type="submit" class="primary-btn">Login</a>
+                  <button type="submit" class="site-btn">Login</button>
                 </div><br/><br/>
               </form>
               
