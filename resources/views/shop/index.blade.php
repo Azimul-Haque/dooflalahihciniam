@@ -12,6 +12,8 @@
       <div class="container">
           <div class="row">
               <div class="categories__slider owl-carousel">
+                {{-- ekahne kaaj ache, etake dynamic korte hobe
+                ekahne kaaj ache, etake dynamic korte hobe --}}
                   <div class="col-lg-3">
                       <div class="categories__item set-bg" data-setbg="{{ asset('vendor/ogani/img/categories/cat-667.jpg') }}">
                           <h5><a href="{{ Request::url() . '/category/10/canned-dried' }}">Dried & Canned</a></h5>
