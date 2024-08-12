@@ -34,7 +34,8 @@
                         <span class="icon_phone"></span>
                         <h4>Phone</h4>
                         <p>
-                            04-7481-4515
+                            04-7481-4515<br/>
+                            090-1703-9984
                         </p>
                     </div>
                 </div>
