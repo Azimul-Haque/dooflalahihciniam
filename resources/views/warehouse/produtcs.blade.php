@@ -173,7 +173,7 @@
                               </p>
                             </div>
                             <div class="modal-footer">
-                              {!! Form::model($product, ['route' => ['warehouse.unavailableproduct', $product->id], 'method' => 'PUT']) !!}
+                              {!! Form::model($product, ['route' => ['warehouse.featureorremove', $product->id], 'method' => 'PUT']) !!}
                                 @if($product->isFeatured == 0)
                                 <button type="submit" class="btn btn-danger">ফিচার্ড করুন</button>
                                 @elseif($product->isFeatured == 1)
