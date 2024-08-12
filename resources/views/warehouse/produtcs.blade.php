@@ -142,7 +142,7 @@
                       </div>
 
                       @if($product->isAvailable == 1)
-                      <a type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Make this product unavailable"><i class="fa fa-tag" aria-hidden="true"></i></a>
+                      <a type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Make this product unavailable"><i class="fa fa-tag" aria-hidden="true"></i></a>
                       @elseif($product->isAvailable == 0)
                       <a type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Make this product available"><i class="fa fa-tag" aria-hidden="true"></i></a>
                       @endif
@@ -152,7 +152,7 @@
                         
                           <!-- Modal content-->
                           <div class="modal-content">
-                            <div class="modal-header modal-header-warning">
+                            <div class="modal-header modal-header-info">
                               <button type="button" class="close" data-dismiss="modal">×</button>
                               <h4 class="modal-title">আপনি কি নিশ্চিতভাবে এই পণ্যটিকে 
                               @if($product->isAvailable == 1)
