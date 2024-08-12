@@ -96,16 +96,16 @@
             {!! Form::open(['route' => 'index.postcontactmessage', 'method' => 'POST']) !!}
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" name="name" placeholder="Your name">
+                        <input type="text" name="name" placeholder="Your name" required>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" name="phone" placeholder="Your Phone Number">
+                        <input type="text" name="phone" placeholder="Your Phone Number" required>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" name="email" placeholder="Your Email">
+                        <input type="text" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" name="contact_sum_result" placeholder="Your Email">
+                        <input type="text" name="contact_sum_result" placeholder="{{ $contact_num1 }} + {{ $contact_num2 }} = ?" required="">
                     </div>
                     <div class="col-lg-12 text-center">
                         <textarea placeholder="Your message"></textarea>
@@ -145,7 +145,7 @@
                         @endphp
 
                         <input type="hidden" name="contact_sum_result_hidden" value="{{ $contact_sum_result_hidden }}">
-                        <input type="text" name="contact_sum_result" id="" class="form-control" placeholder="{{ $contact_num1 }} + {{ $contact_num2 }} = ?" required="">
+                        <input type="text" name="contact_sum_result" id="" class="form-control" >
                         {!! app('captcha')->display() !!}<br/>
                         
                         <button id="contact-us-button" type="submit" class="highlight-button-dark btn btn-small button xs-margin-bottom-five"><i class="fa fa-paper-plane"></i> Send</button>
