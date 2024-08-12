@@ -66,6 +66,10 @@
                 @foreach($products as $product)
                   <tr>
                     <td>
+                      @php
+                          $ptext = $product->title;
+                          $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
+                      @endphp
                       =<a href="{{ route('product.getsingleproduct', [$product->title, $product->title]) }}"></a>
                       {{ $product->title }}
                       <br/>
