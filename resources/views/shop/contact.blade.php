@@ -103,7 +103,7 @@
                     </div>
                     <div class="col-lg-12 text-center">
                         <textarea placeholder="Your message"></textarea>
-                        {!! app('captcha')->display() !!}<br/>
+                        <center>{!! app('captcha')->display() !!}</center>
                         <button type="submit" class="site-btn">SEND MESSAGE</button>
                     </div>
                 </div>
