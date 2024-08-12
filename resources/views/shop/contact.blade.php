@@ -99,7 +99,7 @@
                         <input type="text" name="name" placeholder="Your name">
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" name="email" placeholder="Your Phone Number">
+                        <input type="text" name="phone" placeholder="Your Phone Number">
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <input type="text" name="email" placeholder="Your Email">
