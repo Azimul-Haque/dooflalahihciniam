@@ -75,9 +75,7 @@
                       {!! Form::label('address', 'Delivery Address') !!}
                       {!! Form::textarea('address', null, array('class' => 'form-control address', 'required' => '')) !!}
                   </div>
-                  <div class="col-md-6">                  
-                      
-                  
+                  <div class="col-md-6">
                       {!! Form::label('captcha', 'Captcha') !!}
                       {!! app('captcha')->display() !!}
                   </div>
