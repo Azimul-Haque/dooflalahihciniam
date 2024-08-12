@@ -22,7 +22,7 @@
                       {{-- <h2>Organi Shop</h2> --}}
                       <div class="breadcrumb__option">
                         <a href="{{ route('product.index') }}">Mainichi Halal Food</a>
-                        <span>Product</span>
+                        <span>Login</span>
                       </div>
                   </div>
               </div>
