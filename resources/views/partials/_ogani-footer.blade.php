@@ -9,7 +9,7 @@
                         </div>
                         <ul>
                             <li>Address: 1.15.3 Yachiyodai Higashi, Yachiyo-shi, Chiba Prefecture 276-0032, Japan</li>
-                            <li>Phone: +65 11.188.888</li>
+                            <li>Phone: +81 04-7481-4515, </li>
                             <li>Email: hello@colorlib.com</li>
                         </ul>
                     </div>
