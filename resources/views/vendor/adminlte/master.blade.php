@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title_prefix', config('adminlte.title_prefix', ''))
         @yield('title', config('adminlte.title', 'AdminLTE 2'))
-        @yield('title_postfix', config('adminlte.title_postfix', '')) | AL-Mani Food Products
+        @yield('title_postfix', config('adminlte.title_postfix', '')) | Mainichi Halal Food
     </title>
     <meta name="description" content="Al Amana Halal & Global Food provides you halal food. Developed by A. H. M. Azimul Haque.">
     <meta name="keywords" content="Al Amana Halal & Global Food, Al Amana Global Co. Ltd">
