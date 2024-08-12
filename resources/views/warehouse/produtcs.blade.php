@@ -141,9 +141,9 @@
                         </div>
                       </div>
 
-                      @if($product->isAvailable == 1)
+                      @if($product->isFeatured == 1)
                       <a type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Make this product Featured"><i class="fa fa-tag" aria-hidden="true"></i></a>
-                      @elseif($product->isAvailable == 0)
+                      @elseif($product->isFeatured == 0)
                       <a type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Remove this product from Featured"><i class="fa fa-tag" aria-hidden="true"></i></a>
                       @endif
                       <!-- Modal -->
@@ -155,9 +155,9 @@
                             <div class="modal-header modal-header-info">
                               <button type="button" class="close" data-dismiss="modal">×</button>
                               <h4 class="modal-title">আপনি কি নিশ্চিতভাবে এই পণ্যটিকে 
-                              @if($product->isAvailable == 1)
+                              @if($product->isFeatured == 1)
                               অপ্রাপ্য
-                              @elseif($product->isAvailable == 0)
+                              @elseif($product->isFeatured == 0)
                               প্রাপ্য
                               @endif
                             করতে চান?</h4>
@@ -174,9 +174,9 @@
                             </div>
                             <div class="modal-footer">
                               {!! Form::model($product, ['route' => ['warehouse.unavailableproduct', $product->id], 'method' => 'PUT']) !!}
-                                @if($product->isAvailable == 1)
+                                @if($product->isFeatured == 1)
                                 <button type="submit" class="btn btn-danger">অপ্রাপ্য করুন</button>
-                                @elseif($product->isAvailable == 0)
+                                @elseif($product->isFeatured == 0)
                                 <button type="submit" class="btn btn-success">প্রাপ্য করুন</button>
                                 @endif
                                 <button type="button" class="btn btn-default" data-dismiss="modal">বন্ধ করুন</button>
