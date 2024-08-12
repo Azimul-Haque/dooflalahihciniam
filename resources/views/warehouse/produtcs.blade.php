@@ -66,7 +66,9 @@
                 @foreach($products as $product)
                   <tr>
                     <td>
-                      {{ $product->title }}<br/>
+                      =<a href="{{ route('product.getsingleproduct', [$product->title, $product->title]) }}"></a>
+                      {{ $product->title }}
+                      <br/>
                       <small>{{ $product->category->name }} - {{ $product->subcategory->name }} <b>(Code: {{ $product->code }})</b></small>
                     </td>
                     <td>
