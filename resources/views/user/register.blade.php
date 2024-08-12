@@ -55,25 +55,25 @@
               <div class="row">
                   <div class="col-md-6">
                       {!! Form::label('name', 'Name') !!}
-                      {!! Form::text('name', null, array('class' => 'form-control', 'required' => '')) !!}
+                      {!! Form::text('name', null, array('class' => 'form-control', 'required' => '')) !!}<br/>
                   </div>
                   <div class="col-md-6">
                       {!! Form::label('email', 'Email') !!}
-                      {!! Form::text('email', null, array('class' => 'form-control', 'required' => '')) !!}
+                      {!! Form::text('email', null, array('class' => 'form-control', 'required' => '')) !!}<br/>
                   </div>
                   <div class="col-md-6">
                       {!! Form::label('phone', 'Phone No') !!}
-                      {!! Form::text('phone', null, array('class' => 'form-control', 'required' => '', "onkeypress" => "if(this.value.length==11) return false;")) !!}{{-- onkeypress="if(this.value.length==11) return false;" --}}
+                      {!! Form::text('phone', null, array('class' => 'form-control', 'required' => '', "onkeypress" => "if(this.value.length==11) return false;")) !!}{{-- onkeypress="if(this.value.length==11) return false;" --}}<br/>
 
                       {!! Form::label('password', 'Password') !!}
-                      {!! Form::password('password', array('class' => 'form-control', 'required' => '')) !!}
+                      {!! Form::password('password', array('class' => 'form-control', 'required' => '')) !!}<br/>
                       
                       {!! Form::label('password_confirmation', 'Confirm Password') !!}
-                      {!! Form::password('password_confirmation' , array('class' => 'form-control', 'required' => '')) !!}
+                      {!! Form::password('password_confirmation' , array('class' => 'form-control', 'required' => '')) !!}<br/>
                   </div>
                   <div class="col-md-6">
                       {!! Form::label('address', 'Delivery Address') !!}
-                      {!! Form::textarea('address', null, array('class' => 'form-control address', 'required' => '')) !!}
+                      {!! Form::textarea('address', null, array('class' => 'form-control address', 'required' => '')) !!}<br/>
                   </div>
                   <div class="col-md-6">
                       {!! Form::label('captcha', 'Captcha') !!}
