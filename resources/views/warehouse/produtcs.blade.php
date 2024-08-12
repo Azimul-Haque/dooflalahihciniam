@@ -142,12 +142,12 @@
                       </div>
 
                       @if($product->isAvailable == 1)
-                      <a type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#makeUnavailable{{ $product->id }}" data-backdrop="static" title="Make this product unavailable"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                      <a type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Make this product unavailable"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
                       @elseif($product->isAvailable == 0)
-                      <a type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#makeUnavailable{{ $product->id }}" data-backdrop="static" title="Make this product available"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                      <a type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#makeFeatured{{ $product->id }}" data-backdrop="static" title="Make this product available"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
                       @endif
                       <!-- Modal -->
-                      <div class="modal fade" id="makeUnavailable{{ $product->id }}" role="dialog">
+                      <div class="modal fade" id="makeFeatured{{ $product->id }}" role="dialog">
                         <div class="modal-dialog">
                         
                           <!-- Modal content-->
