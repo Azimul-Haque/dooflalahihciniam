@@ -425,7 +425,7 @@ class WarehouseController extends Controller
       if($product->isFeatured == 1) {
         Session::flash('success', 'পণ্যটি সফলভাবে ফিচার্ড করা হয়েছে। এটি এখন Featured Product দেখা যাবে!');
       } elseif($product->isFeatured == 0) {
-        Session::flash('success', 'পণ্যটি সফলভাবে অপ্রাপ্য করা হয়েছে। এটি আর Featured Product দেখা যাবে ন।!');
+        Session::flash('success', 'পণ্যটি সফলভাবে ফিচার্ড হতে সাধারণ করা হয়েছে। এটি আর Featured Product দেখা যাবে ন।!');
       }
       
       return redirect()->route('warehouse.products');
