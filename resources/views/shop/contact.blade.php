@@ -71,7 +71,7 @@
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d810.0010153950798!2d140.0915076999755!3d35.70151766397057!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60228128bbac4569%3A0x94ba692a64cd9d70!2sMAINICHI%20FOOD%20PRODUCT!5e0!3m2!1sen!2sus!4v1723483200757!5m2!1sen!2sus"
             height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <div class="map-inside">
-            <i class="icon_pin"></i>
+            {{-- <i class="icon_pin"></i> --}}
             <div class="inside-widget">
                 <h4>Mainichi Halal Food</h4>
                 <ul>
