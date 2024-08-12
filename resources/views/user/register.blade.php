@@ -56,6 +56,11 @@
                       {!! Form::label('name', 'Name') !!}
                       {!! Form::text('name', null, array('class' => 'form-control', 'required' => '')) !!}
                   </div>
+
+                  <div class="col-md-6">
+                      {!! Form::label('name', 'Name') !!}
+                      {!! Form::text('name', null, array('class' => 'form-control', 'required' => '')) !!}
+                  </div>
               </div>
               
                 
