@@ -84,7 +84,7 @@
                       </div>
                   </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+              <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables dal-lentils">
                   <div class="featured__item">
                       <div class="featured__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/featured/feature-2.jpg') }}">
                           <ul class="featured__item__pic__hover">
@@ -114,7 +114,7 @@
                       </div>
                   </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+              <div class="col-lg-3 col-md-4 col-sm-6 mix dal-lentils oranges">
                   <div class="featured__item">
                       <div class="featured__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/featured/feature-4.jpg') }}">
                           <ul class="featured__item__pic__hover">
@@ -144,7 +144,7 @@
                       </div>
                   </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+              <div class="col-lg-3 col-md-4 col-sm-6 mix oranges dal-lentils">
                   <div class="featured__item">
                       <div class="featured__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/featured/feature-6.jpg') }}">
                           <ul class="featured__item__pic__hover">
@@ -174,7 +174,7 @@
                       </div>
                   </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+              <div class="col-lg-3 col-md-4 col-sm-6 mix dal-lentils vegetables">
                   <div class="featured__item">
                       <div class="featured__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/featured/feature-8.jpg') }}">
                           <ul class="featured__item__pic__hover">
