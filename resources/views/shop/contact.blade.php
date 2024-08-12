@@ -68,7 +68,7 @@
     <!-- Map Begin -->
     <div class="map">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.0157399575658!2d140.09124118781082!3d35.70006825145883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022812f4f57067f%3A0x913d9961d26e44bf!2zSmFwYW4sIOOAkjI3Ni0wMDMyIENoaWJhLCBZYWNoaXlvLCBZYWNoaXlvZGFpaGlnYXNoaSwgMS1jaMWNbWXiiJIy4oiSMSAyLTE2IOesrDc!5e0!3m2!1sen!2sbd!4v1715632587410!5m2!1sen!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d810.0010153950798!2d140.0915076999755!3d35.70151766397057!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60228128bbac4569%3A0x94ba692a64cd9d70!2sMAINICHI%20FOOD%20PRODUCT!5e0!3m2!1sen!2sus!4v1723483200757!5m2!1sen!2sus"
             height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <div class="map-inside">
             <i class="icon_pin"></i>
