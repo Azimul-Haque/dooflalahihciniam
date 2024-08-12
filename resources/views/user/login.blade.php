@@ -3,6 +3,8 @@
 @section('title', 'Login')
 
 @section('css')
+
+.login-box
   
 @endsection
 
