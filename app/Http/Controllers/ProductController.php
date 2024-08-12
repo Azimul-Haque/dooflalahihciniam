@@ -342,7 +342,7 @@ class ProductController extends Controller
         $nowdatetime = Carbon::now();
 
         // $order->payment_id = $nowdatetime->format('YmdHis') . random_string(5);
-        $order->payment_id = random_string(6);
+        $order->payment_id = random_string(8);
         Auth::user()->orders()->save($order);
 
         // if($request->fcode && $request->fcode != Auth::user()->code) {
