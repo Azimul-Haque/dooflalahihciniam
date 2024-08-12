@@ -60,7 +60,7 @@
                   <div class="featured__controls">
                       <ul>
                           <li class="active" data-filter="*">All</li>
-                          <li data-filter=".oranges">Oranges</li>
+                          <li data-filter=".beef">Beef</li>
                           <li data-filter=".fresh-meat">Fresh Meat</li>
                           <li data-filter=".vegetables">Vegetables</li>
                           <li data-filter=".fastfood">Fastfood</li>
@@ -69,7 +69,7 @@
               </div>
           </div>
           <div class="row featured__filter">
-              <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+              <div class="col-lg-3 col-md-4 col-sm-6 mix beef fresh-meat">
                   <div class="featured__item">
                       <div class="featured__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/featured/feature-1.jpg') }}">
                           <ul class="featured__item__pic__hover">
