@@ -46,7 +46,7 @@
         <div class="row">
           <div class="col-md-4 mx-auto">
             <div class="login-box">
-              <h2 style="text-align: center">Login</h2>
+              <h2 style="text-align: center"><b>Login</b></h2>
               <form action="{{ route('user.login') }}" method="POST">
                 {{ csrf_field() }}
                 <div class="form-group">
