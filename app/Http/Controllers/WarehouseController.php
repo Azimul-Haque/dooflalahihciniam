@@ -414,17 +414,17 @@ class WarehouseController extends Controller
 
     public function putFeaturedProduct(Request $request, $id) {
       $product = Product::find($id);
-      if($product->isAvailable == 1) {
-        $product->isAvailable = 0;
-      } elseif($product->isAvailable == 0) {
-        $product->isAvailable = 1;
+      if($product->isFeatured == 1) {
+        $product->isFeatured = 0;
+      } elseif($product->isFeatured == 0) {
+        $product->isFeatured = 1;
       }
       
       $product->save();
 
-      if($product->isAvailable == 1) {
+      if($product->isFeatured == 1) {
         Session::flash('success', 'পণ্যটি সফলভাবে প্রাপ্য করা হয়েছে। এটি এখন পণ্য তালিকায় দেখা যাবে!');
-      } elseif($product->isAvailable == 0) {
+      } elseif($product->isFeatured == 0) {
         Session::flash('success', 'পণ্যটি সফলভাবে অপ্রাপ্য করা হয়েছে। এটি আর পণ্য তালিকায় দেখা যাবে ন।!');
       }
       
