@@ -3,46 +3,7 @@
 @section('title', 'Login')
 
 @section('css')
-  <script type="text/javascript" src="{{ asset('vendor/hcode/js/jquery.min.js') }}"></script>
-  <style type="text/css">
-    .padding-top-ten {
-      padding-top: 10%;
-    }
-    .padding-top-five {
-      padding-top: 5%;
-      padding-bottom: 5%;
-    }
-    .image-thumb-product {
-      max-height: 50px; 
-      width: auto; 
-      border: 1px solid gray;
-    }
-    iframe {
-      width: 100% !important;
-    }
-  </style>
-  <meta property="og:image" content="{{ asset('images/product-images/'.$product->productimages->first()->image) }}" />
-  <meta property="og:title" content="{{ $product->title }}"/>
-  <meta property="og:description" content="¥ {{ $product->price }} | {{ substr(strip_tags($product->description), 0, 200) }}" />
-  <meta property="og:type" content="article"/>
-  <meta property="og:url" content="{{ Request::url() }}" />
-  <meta property="og:site_name" content="Mainichi Halal Food">
-  <meta property="og:locale" content="en_US">
-  <meta property="fb:admins" content="100001596964477">
-  <meta property="fb:app_id" content="163879201229487">
-  <meta property="og:type" content="article">
-  <!-- Open Graph - Article -->
-  <meta name="article:section" content="Mainichi Halal Food">
-  <meta name="article:published_time" content="{{ $product->created_at }}">
-  <meta name="article:author" content="Ecom">
-  <meta name="article:tag" content="Product">
-  <meta name="article:modified_time" content="{{ $product->updated_at }}">
-
-  @php
-      $ptext = $product->title;
-      $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
-  @endphp
-  <link rel="canonical" href="{{ route('product.getsingleproduct', [$product->id, $pslug]) }}" />
+  
 @endsection
 
 @section('content')
