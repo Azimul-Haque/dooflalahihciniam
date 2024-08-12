@@ -423,7 +423,7 @@ class WarehouseController extends Controller
       $product->save();
 
       if($product->isFeatured == 1) {
-        Session::flash('success', 'পণ্যটি সফলভাবে প্রাপ্য করা হয়েছে। এটি এখন পণ্য তালিকায় দেখা যাবে!');
+        Session::flash('success', 'পণ্যটি সফলভাবে ফিচার্ড করা হয়েছে। এটি এখন পণ্য তালিকায় দেখা যাবে!');
       } elseif($product->isFeatured == 0) {
         Session::flash('success', 'পণ্যটি সফলভাবে অপ্রাপ্য করা হয়েছে। এটি আর পণ্য তালিকায় দেখা যাবে ন।!');
       }
