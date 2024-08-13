@@ -146,6 +146,6 @@
         </div>
     </div> --}}
     <div class="sidebar__item">
-        @include('_ogani-latest-products')
+        @include('partials._ogani-latest-products')
     </div>
 </div>
