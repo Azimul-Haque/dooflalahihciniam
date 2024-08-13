@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\User;
 use App\Cart;
 use App\Category;
+use App\Subategory;
 use App\Product;
 use App\Order;
 use App\Slider;
@@ -214,7 +215,7 @@ class ProductController extends Controller
     }
 
     public function getSubcategoryWise($id, $random_string) {
-      $catorsub = Category::findOrFail($id);
+      $catorsub = Subcategory::findOrFail($id);
       $products = Product::where('isAvailable', '!=', '0')
                          ->where('subcategory_id', $id)
                          ->paginate(16);
