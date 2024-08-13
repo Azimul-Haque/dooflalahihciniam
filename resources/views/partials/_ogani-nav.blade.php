@@ -295,8 +295,8 @@
                                 <button type="submit" class="site-btn">SEARCH</button>
                             </form>
                         </div>
-                        <div class="hero__search__phone">
-                            <a class="hero__search__phone__icon call-to-this-number" href="tel:+81 090-1703-9984" style="">
+                        <div class="hero__search__phone call-to-this-number">
+                            <a class="hero__search__phone__icon" href="tel:+81 090-1703-9984" style="">
                                 <i class="fa fa-phone"></i>
                             </a>
                             <div class="hero__search__phone__text">
