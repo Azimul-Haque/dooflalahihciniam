@@ -46,6 +46,9 @@ class ProductController extends Controller
                          ->orderBy('id', 'desc')
                          ->take(50)
                          ->paginate(16);
+      $featured = Product::where('isAvailable', '!=', '0')
+                         ->orderBy('id', 'desc')
+                         ->take(50);
       $newarrivals = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
       return view('shop.shop')
