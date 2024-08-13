@@ -9,7 +9,7 @@
               @endphp
               <a href="{{ route('product.getsingleproduct', [$product->id, $pslug]) }}" class="latest-product__item">
                   <div class="latest-product__item__pic">
-                      <img src="{{ asset('vendor/ogani/img/latest-product/lp-1.jpg') }}" alt="">
+                      <img src="{{ asset('images/product-images/'.$product->productimages->first()->image) }}" alt="">
                   </div>
                   <div class="latest-product__item__text">
                       <h6>{{ $product->title }}</h6>
@@ -31,7 +31,7 @@
               @endphp
               <a href="{{ route('product.getsingleproduct', [$product->id, $pslug]) }}" class="latest-product__item">
                   <div class="latest-product__item__pic">
-                      <img src="{{ asset('vendor/ogani/img/latest-product/lp-1.jpg') }}" alt="">
+                      <img src="{{ asset('images/product-images/'.$product->productimages->first()->image) }}" alt="">
                   </div>
                   <div class="latest-product__item__text">
                       <h6>{{ $product->title }}</h6>
