@@ -22,7 +22,7 @@
                       }
                     @endphp
                     @if($category->products->count() > 0 && $totalproductofthiscat > 0)
-                        <li style="margin-bottom: 10px;">
+                        <li style="margin-bottom: 5px;">
                             <a href="{{ route('product.categorywise', [$category->id, $cslug]) }}">
                                 {{ $category->name }}<span></span>
                             </a>
