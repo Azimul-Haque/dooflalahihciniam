@@ -67,11 +67,11 @@ class ProductController extends Controller
                          ->take(50)
                          ->paginate(16);
       
-      $newarrivals = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
+      $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
       return view('shop.shop')
                   ->withProducts($products)
-                  ->withNewarrivals($newarrivals);
+                  ->withLatestproducts($latestproducts);
     }
 
     public function getIndexAdhoc() {
