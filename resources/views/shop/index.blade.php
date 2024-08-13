@@ -70,7 +70,7 @@
           </div>
           <div class="row featured__filter">
             @foreach($featureditems as $featureditem)
-              <div class="col-lg-3 col-md-4 col-sm-6 mix @if($featureditem->category->name) @endif">
+              <div class="col-lg-3 col-md-4 col-sm-6 mix @if($featureditem->category->id == 1) beef @endif">
                   <div class="featured__item">
                       <div class="featured__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/featured/feature-1.jpg') }}">
                           <ul class="featured__item__pic__hover">
