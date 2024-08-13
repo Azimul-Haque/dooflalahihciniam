@@ -17,7 +17,7 @@
                           @if($product->oldprice > 0)
                             <small><del>¥ {{ $product->oldprice }}</del></small>
                           @endif
-                          ¥ {{ $product->price }}
+                          ¥ {{ $product->price }} 
                       </span>
                   </div>
               </a>
@@ -31,7 +31,7 @@
               @endphp
               <a href="{{ route('product.getsingleproduct', [$product->id, $pslug]) }}" class="latest-product__item">
                   <div class="latest-product__item__pic">
-                      <img src="{{ asset('images/product-images/'.$product->productimages->first()->image) }}" alt="{{ 'Image of' . $product->title }}">
+                      <img src="{{ asset('images/product-images/'.$product->productimages->first()->image) }}" alt="{{ 'Image of ' . $product->title }}">
                   </div>
                   <div class="latest-product__item__text">
                       <h6>{{ $product->title }}</h6>
