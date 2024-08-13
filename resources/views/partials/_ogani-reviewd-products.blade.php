@@ -2,7 +2,7 @@
     <h4>Top Rated Products</h4>
     <div class="latest-product__slider owl-carousel">
         <div class="latest-prdouct__slider__item">
-            @foreach($toprateditems->slice(0, 3) as $product)
+            @foreach($reviewdproducts->slice(0, 3) as $product)
               @php
                   $ptext = $product->title;
                   $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
@@ -24,7 +24,7 @@
             @endforeach
         </div>
         <div class="latest-prdouct__slider__item">
-            @foreach($toprateditems->slice(3, 3) as $product)
+            @foreach($reviewdproducts->slice(3, 3) as $product)
               @php
                   $ptext = $product->title;
                   $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
