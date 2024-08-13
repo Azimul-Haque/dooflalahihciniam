@@ -17,6 +17,7 @@ use App\Wishlist;
 use App\Productreview;
 
 use Session;
+use DB;
 use Auth, Artisan;
 use Response;
 use Carbon\Carbon;
