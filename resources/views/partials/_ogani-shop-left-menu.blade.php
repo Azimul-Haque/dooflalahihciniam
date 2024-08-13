@@ -146,6 +146,6 @@
         </div>
     </div> --}}
     <div class="sidebar__item">
-        @include(partials._oragni-latest-products)
+        @include('partials._oragni-latest-products')
     </div>
 </div>
