@@ -82,7 +82,7 @@
                             $ptext = $product->title;
                             $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
                         @endphp
-                          <h6><a href="#">{{ $product->title }}</a></h6>
+                          <h6><a href="{{ route('product.getsingleproduct', [$product->id, $pslug]) }}">{{ $product->title }}</a></h6>
                           <h5>¥{{ $product->price }} <small><del>¥{{ $product->oldprice }}</del></small></h5>
                       </div>
                   </div>
