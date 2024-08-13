@@ -69,10 +69,10 @@
               </div>
           </div>
           <div class="row featured__filter">
-            @foreach($featureditems as $featureditem)
-              <div class="col-lg-3 col-md-4 col-sm-6 mix @if($featureditem->category->id == 1) beef @elseif($featureditem->category->id == 2) chicken @elseif($featureditem->category->id == 8) vegetables @elseif($featureditem->category->id == 5) dal-lentils @endif">
+            @foreach($featureditems as $product)
+              <div class="col-lg-3 col-md-4 col-sm-6 mix @if($product->category->id == 1) beef @elseif($product->category->id == 2) chicken @elseif($product->category->id == 8) vegetables @elseif($product->category->id == 5) dal-lentils @endif">
                   <div class="featured__item">
-                      <div class="featured__item__pic set-bg" data-setbg="{{ asset('vendor/ogani/img/featured/feature-1.jpg') }}">
+                      <div class="featured__item__pic set-bg" data-setbg="{{ asset('images/product-images/'.$product->productimages->first()->image) }}">
                           <ul class="featured__item__pic__hover">
                               <li><a href="#"><i class="fa fa-heart"></i></a></li>
                               <li><a href="#"><i class="fa fa-retweet"></i></a></li>
