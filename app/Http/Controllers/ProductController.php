@@ -36,10 +36,12 @@ class ProductController extends Controller
                          ->get();
       $sliders = Slider::orderBy('id', 'asc')->get();
       $newarrivals = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
+      $toprateditems = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
       return view('shop.index')
                   ->withFeatureditems($featureditems)
                   ->withNewarrivals($newarrivals)
+                  ->withToprateditems($toprateditems)
                   ->withSliders($sliders);
     }
 
