@@ -74,7 +74,7 @@
                   <div class="featured__item">
                       <div class="featured__item__pic set-bg" data-setbg="{{ asset('images/product-images/'.$product->productimages->first()->image) }}">
                           <ul class="featured__item__pic__hover">
-                              <li><a id="addToCart{{ $product->id }}" href="#!"><i class="fa fa-shopping-cart"></i></a></li>
+                              <li><a id="addToCart{{ $product->id }}" href="javascript(0)"><i class="fa fa-shopping-cart"></i></a></li>
                           </ul>
                       </div>
                       <div class="featured__item__text">
