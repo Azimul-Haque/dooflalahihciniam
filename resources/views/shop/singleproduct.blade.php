@@ -302,7 +302,7 @@
                   <div class="product__item">
                       <div class="product__item__pic set-bg" data-setbg="{{ asset('images/product-images/'.$relproduct->productimages->first()->image) }}">
                           <ul class="product__item__pic__hover">
-                              <li><a id="addToCart{{ $product->id }}" href="javascript:void(0)"><i class="fa fa-shopping-cart"></i></a></li>
+                              <li><a id="addToCart{{ $relproduct->id }}" href="javascript:void(0)"><i class="fa fa-shopping-cart"></i></a></li>
                           </ul>
                       </div>
                       <div class="product__item__text">
@@ -320,10 +320,10 @@
               <script src="{{ asset('vendor/ogani/js/jquery-3.3.1.min.js') }}"></script>
               <script type="text/javascript">
                 $(document).ready(function(){
-                    $("#addToCart{{ $product->id }}").click(function(){
-                      console.log('Item ID: {{ $product->id }}');
+                    $("#addToCart{{ $relproduct->id }}").click(function(){
+                      console.log('Item ID: {{ $relproduct->id }}');
                       $.ajax({
-                          url: "/addtocart/{{ $product->id }}",
+                          url: "/addtocart/{{ $relproduct->id }}",
                           type: "GET",
                           data: {},
                           success: function (data) {
@@ -331,9 +331,9 @@
                             console.log(response);
                             if(response == 'success') {
                               if($(window).width() > 768) {
-                                toastr.success('{{ $product->title }} added to your bag', 'SUCCESS').css('width','400px');
+                                toastr.success('{{ $relproduct->title }} added to your bag', 'SUCCESS').css('width','400px');
                               } else {
-                                toastr.success('{{ $product->title }} added to your bag', 'SUCCESS').css('width', ($(window).width()-25)+'px');
+                                toastr.success('{{ $relproduct->title }} added to your bag', 'SUCCESS').css('width', ($(window).width()-25)+'px');
                               }
                             }
                             var totalInBag = parseInt($("#totalInBag").text());
