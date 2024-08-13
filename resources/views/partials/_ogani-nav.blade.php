@@ -1,7 +1,13 @@
-<!-- Page Preloder -->
-    <!-- <div id="preloder">
-        <div class="loader"></div>
-    </div> -->
+    <style type="text/css">
+        .call-to-this-number {
+            
+        }
+    </style>
+
+    <!-- Page Preloder -->
+        <!-- <div id="preloder">
+            <div class="loader"></div>
+        </div> -->
 
     <!-- Humberger Begin -->
     <div class="humberger__menu__overlay"></div>
