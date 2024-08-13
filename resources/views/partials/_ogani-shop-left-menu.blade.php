@@ -151,20 +151,6 @@
             <div class="latest-product__slider owl-carousel">
                 <div class="latest-prdouct__slider__item">
                     @foreach($newarrivals->slice(0, 3) as $product)
-                      {{-- <li class="clearfix">
-                          <a href="">
-                            <img src="{{ asset('images/product-images/'.$product->productimages->first()->image) }}" alt="{{ $product->title }}">
-                          </a>
-                          <div class="widget-posts-details">
-                            <a href="{{ route('product.getsingleproduct', [$product->id, generate_token(100)]) }}">
-                              {{ $product->title }}
-                            </a> 
-                            @if($product->oldprice > 0)
-                              <del>¥ {{ $product->oldprice }}</del>
-                            @endif
-                            ¥ {{ $product->price }}
-                          </div>
-                      </li> --}}
                       @php
                           $ptext = $product->title;
                           $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
