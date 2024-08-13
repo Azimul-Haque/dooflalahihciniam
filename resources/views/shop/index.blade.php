@@ -70,7 +70,7 @@
           </div>
           <div class="row featured__filter">
             @foreach($featureditems as $featureditem)
-
+              sads
             @endforeach
               <div class="col-lg-3 col-md-4 col-sm-6 mix beef chicken">
                   <div class="featured__item">
