@@ -30,10 +30,10 @@ class ProductController extends Controller
 
     public function getIndex() {
       
-      // $products = Product::where('isAvailable', '!=', '0')
-      //                    ->orderBy('id', 'desc')
-      //                    ->take(50)
-      //                    ->paginate(10);
+      $featureditems = Product::where('isFeatured', '1')
+                         ->orderBy('id', 'desc')
+                         ->take(12)
+                         ->get();
       $sliders = Slider::orderBy('id', 'asc')->get();
 
       return view('shop.index')
@@ -46,10 +46,7 @@ class ProductController extends Controller
                          ->orderBy('id', 'desc')
                          ->take(50)
                          ->paginate(16);
-      $featureditems = Product::where('isFeatured', '1')
-                         ->orderBy('id', 'desc')
-                         ->take(12)
-                         ->get();
+      
       $newarrivals = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
       return view('shop.shop')
