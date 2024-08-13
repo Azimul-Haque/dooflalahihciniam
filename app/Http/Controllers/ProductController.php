@@ -38,13 +38,13 @@ class ProductController extends Controller
       $sliders = Slider::orderBy('id', 'asc')->get();
       $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
       // $toprateditems = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
-      $toprateditems = Product::select('products.*', DB::raw('AVG(productreviews.rating) as average_rating'))
+      $topratedproducts = Product::select('products.*', DB::raw('AVG(productreviews.rating) as average_rating'))
                   ->join('productreviews', 'products.id', '=', 'productreviews.product_id')
                   ->groupBy('products.id')
                   ->orderBy('average_rating', 'desc')
                   ->take(6)
                   ->get();
-      $reviewditems = Product::select('products.*', DB::raw('AVG(productreviews.rating) as average_rating'))
+      $reviewdproducts = Product::select('products.*', DB::raw('AVG(productreviews.rating) as average_rating'))
                   ->join('productreviews', 'products.id', '=', 'productreviews.product_id')
                   ->groupBy('products.id')
                   ->orderBy('average_rating', 'desc')
@@ -55,7 +55,8 @@ class ProductController extends Controller
       return view('shop.index')
                   ->withFeatureditems($featureditems)
                   ->withLatestproducts($latestproducts)
-                  ->withToprateditems($toprateditems)
+                  ->withTopratedproducts($topratedproducts)
+                  ->withReviewdproducts($reviewdproducts)
                   ->withSliders($sliders);
     }
 
