@@ -46,7 +46,7 @@ class ProductController extends Controller
                          ->orderBy('id', 'desc')
                          ->take(50)
                          ->paginate(16);
-      $featured = Product::where('isFeatured', '1')
+      $featureditems = Product::where('isFeatured', '1')
                          ->orderBy('id', 'desc')
                          ->take(12)
                          ->get();
@@ -54,7 +54,7 @@ class ProductController extends Controller
 
       return view('shop.shop')
                   ->withProducts($products)
-                  ->withFeatured($featured)
+                  ->withFeatureditems($featureditems)
                   ->withNewarrivals($newarrivals);
     }
 
