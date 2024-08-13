@@ -100,41 +100,6 @@
                   <div class="product__details__text">
                       <h3>{{ $product->title }}</h3>
                       <div class="product__details__rating">
-                          {{-- <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star-half-o"></i> --}}
-                          {{-- @if($product->productreviews->count() > 0)
-                            @php
-                              $avgrating = $product->productreviews->sum('rating') / $product->productreviews->count();
-                            @endphp
-                            @if($avgrating >= 1)
-                              <i class="fa fa-star black-text"></i>
-                            @else
-                              <i class="fa fa-star-o black-text"></i>
-                            @endif
-                            @if($avgrating >= 2)
-                              <i class="fa fa-star black-text"></i>
-                            @else
-                              <i class="fa fa-star-o black-text"></i>
-                            @endif
-                            @if($avgrating >= 3)
-                              <i class="fa fa-star black-text"></i>
-                            @else
-                              <i class="fa fa-star-o black-text"></i>
-                            @endif
-                            @if($avgrating >= 4)
-                              <i class="fa fa-star black-text"></i>
-                            @else
-                              <i class="fa fa-star-o black-text"></i>
-                            @endif
-                            @if($avgrating >= 5)
-                              <i class="fa fa-star black-text"></i>
-                            @else
-                              <i class="fa fa-star-o black-text"></i>
-                            @endif
-                          @endif --}}
                           @if($product->productreviews->count() > 0)
                               @php
                                   $avgrating = $product->productreviews->sum('rating') / $product->productreviews->count();
