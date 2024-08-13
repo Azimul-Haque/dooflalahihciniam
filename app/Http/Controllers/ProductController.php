@@ -8,7 +8,7 @@ use App\Http\Requests;
 use App\User;
 use App\Cart;
 use App\Category;
-use App\Subategory;
+use App\Subcategory;
 use App\Product;
 use App\Order;
 use App\Slider;
