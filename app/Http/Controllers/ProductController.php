@@ -48,7 +48,8 @@ class ProductController extends Controller
                          ->paginate(16);
       $featured = Product::where('isAvailable', '!=', '0')
                          ->orderBy('id', 'desc')
-                         ->take(50);
+                         ->take(12)
+                         ->get()
       $newarrivals = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
       return view('shop.shop')
