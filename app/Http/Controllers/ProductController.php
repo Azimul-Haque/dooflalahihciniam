@@ -44,7 +44,6 @@ class ProductController extends Controller
                   ->orderBy('average_rating', 'desc')
                   ->take(6)
                   ->get();
-                  dd($toprateditems);
 
       return view('shop.index')
                   ->withFeatureditems($featureditems)
