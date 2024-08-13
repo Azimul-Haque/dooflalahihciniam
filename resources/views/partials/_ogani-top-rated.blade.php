@@ -1,5 +1,5 @@
 <div class="latest-product__text">
-    <h4>Latest Products</h4>
+    <h4>Top Rated Products</h4>
     <div class="latest-product__slider owl-carousel">
         <div class="latest-prdouct__slider__item">
             @foreach($newarrivals->slice(0, 3) as $product)
