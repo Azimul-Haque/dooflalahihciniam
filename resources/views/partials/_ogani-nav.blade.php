@@ -290,7 +290,7 @@
                             </form>
                         </div>
                         <div class="hero__search__phone">
-                            <a class="hero__search__phone__icon">
+                            <a class="hero__search__phone__icon" href="#!">
                                 <i class="fa fa-phone"></i>
                             </a>
                             <div class="hero__search__phone__text">
