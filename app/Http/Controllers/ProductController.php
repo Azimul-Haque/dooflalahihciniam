@@ -37,6 +37,7 @@ class ProductController extends Controller
       $sliders = Slider::orderBy('id', 'asc')->get();
 
       return view('shop.index')
+                  ->withFeatureditems($featureditems)
                   ->withSliders($sliders);
     }
 
@@ -51,7 +52,6 @@ class ProductController extends Controller
 
       return view('shop.shop')
                   ->withProducts($products)
-                  ->withFeatureditems($featureditems)
                   ->withNewarrivals($newarrivals);
     }
 
