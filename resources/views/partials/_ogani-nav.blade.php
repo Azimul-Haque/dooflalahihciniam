@@ -1,6 +1,6 @@
     <style type="text/css">
         .call-to-this-number {
-            
+            color: black;
         }
     </style>
 
