@@ -290,9 +290,9 @@
                             </form>
                         </div>
                         <div class="hero__search__phone">
-                            <div class="hero__search__phone__icon">
+                            <a class="hero__search__phone__icon">
                                 <i class="fa fa-phone"></i>
-                            </div>
+                            </a>
                             <div class="hero__search__phone__text">
                                 <h5>+81 090-1703-9984</h5>
                                 <span>support 24/7 time</span>
