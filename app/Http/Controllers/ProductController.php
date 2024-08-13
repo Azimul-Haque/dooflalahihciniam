@@ -44,7 +44,7 @@ class ProductController extends Controller
                   ->orderBy('average_rating', 'desc')
                   ->take(6)
                   ->get();
-      $toprateditems = Product::select('products.*', DB::raw('AVG(productreviews.rating) as average_rating'))
+      $reviewditems = Product::select('products.*', DB::raw('AVG(productreviews.rating) as average_rating'))
                   ->join('productreviews', 'products.id', '=', 'productreviews.product_id')
                   ->groupBy('products.id')
                   ->orderBy('average_rating', 'desc')
