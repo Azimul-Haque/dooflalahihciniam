@@ -49,11 +49,12 @@ class ProductController extends Controller
       $featured = Product::where('isFeatured', '1')
                          ->orderBy('id', 'desc')
                          ->take(12)
-                         ->get()
+                         ->get();
       $newarrivals = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
       return view('shop.shop')
                   ->withProducts($products)
+                  ->withFeatured($featured)
                   ->withNewarrivals($newarrivals);
     }
 
