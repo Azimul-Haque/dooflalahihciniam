@@ -160,7 +160,7 @@
                               </div>
                           </div>
                       </div>
-                      <a href="#!" class="primary-btn" id="addToCartSingle">ADD TO CARD</a>
+                      <a href="javascript:void(0)" class="primary-btn" id="addToCartSingle">ADD TO CARD</a>
                       @if(Auth::check())
                         <a href="{{ route('product.addtowishlist', [$product->id, Auth::user()->id]) }}" class="heart-icon">
                           @if(in_array($product->id, Auth::user()->wishlists->pluck('product_id')->toArray()))
