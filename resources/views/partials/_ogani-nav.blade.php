@@ -290,7 +290,7 @@
                             </form>
                         </div>
                         <div class="hero__search__phone">
-                            <a class="hero__search__phone__icon" href="#!">
+                            <a class="hero__search__phone__icon" href="tel:+81 090-1703-9984">
                                 <i class="fa fa-phone"></i>
                             </a>
                             <div class="hero__search__phone__text">
