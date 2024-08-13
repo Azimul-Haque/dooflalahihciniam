@@ -50,7 +50,7 @@
                                         @endif
                                         >
                                             <a href="{{ route('product.subcategorywise', [$subcategory->id, $scslug]) }}">
-                                                {{ $subcategory->name }}
+                                                - {{ $subcategory->name }}
                                             </a>
                                         </li>
                                     @endif
