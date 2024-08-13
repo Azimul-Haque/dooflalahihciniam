@@ -1,5 +1,5 @@
     <style type="text/css">
-        .call-to-this-number a: hover {
+        .call-to-this-number a:hover {
             color: black;
         }
     </style>
