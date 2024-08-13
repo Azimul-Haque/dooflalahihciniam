@@ -26,7 +26,7 @@
                             <a href="{{ route('product.categorywise', [$category->id, $cslug]) }}">
                                 {{ $category->name }}<span></span>
                             </a>
-                            <ul style="margin-left: 30px; margin-top: 5px;">
+                            <ul style="margin-left: 30px; margin-top: -10px;">
                                 @foreach($category->subcategories as $subcategory)
                                     @php
                                       $totalproductofthissubcat = 0;
