@@ -63,9 +63,6 @@
                           <span class="right">৳ {{ $item['price'] }}</span>
                         </li>
                         @endforeach
-                          <li>Vegetable’s Package <span>$75.99</span></li>
-                          <li>Fresh Vegetable <span>$151.99</span></li>
-                          <li>Organic Bananas <span>$53.99</span></li>
                       </ul>
                       <div class="checkout__order__subtotal">Subtotal <span>$750.99</span></div>
                       <div class="checkout__order__total">Total <span>$750.99</span></div>
