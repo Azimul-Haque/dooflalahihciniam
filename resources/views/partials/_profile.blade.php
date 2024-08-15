@@ -15,7 +15,7 @@
 					<big><b>{{ Auth::user()->name }}</b></big>
 				</div>
 				<div class="profile-usertitle-job">
-					<span class="label label-default">{{ ucfirst(Auth::user()->role) }}</span><br/><hr/>
+					<span class="badge badge-pill badge-default">{{ ucfirst(Auth::user()->role) }}</span><br/><hr/>
 				</div>
 			</center>
 		</div>
