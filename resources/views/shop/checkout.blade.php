@@ -67,7 +67,6 @@
                           </li>
                           @endforeach
                         </ul>
-                        <h4 class="right">Delivery Charge: ৳ </h4><br/>
                         <div class="checkout__order__subtotal">Delivery Charge <span id="deliveryCharge">{{ $cart->deliveryCharge }}</span></div>
                         <div class="checkout__order__subtotal">Subtotal <span>$750.99</span></div>
                         <div class="checkout__order__total">Total <span>$750.99</span></div>
