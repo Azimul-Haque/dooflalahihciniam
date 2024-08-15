@@ -190,8 +190,8 @@
                   <div class="shoping__checkout">
                       <h5>Cart Total</h5>
                       <ul>
-                          <li>Subtotal <span>¥ <span>{{ $totalPrice }}</span></span></li>
-                          <li>Total <span>¥ {{ $totalPrice }}</span></li>
+                          <li>Subtotal <span>¥ <span id="totalPriceGross">{{ $totalPrice }}</span></span></li>
+                          <li>Total <span>¥ <span id="totalPriceGross">{{ $totalPrice }}</span></span></li>
                       </ul>
                       <a href="{{ route('product.checkout') }}" class="primary-btn">PROCEED TO CHECKOUT</a>
                   </div>
