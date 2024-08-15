@@ -198,10 +198,10 @@
                         Delivery Charge
                         <span class="badge pull-right">¥ {{ json_encode($order->cart->deliveryCharge) }}</span>
                       </li>
-                      <li class="list-group-item">
+                      {{-- <li class="list-group-item">
                         Discount/ Earned Balance Usage
                         <span class="badge pull-right">¥ {{ json_encode($order->cart->discount) }}</span>
-                      </li>
+                      </li> --}}
                     </ul>
                   </div>
                   <div class="card-footer card-footer-custom">
