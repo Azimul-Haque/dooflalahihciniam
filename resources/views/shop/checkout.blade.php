@@ -98,30 +98,6 @@
         </div>
   </section>
   <!-- Checkout Section End -->
-
-  <!-- content section -->
-  <section class="content-section padding-three">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            
-          </div>
-          <div class="col-md-8">
-            <ul class="list-group">
-              @foreach($cart->items as $item)
-              <li class="list-group-item">
-                {{-- {{ json_encode($item) }} --}}
-                {{ $item['item']['title'] }} | {{ $item['qty'] }}
-                <span class="right">৳ {{ $item['price'] }}</span>
-              </li>
-              @endforeach
-            </ul>
-            
-          </div>
-        </div>
-      </div>
-  </section>
-  <!-- end content section -->
 @endsection
 
 @section('js')
