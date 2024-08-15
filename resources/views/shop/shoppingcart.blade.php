@@ -46,7 +46,7 @@
                   <div class="shoping__cart__table">
                       
                   @foreach($products as $product)
-                    <li class="list-group-item" id="productItemListItem{{ $product['item']['id'] }}" style="padding: 10px;">
+                    <li class="list-group-item" id="productItemListItem{{ $product['item']['id'] }}" style="padding: 20px;">
                       <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-6">
                           <img src="{{ asset('images/product-images/'.$product['item']['productimages']->first()->image) }}" style="max-height: 50px; border:1px solid #777; margin-right: 10px;">
