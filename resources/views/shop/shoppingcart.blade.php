@@ -153,7 +153,7 @@
           <div class="col-md-8 mx-auto">
             <h3>
               <center>
-                There is no products in your bag! Visit this page by adding our products to your bag. thank you<br/><br/>
+                There is no products in your bag! Visit this page by adding our products to your bag. thank you!<br/><br/>
                 <a href="{{ route('product.shop') }}" class="site-btn"><i class="fa fa-shopping-bag"></i> See Products</a>
               </center>
             </h3>
