@@ -157,7 +157,7 @@
               <div class="card card-success shadow-light">
                 <div class="card-header">
                   <h4 class="card-title">
-                    <button class="btn-link" data-toggle="collapse" data-parent="#accordion" data-target="#receiptcollapse{{ $order->id }}">
+                    <button class="" data-toggle="collapse" data-parent="#accordion" data-target="#receiptcollapse{{ $order->id }}">
                       @if($order->paymentstatus == 'paid')
                         <i class="fa fa-check" title="Delivered"></i>
                       @elseif($order->paymentstatus == 'not-paid')
