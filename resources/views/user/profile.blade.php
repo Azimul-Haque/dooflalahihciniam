@@ -52,33 +52,6 @@
             
             @include('partials/_profile') <br/>
 
-            {{-- wishlist --}}
-            <div class="panel panel-success shadow-light">
-              <div class="panel-heading"><h4 class="panel-title">My WishList</h4></div>
-              <div class="panel-body" style="padding: 0px;">
-                <table class="table table-hover table-condensed table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Products</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    @foreach(Auth::user()->wishlists as $wishlist)
-                    <tr>
-                      <td class="wishlist">
-                        <a href="{{ route('product.getsingleproduct', [$wishlist->product->id, generate_token(100)]) }}">
-                          {{ $wishlist->product->title }}<br/>
-                          <small>{{ $wishlist->created_at->format('M d, Y, h:i A') }}</small>
-                        </a>
-                      </td>
-                    </tr>
-                    @endforeach
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            {{-- wishlist --}}
-
             <div class="latest-product__text">
                 <h4>Top Rated Products</h4>
                 <div class="latest-product__slider owl-carousel">
