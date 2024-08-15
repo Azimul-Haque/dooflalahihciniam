@@ -112,7 +112,7 @@
                   @foreach($orders->first()->cart->items as $item)
                     <li class="list-group-item">
                       <div style="float: left;">{{ $item['item']['title'] }}</div> | {{ $item['qty'] }}
-                      <span class="badge">¥ {{ $item['price'] }}</span>
+                      <span class="badge pull-right">¥ {{ $item['price'] }}</span>
                     </li>
                   @endforeach
                 </ul><br/>
