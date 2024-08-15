@@ -63,7 +63,7 @@
                           <li >
                             {{-- {{ json_encode($item) }} --}}
                             {{ $item['item']['title'] }} <label class="badge badge-pill badge-warning">{{ $item['qty'] }}</label>
-                            <span class="right">৳ {{ $item['price'] }}</span>
+                            <span class="right">¥ {{ $item['price'] }}</span>
                           </li>
                           @endforeach
                         </ul>
@@ -98,14 +98,14 @@
                         
                           <ul class="list-group">
                             <li class="list-group-item">
-                              <h4 class="right">Delivery Charge: ৳ <span id="deliveryCharge">{{ $cart->deliveryCharge }}</span></h4><br/>
+                              <h4 class="right">Delivery Charge: ¥ <span id="deliveryCharge">{{ $cart->deliveryCharge }}</span></h4><br/>
                             </li>
                             @if(Auth::user()->points > 0)
                               <li class="list-group-item">
                                 <h4 class="right">
                                   <table style="float: right;">
                                     <tr>
-                                      <td><label for="useearnedbalance" style="margin-right: 10px;">Pay from earned balance: ৳ </label></td>
+                                      <td><label for="useearnedbalance" style="margin-right: 10px;">Pay from earned balance: ¥ </label></td>
                                       <td>
                                           @if($cart->totalPrice > Auth::user()->points)
                                             <input type="number" name="useearnedbalance" id="useearnedbalance" max="{{ Auth::user()->points }}" min="0" step=".01" class="form-control" value="0" onchange="useEarnedBalance()">
@@ -123,7 +123,7 @@
                             @endif
                             <li class="list-group-item">
                               <input type="hidden" name="actualtotalprice" id="actualtotalprice" value="{{ $cart->totalPrice }}">
-                              <h4 class="right bold">Total Payable Price: ৳ <span id="totalPrice">{{ $cart->totalPrice }}</span></h4><br/>
+                              <h4 class="right bold">Total Payable Price: ¥ <span id="totalPrice">{{ $cart->totalPrice }}</span></h4><br/>
                             </li>
                           </ul>
 
@@ -200,11 +200,11 @@
       // $('#checkout-btn[type="submit"]').attr('disabled','disabled');
       if(({{ $cart->totalPrice }} > {{ Auth::user()->points }}) && ($('#useearnedbalance').val() > {{ Auth::user()->points }})) {
         $('#checkout-btn[type="submit"]').attr('disabled','disabled');
-        toastr.warning('আপনি অর্জিত ব্যালেন্স ৳ {{ bangla(Auth::user()->points) }} এর বেশি ব্যবহার করতে পারবেন না!').css('width', '400px');
+        toastr.warning('আপনি অর্জিত ব্যালেন্স ¥ {{ bangla(Auth::user()->points) }} এর বেশি ব্যবহার করতে পারবেন না!').css('width', '400px');
         $('#actualtotalprice').val({{ $cart->totalPrice }});
       } else if(({{ Auth::user()->points }} > {{ $cart->totalPrice }}) && ($('#useearnedbalance').val() > {{ $cart->totalPrice }})) {
         $('#checkout-btn[type="submit"]').attr('disabled','disabled');
-        toastr.warning('মোট পণ্যমূল্য ৳ {{ bangla($cart->totalPrice) }} এর বেশি দিতে পারবেন না!').css('width', '400px');
+        toastr.warning('মোট পণ্যমূল্য ¥ {{ bangla($cart->totalPrice) }} এর বেশি দিতে পারবেন না!').css('width', '400px');
         $('#actualtotalprice').val({{ $cart->totalPrice }});
       } else {
         $('#checkout-btn[type="submit"]').removeAttr('disabled');
