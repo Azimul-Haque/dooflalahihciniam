@@ -38,7 +38,7 @@
   <!-- Breadcrumb Section End -->
   
   <!-- head section -->
-  <section class="content-top-margin page-title page-title-small bg-gray">
+  <section class="checkout spad">
       <div class="container">
           <div class="row">
               <div class="col-lg-8 col-md-7 col-sm-12 wow fadeInUp" data-wow-duration="300ms">
