@@ -151,20 +151,7 @@
                       });
                     </script>
                   @endforeach
-                    <div class="">
-                      <div class="row">
-                        <div class="col-md-8"></div>
-                        <div class="col-md-2">
-                          <strong style="float: right;" id="totalPriceGross">Total Price: ¥ {{ $totalPrice }}</strong>
-                        </div>
-                        <div class="col-md-2">
-                        </div>
-                      </div>
-                      <hr/>
-                    </div>
-                    <div class="">
-                      <a href="{{ route('product.checkout') }}" class="highlight-button btn btn-medium no-margin pull-left"><i class="fa fa-check-square-o" aria-hidden="true"></i> Confirm the Order</a>
-                    </div>
+                    
                   </div>
               </div>
           </div>
