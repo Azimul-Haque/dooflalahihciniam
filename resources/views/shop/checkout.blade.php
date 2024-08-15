@@ -41,9 +41,9 @@
           </div> --}}
           <div class="checkout__form">
               <h4>Billing Details</h4>
-              
+
               <form action="#">
-                  
+                      <div class="col-md-4"></div>
                       <div class="col-lg-4 col-md-6">
                           <div class="checkout__order">
                               <h4>Your Order</h4>
