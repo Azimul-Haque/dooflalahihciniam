@@ -321,6 +321,7 @@ class ProductController extends Controller
 
       $this->validate($request, [
         'address'              => 'required',
+        'deliverylocation'     => 'required',
         'fcode'                => 'sometimes',
         'useearnedbalance'     => 'sometimes',
         // 'deliverylocation'     => 'required',
