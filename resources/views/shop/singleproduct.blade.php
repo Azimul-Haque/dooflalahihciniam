@@ -60,7 +60,7 @@
                   <div class="breadcrumb__text">
                       {{-- <h2>Organi Shop</h2> --}}
                       <div class="breadcrumb__option">
-                        <a href="./index.html">{{ $product->title }}</a>
+                        <a href="{{ route('product.index') }}">Home</a>
                         <a href="{{ route('product.index') }}">{{ $product->title }}</a>
                         <span>{{ $product->title }}</span>
                       </div>
