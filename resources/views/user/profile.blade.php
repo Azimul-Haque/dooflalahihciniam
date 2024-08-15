@@ -141,7 +141,7 @@
             @endif
             <br/>
             <div class="card card-primary shadow-light">
-              <div class="card-heading">
+              <div class="card-header">
                 <h4 class="card-title">Your previous orders</h4>
               </div>
               <div class="card-body">
