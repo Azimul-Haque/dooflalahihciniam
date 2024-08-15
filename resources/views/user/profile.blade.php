@@ -190,7 +190,8 @@
                           <span class="badge">¥ {{ $item['price'] }}</span>
                         </li>
                       @endforeach
-                    </ul><ul class="list-group">
+                    </ul><br/>
+                    <ul class="list-group">
                     <li class="list-group-item">
                       Delivery Charge
                       <span class="badge">¥ {{ json_encode($order->cart->deliveryCharge) }}</span>
