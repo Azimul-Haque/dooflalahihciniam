@@ -36,7 +36,7 @@
   <!-- Breadcrumb Section End -->
 
   <!-- content section -->
-  <section class="padding-three">
+  <section class="product spad">
       <div class="container">
           <div class="row">
               <div class="col-md-12">
