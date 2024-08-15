@@ -21,7 +21,7 @@
                       {{-- <h2>Shopping Cart</h2> --}}
                       <div class="breadcrumb__option">
                           <a href="{{ route('product.index') }}">Home</a>
-                          <span>Shopping Cart</span>
+                          <span>Checkout</span>
                       </div>
                   </div>
               </div>
