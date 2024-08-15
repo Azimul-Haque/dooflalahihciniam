@@ -52,17 +52,17 @@
               </div>
               <div class="col-md-6">
                 
-                @endforeach
                   <div class="checkout__order">
                       <h4>Your Order</h4>
                       <div class="checkout__order__products">Products <span>Total</span></div>
                       <ul>
                         @foreach($cart->items as $item)
-                        <li>
+                        <li class="list-group-item">
                           {{-- {{ json_encode($item) }} --}}
                           {{ $item['item']['title'] }} | {{ $item['qty'] }}
                           <span class="right">৳ {{ $item['price'] }}</span>
                         </li>
+                        @endforeach
                           <li>Vegetable’s Package <span>$75.99</span></li>
                           <li>Fresh Vegetable <span>$151.99</span></li>
                           <li>Organic Bananas <span>$53.99</span></li>
