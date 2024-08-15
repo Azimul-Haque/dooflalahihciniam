@@ -36,7 +36,7 @@
 			<span title="Email Address"><i class="fa fa-envelope-o"></i> {{ Auth::user()->email }}</span><br/>
 			<span title="Delivery Address"><i class="fa fa-home"></i> {{ Auth::user()->address }}</span><br/>
 			<span class="text-center">
-				<button class="site-btn" type="button" data-toggle="modal" data-target="#editProfileModal" data-backdrop="static"><i class="fa fa-edit"></i> Edit Profile</button>
+				<button class="site-btn" type="button" data-toggle="modal" data-target="#editProfileModal" data-backdrop="static" style="width: 100%;"><i class="fa fa-edit"></i> Edit Profile</button>
 			</span>
 		</div>
 		<!-- END MENU -->
