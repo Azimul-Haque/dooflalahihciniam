@@ -158,7 +158,7 @@
                 <div class="card card-success shadow-light" style="margin-bottom: 5px;">
                   <div class="card-header">
                     <h5 class="card-title">
-                      <a data-toggle="collapse" data-parent="#accordion" data-target="#receiptcollapse{{ $order->id }}" style="h">
+                      <a data-toggle="collapse" data-parent="#accordion" data-target="#receiptcollapse{{ $order->id }}" style="cursor: pointer;">
                         @if($order->paymentstatus == 'paid')
                           <i class="fa fa-check" title="Delivered"></i>
                         @elseif($order->paymentstatus == 'not-paid')
