@@ -190,6 +190,7 @@
       } else {
         deliveryCharge = 0;
         $('#freePickUpPoint').text('');
+        $('#address').text('');
       }
       $('#deliveryCharge').text(deliveryCharge);
       $('#totalPrice').text(parseFloat($('#actualtotalprice').val()) + deliveryCharge);
