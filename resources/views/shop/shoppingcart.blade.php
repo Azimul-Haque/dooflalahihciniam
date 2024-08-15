@@ -151,12 +151,12 @@
           </div>
         @else
           <div class="col-md-10 mx-auto">
-            <h2>
+            <h3>
               <center>
                 There are no products in your bag! Visit this page by adding our products to your bag. thank you<br/><br/>
                 <a href="{{ route('product.shop') }}" class="site-btn"><i class="fa fa-shopping-bag"></i> See Products</a>
               </center>
-            </h2>
+            </h3>
 
           </div>
         @endif
