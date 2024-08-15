@@ -142,7 +142,7 @@
             <br/>
             <div class="panel panel-primary shadow-light">
               <div class="panel-heading">
-                <h3 class="panel-title">Your previous orders</h3>
+                <h4 class="panel-title">Your previous orders</h4>
               </div>
               <div class="panel-body">
                 <div class="panel-group" id="accordion">
