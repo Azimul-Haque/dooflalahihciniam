@@ -85,7 +85,7 @@
                     <div class="latest-prdouct__slider__item">
                         @foreach(Auth::user()->wishlists as $wishlist)
                           @php
-                              $ptext = $wishlist->title;
+                              $ptext = $wishlist->product->title;
                               $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
                           @endphp
                           <a href="{{ route('product.getsingleproduct', [$wishlist->product->id, $pslug]) }}" class="latest-product__item">
@@ -93,12 +93,12 @@
                                   <img src="{{ asset('images/product-images/'.$wishlist->product->productimages->first()->image) }}" alt="{{ 'Image of Product' }}">
                               </div>
                               <div class="latest-product__item__text">
-                                  <h6>{{ $wishlist->title }}</h6>
+                                  <h6>{{ $wishlist->product->title }}</h6>
                                   <span>
                                       @if($wishlist->oldprice > 0)
-                                        <small><del>¥ {{ $wishlist->oldprice }}</del></small>
+                                        <small><del>¥ {{ $wishlist->product->oldprice }}</del></small>
                                       @endif
-                                      ¥ {{ $wishlist->price }}
+                                      ¥ {{ $wishlist->product->price }}
                                   </span>
                               </div>
                           </a>
