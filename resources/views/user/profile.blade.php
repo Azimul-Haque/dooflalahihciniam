@@ -156,7 +156,7 @@
               @foreach($orders as $order)
               <div class="card card-success shadow-light">
                 <div class="card-header">
-                  <h4 class="card-title">
+                  <h5 class="card-title">
                     <a data-toggle="collapse" data-parent="#accordion" data-target="#receiptcollapse{{ $order->id }}">
                       @if($order->paymentstatus == 'paid')
                         <i class="fa fa-check" title="Delivered"></i>
@@ -165,7 +165,7 @@
                       @endif
                       {{ $order->created_at->format('M d, Y, h:i A') }}
                     </a>
-                  </h4>
+                  </h5>
                 </div>
                 <div id="receiptcollapse{{ $order->id }}" class="card-collapse collapse">
                   <div class="card-body">
