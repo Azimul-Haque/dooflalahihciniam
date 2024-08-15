@@ -202,7 +202,7 @@
                         Discount/ Earned Balance Usage
                         <span class="badge pull-right">¥ {{ json_encode($order->cart->discount) }}</span>
                       </li> --}}
-                    </ul>
+                      </ul>
                   </div>
                   <div class="card-footer card-footer-custom">
                     <strong>Total Payable <span style="float: right;">¥ {{ $order->cart->totalPrice }}</span></strong>
