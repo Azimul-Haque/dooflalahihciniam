@@ -141,7 +141,7 @@
                             <select id="payment_method" name="payment_method" class="form-control" required="">
                               <option value="" selected="" disabled="">Payment Method</option>
                               <option value="0" selected="">Cash On Delivery</option>
-                              {{-- <option value="1">Payment Gateway</option> --}}
+                              <option value="1">Payment Gateway</option>
                             </select>
                             <span id="bKashText"></span>
                           </div> --}}
