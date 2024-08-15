@@ -135,7 +135,7 @@
             <center>
               <h2>
                 No order found<br/>
-                <a class="highlight-button btn btn-medium checkout-btn xs-width-100 xs-text-center" href="{{ route('product.index') }}"><i class="fa fa-cart-plus"></i> See Products</a>
+                <a class="site-btn" href="{{ route('product.index') }}"><i class="fa fa-cart-plus"></i> See Products</a>
               </h2>
             </center>
             @endif
