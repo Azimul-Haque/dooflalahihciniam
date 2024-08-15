@@ -181,6 +181,7 @@
       if($('#deliverylocation').val() == 0) {
         deliveryCharge = 60;
         $('#freePickUpPoint').text('');
+        $('#address').text('{{ Auth::user()->address }}');
       } else if ($('#deliverylocation').val() == 1020) {
         deliveryCharge = 0;
         $('#freePickUpPoint').text('1.15.3 Yachiyodai Higashi, Yachiyo-shi, Chiba Prefecture 276-0032, Japan');
