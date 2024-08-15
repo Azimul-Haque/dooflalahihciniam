@@ -70,7 +70,6 @@
                                       <span class="icon_close"></span>
                                   </td>
                               </tr>
-                              @if(Session::has('cart'))
                                 <div class="">
                                   <ul class="list-group">
                                     @foreach($products as $product)
@@ -192,17 +191,6 @@
                                 <div class="">
                                   <a href="{{ route('product.checkout') }}" class="highlight-button btn btn-medium no-margin pull-left"><i class="fa fa-check-square-o" aria-hidden="true"></i> Confirm the Order</a>
                                 </div>
-                              @else
-                                <div class="col-md-10 col-md-offset-1">
-                                  <h2>
-                                    <center>
-                                      There are no products in your bag! Visit this page by adding our products to your bag. thank you<br/><br/>
-                                      <a href="{{ route('product.index') }}" class="highlight-button btn btn-medium"><i class="fa fa-cart-plus"></i> See Products</a>
-                                    </center>
-                                  </h2>
-
-                                </div>
-                              @endif
                           </tbody>
                       </table>
                   </div>
