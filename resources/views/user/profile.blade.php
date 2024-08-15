@@ -192,7 +192,7 @@
                             <span class="badge pull-right">¥ {{ $item['price'] }}</span>
                           </li>
                         @endforeach
-                      </ul><br/>
+                      </ul>
                       <ul class="list-group">
                       <li class="list-group-item">
                         Delivery Charge
