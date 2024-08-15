@@ -208,7 +208,7 @@
                   <strong>Total Payable <span style="float: right;">¥ {{ $order->cart->totalPrice }}</span></strong>
                 </div>
                 </div>
-              </div>
+              </div><br/>
             @endforeach
             </div>
 
