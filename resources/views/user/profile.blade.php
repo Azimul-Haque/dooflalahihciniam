@@ -108,7 +108,7 @@
                     {{ $orders->first()->user->address }}
                   @endif
                 </span>
-                <ul class="list-group">
+                <ul class="list-group" style="margin-bottom: 5px;">
                   @foreach($orders->first()->cart->items as $item)
                     <li class="list-group-item">
                       <div style="float: left;">{{ $item['item']['title'] }}</div> | {{ $item['qty'] }}
