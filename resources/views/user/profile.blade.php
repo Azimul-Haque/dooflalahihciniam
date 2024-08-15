@@ -245,8 +245,8 @@
               {!! Form::password('password', null, array('class' => 'form-control', 'id' => 'password')) !!}
             </div>
             <div class="modal-footer">
-                <button type="submit" class="highlight-button btn btn-small">Update</button>
-                <button type="button" class="highlight-button-dark btn btn-small" data-dismiss="modal">Close</button>
+                <button type="submit" class="site-btn">Update</button>
+                <button type="button" class="cart-btn" data-dismiss="modal">Close</button>
             </div>
             {!! Form::close() !!}
           </div>
