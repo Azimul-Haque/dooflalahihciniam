@@ -29,12 +29,12 @@
 		<!-- SIDEBAR MENU -->
 		<div class="">
 			<span title="">
-				<i class="fa fa-id-card-o"></i> <b>{{ Auth::user()->code }}</b><br/>
-			</span>
+				<i class="fa fa-id-card-o"></i> <b>{{ Auth::user()->code }}</b>
+			</span><br/>
 			{{-- <span title="Earned Balance"><i class="fa fa-money"></i> ¥ {{ Auth::user()->points }}</span> --}}
-			<span title="Contact No"><i class="fa fa-phone"></i> {{ Auth::user()->phone }}</span>
-			<span title="Email Address"><i class="fa fa-envelope-o"></i> {{ Auth::user()->email }}</span>
-			<span title="Delivery Address"><i class="fa fa-home"></i> {{ Auth::user()->address }}</span>
+			<span title="Contact No"><i class="fa fa-phone"></i> {{ Auth::user()->phone }}</span><br/>
+			<span title="Email Address"><i class="fa fa-envelope-o"></i> {{ Auth::user()->email }}</span><br/>
+			<span title="Delivery Address"><i class="fa fa-home"></i> {{ Auth::user()->address }}</span><br/>
 			<span class="text-center">
 				<button class="highlight-button-dark btn btn-small" type="button" title="Edit Profile" data-toggle="modal" data-target="#editProfileModal" data-backdrop="static"><i class="fa fa-edit"></i> Edit Profile</button>
 			</span>
