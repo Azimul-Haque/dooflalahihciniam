@@ -119,7 +119,7 @@
                               $ctext = $product->category->name;
                               $cslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ctext));
                           @endphp
-                          <a class="badge badge-pill badge-primary" href="{{ route('product.categorywise', [$product->category->id, $cslug]) }}" style="font-size: 14px;">{{ $product->category->name }}</a>
+                          <a class="badge badge-pill badge-info" href="{{ route('product.categorywise', [$product->category->id, $cslug]) }}" style="font-size: 14px;">{{ $product->category->name }}</a>
                       </div>
                       <div class="product__details__price">¥{{ $product->price }} <small style="margin-left: 10px;"><del>¥{{ $product->oldprice }}</del></small></div>
                       <p>{{ $product->shorttext }}</p>
