@@ -149,16 +149,16 @@
                   </div>
               </div>
           </div>
-          @else
-            <div class="col-md-10 mx-auto">
-              <h2>
-                <center>
-                  There are no products in your bag! Visit this page by adding our products to your bag. thank you<br/><br/>
-                  <a href="{{ route('product.index') }}" class="highlight-button btn btn-medium"><i class="fa fa-cart-plus"></i> See Products</a>
-                </center>
-              </h2>
+        @else
+          <div class="col-md-10 mx-auto">
+            <h2>
+              <center>
+                There are no products in your bag! Visit this page by adding our products to your bag. thank you<br/><br/>
+                <a href="{{ route('product.index') }}" class="highlight-button btn btn-medium"><i class="fa fa-cart-plus"></i> See Products</a>
+              </center>
+            </h2>
 
-            </div>
+          </div>
         @endif
       </div>
   </section>
