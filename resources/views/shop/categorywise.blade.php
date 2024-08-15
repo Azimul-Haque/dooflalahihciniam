@@ -151,7 +151,7 @@
                             </div>
                         </div>
                     </div> --}}
-                    <div class="filter__item">
+                    <div class="">
                         <div class="row">
                             <div class="col-lg-4 col-md-5">
                                 {{-- <div class="filter__sort">
