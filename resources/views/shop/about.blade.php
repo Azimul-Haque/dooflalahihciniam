@@ -25,7 +25,7 @@
                       {{-- <h2>Shopping Cart</h2> --}}
                       <div class="breadcrumb__option">
                           <a href="{{ route('product.index') }}">Home</a>
-                          <span>{{ Auth::user()->name }}</span>
+                          <span>About Us</span>
                       </div>
                   </div>
               </div>
