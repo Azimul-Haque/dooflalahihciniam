@@ -152,7 +152,8 @@
                 </div>
               </div>
             </div>
-            @foreach($orders as $order)
+            <div>
+              @foreach($orders as $order)
               <div class="card card-success shadow-light">
                 <div class="card-header">
                   <h4 class="card-title">
@@ -208,6 +209,7 @@
                 </div>
               </div>
             @endforeach
+            </div>
 
             @include('pagination.default', ['paginator' => $orders])
           </div>
