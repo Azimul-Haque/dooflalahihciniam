@@ -157,14 +157,14 @@
               <div class="card card-success shadow-light">
                 <div class="card-header">
                   <h4 class="card-title">
-                    <button class="" data-toggle="collapse" data-parent="#accordion" data-target="#receiptcollapse{{ $order->id }}">
+                    <a data-toggle="collapse" data-parent="#accordion" data-target="#receiptcollapse{{ $order->id }}">
                       @if($order->paymentstatus == 'paid')
                         <i class="fa fa-check" title="Delivered"></i>
                       @elseif($order->paymentstatus == 'not-paid')
                         <i class="fa fa-hourglass-start" title="Yet to deliver"></i>
                       @endif
                       {{ $order->created_at->format('M d, Y, h:i A') }}
-                    </button>
+                    </a>
                   </h4>
                 </div>
                 <div id="receiptcollapse{{ $order->id }}" class="card-collapse collapse">
