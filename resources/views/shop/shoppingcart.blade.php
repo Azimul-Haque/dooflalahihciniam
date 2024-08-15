@@ -154,7 +154,7 @@
             <h2>
               <center>
                 There are no products in your bag! Visit this page by adding our products to your bag. thank you<br/><br/>
-                <a href="{{ route('product.index') }}" class="site-btn"><i class="fa fa-cart-plus"></i> See Products</a>
+                <a href="{{ route('product.index') }}" class="site-btn"><i class="fa fa-shopping-bag"></i> See Products</a>
               </center>
             </h2>
 
