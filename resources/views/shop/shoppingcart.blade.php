@@ -33,9 +33,9 @@
   <!-- Shoping Cart Section Begin -->
   <section class="shoping-cart spad">
       <div class="container">
+        @if(Session::has('cart'))
           <div class="row">
               <div class="col-lg-12">
-                @if(Session::has('cart'))
                   <div class="shoping__cart__table">
                       <table>
                           <thead>
@@ -159,7 +159,7 @@
               </h2>
 
             </div>
-          @endif
+        @endif
       </div>
   </section>
   <!-- Shoping Cart Section End -->
