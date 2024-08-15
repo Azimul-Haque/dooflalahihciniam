@@ -100,7 +100,7 @@
                             <li class="list-group-item">
                               <h4 class="right">Delivery Charge: ¥ <span id="deliveryCharge">{{ $cart->deliveryCharge }}</span></h4><br/>
                             </li>
-                            @if(Auth::user()->points > 0)
+                            {{-- @if(Auth::user()->points > 0)
                               <li class="list-group-item">
                                 <h4 class="right">
                                   <table style="float: right;">
@@ -120,7 +120,7 @@
                               </li>
                             @else
                               <input type="hidden" name="useearnedbalance" id="useearnedbalance" max="{{ $cart->totalPrice }}" min="0" step=".01" class="form-control" value="0" onchange="useEarnedBalance()">
-                            @endif
+                            @endif --}}
                             <li class="list-group-item">
                               <input type="hidden" name="actualtotalprice" id="actualtotalprice" value="{{ $cart->totalPrice }}">
                               <h4 class="right bold">Total Payable Price: ¥ <span id="totalPrice">{{ $cart->totalPrice }}</span></h4><br/>
