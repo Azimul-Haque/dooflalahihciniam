@@ -84,14 +84,14 @@
             @if($orders->first())
             <div class="card panel-success shadow-light">
               <div class="card-header">
-                <h4 class="card-title">
+                <h5 class="card-title">
                   @if($orders->first()->paymentstatus == 'paid')
                     <i class="fa fa-check" title="Delivered"></i>
                   @elseif($orders->first()->paymentstatus == 'not-paid')
                     <i class="fa fa-hourglass-start" title="Yet to deliver"></i>
                   @endif
                   Last Order: {{ $orders->first()->created_at->format('M d, Y, h:i A') }}
-                </h4>
+                </h5>
               </div>
               <div class="card-body">
                 <h4>
