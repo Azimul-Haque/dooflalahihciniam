@@ -382,7 +382,7 @@ class ProductController extends Controller
         // }
       } catch(\Exception $e) {
         Session::flash('warning', 'There was a problem with your confirmation. Please try again.');
-        return redirect()->route('product.index');
+        return redirect()->back();
       }
 
       // try{
