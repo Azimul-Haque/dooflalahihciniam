@@ -129,7 +129,7 @@
                         <div class="row">
                           <div class="col-md-4">
                             <label for="deliverylocation">Delivery Location</label>
-                            <select id="deliverylocation" name="deliverylocation" class="form-control" required="" onchange="changeDeliveryLocation()">
+                            <select id="deliverylocation" name="deliverylocation" class="" required="" onchange="changeDeliveryLocation()">
                               <option value="" selected="" disabled="">Select Location</option>
                               <option value="0">Inside Dhaka</option>
                               <option value="1020">Free Pick-up Point</option>
