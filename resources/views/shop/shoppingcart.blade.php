@@ -127,7 +127,6 @@
                     </h2>
 
                   </div>
-                  <div class="col-md-auto"></div>
                 @endif
               </div>
           </div>
