@@ -18,7 +18,7 @@
                     <div class="footer__widget">
                         <h6>Useful Links</h6>
                         <ul>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="{{ route('index.about') }}">About Us</a></li>
                             <li><a href="{{ route('index.privacy') }}">Privacy Policy</a></li>
                             <li><a href="{{ route('index.terms') }}">Terms & Conditions</a></li>
                             <li><a href="{{ route('index.refund') }}">Refund & Returns Policy</a></li>
