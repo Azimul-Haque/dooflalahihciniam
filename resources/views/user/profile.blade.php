@@ -82,8 +82,8 @@
           </div>
           <div class="col-md-9">
             @if($orders->first())
-            <div class="">
-              <div class="panel-heading">
+            <div class="card panel-success shadow-light">
+              <div class="card-header">
                 <h4 class="panel-title">
                   @if($orders->first()->paymentstatus == 'paid')
                     <i class="fa fa-check" title="Delivered"></i>
