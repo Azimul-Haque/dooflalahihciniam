@@ -146,66 +146,67 @@
               </div>
               <div class="card-body">
                 <div class="card-group" id="accordion">
-                @foreach($orders as $order)
-                  <div class="card card-success shadow-light">
-                    <div class="card-heading">
-                      <h4 class="card-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#receiptcollapse{{ $order->id }}">
-                          @if($order->paymentstatus == 'paid')
-                            <i class="fa fa-check" title="Delivered"></i>
-                          @elseif($order->paymentstatus == 'not-paid')
-                            <i class="fa fa-hourglass-start" title="Yet to deliver"></i>
-                          @endif
-                          {{ $order->created_at->format('M d, Y, h:i A') }}
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="receiptcollapse{{ $order->id }}" class="card-collapse collapse">
-                      <div class="card-body">
-                        <h4>
-                          <a href="{{ route('warehouse.receiptpdf', [$order->payment_id, generate_token(100)]) }}" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn pull-right" title="Print Invoice" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a>
-                          Order ID: {{ $order->payment_id }}<br/>
-                          Payment Method: {{ payment_method($order->payment_method) }}<br/>
-                        </h4>
-                        Delivery Location:<br/>
-                        <span>
-                          @if($order->deliverylocation == 1020)
-                            {{ deliverylocation($order->deliverylocation) }}
-                          @else
-                            {{ $order->user->address }}
-                          @endif
-                        </span>
-                        <ul class="list-group">
-                          @foreach($order->cart->items as $item)
-                            <li class="list-group-item">
-                              <div style="white-space: nowrap; max-width: 150px; overflow: hidden; text-overflow: ellipsis; float: left;" title="{{ $item['item']['title'] }}">
-                                {{ $item['item']['title'] }}
-                              </div> | {{ $item['qty'] }}
-                              <span class="badge">¥ {{ $item['price'] }}</span>
-                            </li>
-                          @endforeach
-                        </ul><ul class="list-group">
-                        <li class="list-group-item">
-                          Delivery Charge
-                          <span class="badge">¥ {{ json_encode($order->cart->deliveryCharge) }}</span>
-                        </li>
-                        <li class="list-group-item">
-                          Discount/ Earned Balance Usage
-                          <span class="badge">¥ {{ json_encode($order->cart->discount) }}</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="card-footer card-footer-custom">
-                      <strong>Total Payable <span style="float: right;">¥ {{ $order->cart->totalPrice }}</span></strong>
-                    </div>
-                    </div>
-                  </div>
-                @endforeach
+                
                 <br/>
                 @include('pagination.default', ['paginator' => $orders])
                 </div>
               </div>
             </div>
+            @foreach($orders as $order)
+              <div class="card card-success shadow-light">
+                <div class="card-heading">
+                  <h4 class="card-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#receiptcollapse{{ $order->id }}">
+                      @if($order->paymentstatus == 'paid')
+                        <i class="fa fa-check" title="Delivered"></i>
+                      @elseif($order->paymentstatus == 'not-paid')
+                        <i class="fa fa-hourglass-start" title="Yet to deliver"></i>
+                      @endif
+                      {{ $order->created_at->format('M d, Y, h:i A') }}
+                    </a>
+                  </h4>
+                </div>
+                <div id="receiptcollapse{{ $order->id }}" class="card-collapse collapse">
+                  <div class="card-body">
+                    <h4>
+                      <a href="{{ route('warehouse.receiptpdf', [$order->payment_id, generate_token(100)]) }}" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn pull-right" title="Print Invoice" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a>
+                      Order ID: {{ $order->payment_id }}<br/>
+                      Payment Method: {{ payment_method($order->payment_method) }}<br/>
+                    </h4>
+                    Delivery Location:<br/>
+                    <span>
+                      @if($order->deliverylocation == 1020)
+                        {{ deliverylocation($order->deliverylocation) }}
+                      @else
+                        {{ $order->user->address }}
+                      @endif
+                    </span>
+                    <ul class="list-group">
+                      @foreach($order->cart->items as $item)
+                        <li class="list-group-item">
+                          <div style="white-space: nowrap; max-width: 150px; overflow: hidden; text-overflow: ellipsis; float: left;" title="{{ $item['item']['title'] }}">
+                            {{ $item['item']['title'] }}
+                          </div> | {{ $item['qty'] }}
+                          <span class="badge">¥ {{ $item['price'] }}</span>
+                        </li>
+                      @endforeach
+                    </ul><ul class="list-group">
+                    <li class="list-group-item">
+                      Delivery Charge
+                      <span class="badge">¥ {{ json_encode($order->cart->deliveryCharge) }}</span>
+                    </li>
+                    <li class="list-group-item">
+                      Discount/ Earned Balance Usage
+                      <span class="badge">¥ {{ json_encode($order->cart->discount) }}</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer card-footer-custom">
+                  <strong>Total Payable <span style="float: right;">¥ {{ $order->cart->totalPrice }}</span></strong>
+                </div>
+                </div>
+              </div>
+            @endforeach
           </div>
           <div class="col-md-4">
             
