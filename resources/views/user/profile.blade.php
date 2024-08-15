@@ -154,7 +154,7 @@
             </div>
             @foreach($orders as $order)
               <div class="card card-success shadow-light">
-                <div class="card-heading">
+                <div class="card-header">
                   <h4 class="card-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#receiptcollapse{{ $order->id }}">
                       @if($order->paymentstatus == 'paid')
