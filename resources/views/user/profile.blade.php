@@ -11,6 +11,10 @@
       width: 100%;
       display: block;
     }
+
+    .wishlist a:hover {
+      color: black;
+    }
   </style>
 @endsection
 
