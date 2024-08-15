@@ -65,7 +65,7 @@
                             $ctext = $product->category->name;
                             $cslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ctext));
                         @endphp
-                        <a href="{{ route('product.index') }}">{{ $product->title }}</a>
+                        <a href="{{ route('product.categorywise', [$product->category->id, $cslug]) }}">{{ $product->category->name }}</a>
                         <span>{{ $product->title }}</span>
                       </div>
                   </div>
