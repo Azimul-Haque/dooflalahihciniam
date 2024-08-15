@@ -53,7 +53,7 @@
             @include('partials/_profile') <br/>
 
             <div class="latest-product__text">
-                <h4>Top Rated Products</h4>
+                <h4>My Wishlist</h4>
                 <div class="latest-product__slider">
                     <div class="latest-prdouct__slider__item">
                         @foreach(Auth::user()->wishlists as $wishlist)
