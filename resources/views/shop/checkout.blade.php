@@ -51,6 +51,13 @@
                   {{-- <big>Earned points: <b>{{ Auth::user()->points }}</b></big> --}}
                   {!! Form::label('address', 'Delivery address:') !!}
                   {!! Form::textarea('address', Auth::user()->address, array('class' => 'form-control', 'style' => 'max-height: 100px;')) !!}
+
+                  <select id="deliverylocation" name="deliverylocation" class="" required="" onchange="changeDeliveryLocation()">
+                    <option value="" selected="" disabled="">Select Delivery Location</option>
+                    <option value="0">Inside Dhaka</option>
+                    <option value="1020">Free Pick-up Point</option>
+                    <option value="2">Outside of Dhaka</option>
+                  </select>
                   <br/><br/>
                 </div>
                 <div class="col-md-6">
