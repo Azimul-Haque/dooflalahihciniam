@@ -50,7 +50,7 @@
                 <br/><br/>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <h2>Customer: {{ Auth::user()->name }}</h2>
                 ID: {{ Auth::user()->code }}<br/>
                 Contact: {{ Auth::user()->phone }}<br/>
