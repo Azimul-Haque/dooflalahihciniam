@@ -50,7 +50,7 @@
                   Email: {{ Auth::user()->email }}<br/>
                   {{-- <big>Earned points: <b>{{ Auth::user()->points }}</b></big> --}}
                   {!! Form::label('address', 'Delivery address:') !!}
-                  {!! Form::textarea('address', Auth::user()->address, array('class' => 'form-control', 'style' => '')) !!}
+                  {!! Form::textarea('address', Auth::user()->address, array('class' => 'form-control', 'style' => 'max-height: 100px;')) !!}
                   <br/><br/>
                 </div>
                 <div class="col-md-6">
