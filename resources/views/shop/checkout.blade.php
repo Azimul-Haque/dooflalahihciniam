@@ -77,7 +77,7 @@
                         <div class="checkout__order__subtotal">Subtotal <span>¥<span>{{ $cart->totalPrice }}</span></span></div>
                         {{-- <div class="checkout__order__total">Delivery Charge <span>¥<span id="deliveryCharge">{{ $cart->deliveryCharge }}</span></span></div> --}}
                         <div class="checkout__order__total">Delivery Charge <span>¥<span id="deliveryCharge">60</span></span></div>
-                        <div class="checkout__order__total">Delivery Charge <span>¥<span id="totalPrice">{{ $cart->totalPrice }}</span></span></div>
+                        <div class="checkout__order__total">Delivery Charge <span>¥<span id="totalPrice">{{ $cart->totalPrice + 60 }}</span></span></div>
                         
                         <button type="submit" class="site-btn">PLACE ORDER</button>
 
