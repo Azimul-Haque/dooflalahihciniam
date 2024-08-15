@@ -127,7 +127,7 @@
                   </div>
               </div>
               <div class="col-lg-6">
-                  <div class="shoping__continue">
+                  {{-- <div class="shoping__continue">
                       <div class="shoping__discount">
                           <h5>Discount Codes</h5>
                           <form action="#">
@@ -135,7 +135,7 @@
                               <button type="submit" class="site-btn">APPLY COUPON</button>
                           </form>
                       </div>
-                  </div>
+                  </div> --}}
               </div>
               <div class="col-lg-6">
                   <div class="shoping__checkout">
