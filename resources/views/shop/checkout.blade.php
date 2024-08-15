@@ -68,7 +68,7 @@
                           @endforeach
                         </ul>
                         <div class="checkout__order__subtotal">Delivery Charge ¥<span id="deliveryCharge">{{ $cart->deliveryCharge }}</span></div>
-                        <div class="checkout__order__subtotal">Subtotal <span>$750.99</span></div>
+                        <div class="checkout__order__total">Subtotal <span>$750.99</span></div>
                         <div class="checkout__order__total">Total <span>$750.99</span></div>
                         <div class="checkout__input__checkbox">
                             <label for="acc-or">
