@@ -127,10 +127,15 @@
                         {!! Form::text('address', Auth::user()->address, array('class' => 'form-control')) !!}
 
                         <div class="row">
-                          <div class="col-md-4">
-                            
+                          {{-- <div class="col-md-4">
+                            <select id="deliverylocation" name="deliverylocation" class="" required="" onchange="changeDeliveryLocation()">
+                              <option value="" selected="" disabled="">Select Delivery Location</option>
+                              <option value="0">Inside Dhaka</option>
+                              <option value="1020">Free Pick-up Point</option>
+                              <option value="2">Outside of Dhaka</option>
+                            </select>
                             <span id="freePickUpPoint"></span>
-                          </div>
+                          </div> --}}
                           <div class="col-md-12">
                             <label for="payment_method">Payment Method</label>
                             <select id="payment_method" name="payment_method" class="form-control" required="">
