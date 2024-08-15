@@ -127,7 +127,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="panel-footer panel-footer-custom">
+              <div class="card-footer text-muted">
                 <strong>Total Payable <span style="float: right;">¥ {{ $orders->first()->cart->totalPrice }}</span></strong>
               </div>
             </div>
