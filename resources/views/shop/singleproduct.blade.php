@@ -116,7 +116,7 @@
                           @endif
                           <span>({{ $product->productreviews->count() }} reviews)</span>
                           @php
-                              $ctext = $category->name;
+                              $ctext = $product->category->name;
                               $cslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ctext));
                           @endphp
                           <big><a class="badge badge-warning" href="{{ route('product.categorywise', [$product->category->id, $cslug]) }}">{{ $product->category->name }}</a></big>
