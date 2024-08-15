@@ -49,15 +49,16 @@
                   Contact: {{ Auth::user()->phone }}<br/>
                   Email: {{ Auth::user()->email }}<br/>
                   {{-- <big>Earned points: <b>{{ Auth::user()->points }}</b></big> --}}
-                  {!! Form::label('address', 'Delivery address:') !!}
-                  {!! Form::textarea('address', Auth::user()->address, array('class' => 'form-control', 'style' => 'max-height: 100px;')) !!}
-
                   <select id="deliverylocation" name="deliverylocation" style="width: 300px !important;" required="" onchange="changeDeliveryLocation()">
                     <option value="" selected="" disabled="">Select Delivery Location</option>
                     <option value="0">Delivery Address</option>
                     <option value="1020">Free Pick-up from Shop</option>
                     {{-- <option value="2">Outside of Dhaka</option> --}}
                   </select>
+                  {!! Form::label('address', 'Delivery address:') !!}
+                  {!! Form::textarea('address', Auth::user()->address, array('class' => 'form-control', 'style' => 'max-height: 100px;')) !!}
+
+                  
                   <br/><br/>
                 </div>
                 <div class="col-md-6">
