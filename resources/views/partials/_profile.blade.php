@@ -30,8 +30,8 @@
 		<div class="profile-usermenu">
 			<ul class="nav">
 				<li title="">
-					<i class="fa fa-id-card-o"></i> <b>{{ Auth::user()->code }}</b>
-				</li><br/><br/>
+					<i class="fa fa-id-card-o"></i> <b>{{ Auth::user()->code }}</b><br/>
+				</li>
 				{{-- <li title="Earned Balance"><i class="fa fa-money"></i> ¥ {{ Auth::user()->points }}</li> --}}
 				<li title="Contact No"><i class="fa fa-phone"></i> {{ Auth::user()->phone }}</li>
 				<li title="Email Address"><i class="fa fa-envelope-o"></i> {{ Auth::user()->email }}</li>
