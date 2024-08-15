@@ -189,18 +189,18 @@
                             <div style="white-space: nowrap; max-width: 150px; overflow: hidden; text-overflow: ellipsis; float: left;" title="{{ $item['item']['title'] }}">
                               {{ $item['item']['title'] }}
                             </div> | {{ $item['qty'] }}
-                            <span class="badge">¥ {{ $item['price'] }}</span>
+                            <span class="badge pull-right">¥ {{ $item['price'] }}</span>
                           </li>
                         @endforeach
                       </ul><br/>
                       <ul class="list-group">
                       <li class="list-group-item">
                         Delivery Charge
-                        <span class="badge">¥ {{ json_encode($order->cart->deliveryCharge) }}</span>
+                        <span class="badge pull-right">¥ {{ json_encode($order->cart->deliveryCharge) }}</span>
                       </li>
                       <li class="list-group-item">
                         Discount/ Earned Balance Usage
-                        <span class="badge">¥ {{ json_encode($order->cart->discount) }}</span>
+                        <span class="badge pull-right">¥ {{ json_encode($order->cart->discount) }}</span>
                       </li>
                     </ul>
                   </div>
