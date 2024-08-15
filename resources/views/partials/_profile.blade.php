@@ -29,7 +29,7 @@
 		<!-- SIDEBAR MENU -->
 		<div class="profile-usermenu">
 			<ul class="nav">
-				<li title="This is your user ID. You will get Bonus Amount when your friend use the ID to make a purchase!">
+				<li title="">
 					<i class="fa fa-id-card-o"></i> <b>{{ Auth::user()->code }}</b>
 				</li>
 				<li title="Earned Balance"><i class="fa fa-money"></i> ¥ {{ Auth::user()->points }}</li>
