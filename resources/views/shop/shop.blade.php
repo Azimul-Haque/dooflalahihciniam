@@ -34,7 +34,7 @@
                     @include('partials._ogani-shop-left-menu')
                 </div>
                 <div class="col-lg-9 col-md-7">
-                    <div class="product__discount">
+                    {{-- <div class="product__discount">
                         <div class="section-title product__discount__title">
                             <h2>Sale Off</h2>
                         </div>
@@ -150,7 +150,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="filter__item">
                         <div class="row">
                             <div class="col-lg-4 col-md-5">
