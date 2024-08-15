@@ -57,7 +57,7 @@
                       <div class="checkout__order__products">Products <span>Total</span></div>
                       <ul>
                         @foreach($cart->items as $item)
-                        <li class="list-group-item">
+                        <li >
                           {{-- {{ json_encode($item) }} --}}
                           {{ $item['item']['title'] }} | {{ $item['qty'] }}
                           <span class="right">৳ {{ $item['price'] }}</span>
