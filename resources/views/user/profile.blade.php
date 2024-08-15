@@ -177,6 +177,7 @@
                       </h4>
                       Delivery Location:<br/>
                       <span>
+                        {{ $order->deliverylocation }}
                         @if($order->deliverylocation == 1020)
                           {{ deliverylocation($order->deliverylocation) }}
                         @else
