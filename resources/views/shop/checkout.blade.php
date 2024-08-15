@@ -40,8 +40,8 @@
               </div>
           </div> --}}
           <div class="checkout__form">
-              <h4>Billing Details</h4>
-
+            <h4>Billing Details</h4>
+            <div class="row">
               <div class="col-md-6">
                 <h2>Customer: {{ Auth::user()->name }}</h2>
                 ID: {{ Auth::user()->code }}<br/>
@@ -94,6 +94,8 @@
                       <button type="submit" class="site-btn">PLACE ORDER</button>
                   </div>
               </div>
+            </div>
+              
           </div>
         </div>
   </section>
