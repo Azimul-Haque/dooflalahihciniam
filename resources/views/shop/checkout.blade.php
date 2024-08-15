@@ -136,7 +136,7 @@
                             </select>
                             <span id="freePickUpPoint"></span>
                           </div> --}}
-                          <div class="col-md-12">
+                          {{-- <div class="col-md-12">
                             <label for="payment_method">Payment Method</label>
                             <select id="payment_method" name="payment_method" class="form-control" required="">
                               <option value="" selected="" disabled="">Payment Method</option>
@@ -144,7 +144,7 @@
                               {{-- <option value="1">Payment Gateway</option> --}}
                             </select>
                             <span id="bKashText"></span>
-                          </div>
+                          </div> --}}
                           {{-- <div class="col-md-4">
                             <label for="fcode">আপনার বন্ধুর ইউজার আইডি (যদি থাকে) <a href="#!" title="আপনার বন্ধুর ইউজার আইডি দিলে তার একাউন্টে পয়েন্ট যোগ হবে!"><i class="fa fa-question-circle"></i></a></label>
                             {!! Form::text('fcode', null, array('class' => 'form-control')) !!}
