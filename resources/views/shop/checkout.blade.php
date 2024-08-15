@@ -56,7 +56,7 @@
                     <option value="0">Delivery Address</option>
                     <option value="1020">Free Pick-up from Shop</option>
                     {{-- <option value="2">Outside of Dhaka</option> --}}
-                  </select><br/>
+                  </select><br/><br/>
                   {!! Form::textarea('address', Auth::user()->address, array('class' => 'form-control', 'style' => 'max-height: 100px;')) !!}
                 </div>
                 <div class="col-md-6">
