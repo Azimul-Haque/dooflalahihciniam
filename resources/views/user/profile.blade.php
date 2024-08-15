@@ -46,7 +46,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
+            @if(Auth::check() && Auth::user()->role == 'admin')
+              {{-- @include('partials/shop-sidebar')<br/> --}}
+            @endif
             
+            @include('partials/_profile') <br/>
 
             {{-- wishlist --}}
             <div class="panel panel-success shadow-light">
