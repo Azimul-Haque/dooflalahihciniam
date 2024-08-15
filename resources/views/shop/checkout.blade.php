@@ -44,7 +44,7 @@
             {!! Form::open(['route' => 'product.checkout', 'method' => 'POST']) !!}
               <div class="row">
                 <div class="col-md-6">
-                  <h2>Customer: {{ Auth::user()->name }}</h2>
+                  <h5>Customer: {{ Auth::user()->name }}</h5>
                   ID: {{ Auth::user()->code }}<br/>
                   Contact: {{ Auth::user()->phone }}<br/>
                   Email: {{ Auth::user()->email }}<br/>
