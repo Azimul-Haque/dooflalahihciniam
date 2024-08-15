@@ -140,18 +140,7 @@
             </center>
             @endif
             <br/>
-            <div class="card card-primary shadow-light">
-              <div class="card-heading">
-                <h4 class="card-title">Your previous orders</h4>
-              </div>
-              <div class="card-body">
-                <div class="card-group" id="accordion">
-                
-                <br/>
-                @include('pagination.default', ['paginator' => $orders])
-                </div>
-              </div>
-            </div>
+            
             @foreach($orders as $order)
               <div class="card card-success shadow-light">
                 <div class="card-header">
