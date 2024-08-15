@@ -52,7 +52,7 @@
                   {!! Form::label('address', 'Delivery address:') !!}
                   {!! Form::textarea('address', Auth::user()->address, array('class' => 'form-control', 'style' => 'max-height: 100px;')) !!}
 
-                  <select id="deliverylocation" name="deliverylocation" style="width: 100% !important;" required="" onchange="changeDeliveryLocation()">
+                  <select id="deliverylocation" name="deliverylocation" style="width: 200px; !important;" required="" onchange="changeDeliveryLocation()">
                     <option value="" selected="" disabled="">Select Delivery Location</option>
                     <option value="0">Delivery Address</option>
                     <option value="1020">Free Pick-up from Shop</option>
