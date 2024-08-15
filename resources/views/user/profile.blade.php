@@ -152,6 +152,7 @@
                 </div>
               </div>
             </div> --}}
+            <h4 class="card-title">Your previous orders</h4>
             <div id="accordion">
               @foreach($orders as $order)
               <div class="card card-success shadow-light">
