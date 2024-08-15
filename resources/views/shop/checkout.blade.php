@@ -74,7 +74,8 @@
                           </li>
                           @endforeach
                         </ul>
-                        <div class="checkout__order__subtotal">Subtotal <span>¥<span id="actualtotalprice">{{ $cart->totalPrice }}</span></span></div>
+                        <input type="hidden" name="actualtotalprice" id="actualtotalprice" value="{{ $cart->totalPrice }}">
+                        <div class="checkout__order__subtotal">Subtotal <span>¥<span>{{ $cart->totalPrice }}</span></span></div>
                         <div class="checkout__order__total">Delivery Charge <span>¥<span id="deliveryCharge">{{ $cart->deliveryCharge }}</span></span></div>
                         <div class="checkout__order__total">Delivery Charge <span>¥<span id="totalPrice">{{ $cart->totalPrice }}</span></span></div>
                         <div class="checkout__input__checkbox">
