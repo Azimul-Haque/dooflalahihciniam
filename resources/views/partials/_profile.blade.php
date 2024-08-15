@@ -4,7 +4,7 @@
 		<!-- SIDEBAR USERPIC -->
 		<div class="profile-userpic">
 			<center>
-				<img src="{{ asset('images/user.png') }}" class="img-responsive img-circle" alt="" style="max-height: 120px; padding: 10px;">
+				<img src="{{ asset('images/user.png') }}" class="img-responsive img-circle" alt="" style="max-height: 120px; padding: 10px; border-radius: 50%;">
 			</center>
 		</div>
 		<!-- END SIDEBAR USERPIC -->
