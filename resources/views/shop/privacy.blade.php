@@ -1,4 +1,4 @@
-@extends('layouts.index')
+@extends('layouts.ogani')
 
 @section('title', 'Privacy Policy | Al Amana Halal & Global Food')
 
@@ -25,7 +25,7 @@
                       {{-- <h2>Shopping Cart</h2> --}}
                       <div class="breadcrumb__option">
                           <a href="{{ route('product.index') }}">Home</a>
-                          <span>Terms and Conditions</span>
+                          <span>Privacy Policy</span>
                       </div>
                   </div>
               </div>
