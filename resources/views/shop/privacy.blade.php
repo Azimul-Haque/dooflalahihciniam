@@ -16,22 +16,23 @@
 @endsection
 
 @section('content')
-  <!-- product section -->
-  <section class="content-top-margin page-title page-title-small bg-gray">
+  <!-- Breadcrumb Section Begin -->
+  <section class="breadcrumb-section set-bg" data-setbg="{{ asset('vendor/ogani/img/breadcrumb.jpg') }}">
       <div class="container">
           <div class="row">
-              <!-- section title -->
-              <div class="col-md-6 col-sm-6">
-                  <span class="text-large letter-spacing-2 black-text font-weight-600 agency-title">Privacy Policy</span>
+              <div class="col-lg-12 text-center">
+                  <div class="breadcrumb__text">
+                      {{-- <h2>Shopping Cart</h2> --}}
+                      <div class="breadcrumb__option">
+                          <a href="{{ route('product.index') }}">Home</a>
+                          <span>Terms and Conditions</span>
+                      </div>
+                  </div>
               </div>
-              <!-- end section title -->
-              <!-- section highlight text -->
-              <div class="col-md-6 col-sm-6 text-right xs-text-left">
-              </div>
-              <!-- end section highlight text -->
           </div>
       </div>
   </section>
+  <!-- Breadcrumb Section End -->
 
   <!-- content section -->
   <section class="padding-three">
