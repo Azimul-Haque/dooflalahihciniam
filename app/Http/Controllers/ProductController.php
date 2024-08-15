@@ -381,7 +381,7 @@ class ProductController extends Controller
         //   Session::flash('warning', 'আপনি নিজের আইডিকে রেফার করতে পারবেন না! ধন্যবাদ।');
         // }
       } catch(\Exception $e) {
-        Session::flash('warning', 'There was a problem with your confirmation. Please try again.' . $e);
+        Session::flash('warning', 'There was a problem with your confirmation. Please try again.');
         return redirect()->back();
       }
 
