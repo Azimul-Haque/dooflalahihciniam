@@ -116,69 +116,7 @@
               </li>
               @endforeach
             </ul>
-            {!! Form::open(['route' => 'product.checkout', 'method' => 'POST']) !!}
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <h4 class="right">Delivery Charge: ৳ <span id="deliveryCharge">{{ $cart->deliveryCharge }}</span></h4><br/>
-                </li>
-                @if(Auth::user()->points > 0)
-                  <li class="list-group-item">
-                    <h4 class="right">
-                      <table style="float: right;">
-                        <tr>
-                          <td><label for="useearnedbalance" style="margin-right: 10px;">Pay from earned balance: ৳ </label></td>
-                          <td>
-                              @if($cart->totalPrice > Auth::user()->points)
-                                <input type="number" name="useearnedbalance" id="useearnedbalance" max="{{ Auth::user()->points }}" min="0" step=".01" class="form-control" value="0" onchange="useEarnedBalance()">
-                              @else
-                                <input type="number" name="useearnedbalance" id="useearnedbalance" max="{{ $cart->totalPrice }}" min="0" step=".01" class="form-control" value="0" onchange="useEarnedBalance()">
-                              @endif
-                            
-                          </td>
-                        </tr>
-                      </table>
-                    </h4><br/><br/>
-                  </li>
-                @else
-                  <input type="hidden" name="useearnedbalance" id="useearnedbalance" max="{{ $cart->totalPrice }}" min="0" step=".01" class="form-control" value="0" onchange="useEarnedBalance()">
-                @endif
-                <li class="list-group-item">
-                  <input type="hidden" name="actualtotalprice" id="actualtotalprice" value="{{ $cart->totalPrice }}">
-                  <h4 class="right bold">Total Payable Price: ৳ <span id="totalPrice">{{ $cart->totalPrice }}</span></h4><br/>
-                </li>
-              </ul>
-
-              {!! Form::label('address', 'Delivery address:') !!}
-              {!! Form::text('address', Auth::user()->address, array('class' => 'form-control')) !!}
-
-              <div class="row">
-                {{-- <div class="col-md-4">
-                  <label for="deliverylocation">Delivery Location</label>
-                  <select id="deliverylocation" name="deliverylocation" class="form-control" required="" onchange="changeDeliveryLocation()">
-                    <option value="" selected="" disabled="">Select Location</option>
-                    <option value="0">Inside Dhaka</option>
-                    <option value="1020">Free Pick-up Point</option>
-                    <option value="2">Outside of Dhaka</option>
-                  </select>
-                  <span id="freePickUpPoint"></span>
-                </div> --}}
-                <div class="col-md-12">
-                  <label for="payment_method">Payment Method</label>
-                  <select id="payment_method" name="payment_method" class="form-control" required="">
-                    <option value="" selected="" disabled="">Payment Method</option>
-                    <option value="0" selected="">Cash On Delivery</option>
-                    {{-- <option value="1">Payment Gateway</option> --}}
-                  </select>
-                  <span id="bKashText"></span>
-                </div>
-                {{-- <div class="col-md-4">
-                  <label for="fcode">আপনার বন্ধুর ইউজার আইডি (যদি থাকে) <a href="#!" title="আপনার বন্ধুর ইউজার আইডি দিলে তার একাউন্টে পয়েন্ট যোগ হবে!"><i class="fa fa-question-circle"></i></a></label>
-                  {!! Form::text('fcode', null, array('class' => 'form-control')) !!}
-                </div> --}}
-              </div>
-
-              {!! Form::submit('Confirm Order', array('class' => 'highlight-button-black-background btn btn-medium no-margin pull-right checkout-btn xs-width-100 xs-text-center', 'style' => 'margin-top:20px;', 'id' => 'checkout-btn')) !!}
-            {!! Form::close() !!}
+            
           </div>
         </div>
       </div>
