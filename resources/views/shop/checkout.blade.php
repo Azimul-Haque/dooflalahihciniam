@@ -52,8 +52,8 @@
 
                   {!! Form::label('address', 'Delivery address:') !!}<br/>
                   <select id="deliverylocation" name="deliverylocation" style="width: 300px !important;" required="" onchange="changeDeliveryLocation()">
-                    <option value="" disabled="">Select Delivery Location</option>
-                    <option value="0" selected="" >Delivery Address</option>
+                    <option value="" selected="" disabled="">Select Delivery Location</option>
+                    <option value="0" >Delivery Address</option>
                     <option value="1020">Free Pick-up from Shop</option>
                     {{-- <option value="2">Outside of Dhaka</option> --}}
                   </select><br/><br/>
