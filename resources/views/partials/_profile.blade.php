@@ -28,7 +28,7 @@
 		<!-- END SIDEBAR BUTTONS -->
 		<!-- SIDEBAR MENU -->
 		<div class="profile-usermenu">
-			<ul class="nav">
+			<ul class="">
 				<li title="">
 					<i class="fa fa-id-card-o"></i> <b>{{ Auth::user()->code }}</b><br/>
 				</li>
