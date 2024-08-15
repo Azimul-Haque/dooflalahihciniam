@@ -90,7 +90,7 @@
                           @endphp
                           <a href="{{ route('product.getsingleproduct', [$wishlist->product->id, $pslug]) }}" class="latest-product__item">
                               <div class="latest-product__item__pic">
-                                  <img src="{{ asset('images/product-images/'.$wishlist->productimages->first()->image) }}" alt="{{ 'Image of Product' }}">
+                                  <img src="{{ asset('images/product-images/'.$wishlist->product->productimages->first()->image) }}" alt="{{ 'Image of Product' }}">
                               </div>
                               <div class="latest-product__item__text">
                                   <h6>{{ $wishlist->title }}</h6>
