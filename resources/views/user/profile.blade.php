@@ -246,7 +246,7 @@
             </div>
             <div class="modal-footer">
                 <button type="submit" class="site-btn">Update</button>
-                <button type="button" class="primary-btn cart-btn" data-dismiss="modal">Close</button>
+                <button type="button" class="btn primary-btn cart-btn" data-dismiss="modal">Close</button>
             </div>
             {!! Form::close() !!}
           </div>
