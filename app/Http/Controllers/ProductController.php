@@ -356,6 +356,9 @@ class ProductController extends Controller
         $order->address = $request->address;
         $order->status = 0; // 0 means pending
         $order->paymentstatus = 'not-paid';
+        // apatoto payment_method off 
+        // apatoto payment_method off 
+        // apatoto payment_method off 
         $order->payment_method = $request->payment_method; // 0 means cash on delivery, 1 means bKash
         // $order->deliverylocation = $request->deliverylocation; // 0 == Dhaka, 1020 = free pickup, 2 = outside of Dhaka
         $order->deliverylocation = 0;
