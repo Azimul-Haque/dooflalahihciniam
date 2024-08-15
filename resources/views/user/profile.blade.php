@@ -88,7 +88,7 @@
                               $ptext = $wishlist->title;
                               $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
                           @endphp
-                          <a href="{{ route('product.getsingleproduct', [$wishlist->id, $pslug]) }}" class="latest-product__item">
+                          <a href="{{ route('product.getsingleproduct', [$wishlist->product->id, $pslug]) }}" class="latest-product__item">
                               <div class="latest-product__item__pic">
                                   <img src="{{ asset('images/product-images/'.$wishlist->productimages->first()->image) }}" alt="{{ 'Image of Product' }}">
                               </div>
