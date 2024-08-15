@@ -59,7 +59,7 @@
                 <table class="table table-hover table-condensed table-bordered">
                   <thead>
                     <tr>
-                      <th>Product</th>
+                      <th>Products</th>
                     </tr>
                   </thead>
                   <tbody>
