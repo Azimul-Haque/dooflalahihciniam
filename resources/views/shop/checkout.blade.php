@@ -51,7 +51,7 @@
                   {{-- <big>Earned points: <b>{{ Auth::user()->points }}</b></big> --}}
 
                   {!! Form::label('address', 'Delivery address:') !!}<br/>
-                  <select id="deliverylocation" name="deliverylocation" style="width: 300px !important;" onchange="changeDeliveryLocation()" required="">
+                  <select id="deliverylocation" name="deliverylocation" style="width: 300px !important;" onchange="changeDeliveryLocation()" >
                     <option value="" selected="" disabled="">Select Delivery Location</option>
                     <option value="0" >Delivery Address</option>
                     <option value="1020">Free Pick-up from Shop</option>
