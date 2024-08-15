@@ -8,7 +8,7 @@ class Cart
     public $totalQty = 0;
     public $totalPrice = 0;
     public $totalProfit = 0;
-    public $deliveryCharge = 60; // Hard Coded
+    public $deliveryCharge = 0;
     public $discount = 0;
 
     public function __construct($oldCart) {
