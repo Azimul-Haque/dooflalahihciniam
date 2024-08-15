@@ -68,7 +68,7 @@
                               <div class="latest-product__item__text">
                                   <h6>{{ $wishlist->product->title }}</h6>
                                   <span>
-                                      @if($wishlist->oldprice > 0)
+                                      @if($wishlist->product->oldprice > 0)
                                         <small><del>¥ {{ $wishlist->product->oldprice }}</del></small>
                                       @endif
                                       ¥ {{ $wishlist->product->price }}
