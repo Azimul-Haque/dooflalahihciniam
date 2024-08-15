@@ -150,7 +150,7 @@
               </div>
           </div>
         @else
-          <div class="col-md-10 mx-auto">
+          <div class="col-md-8 mx-auto">
             <h3>
               <center>
                 There are no products in your bag! Visit this page by adding our products to your bag. thank you<br/><br/>
