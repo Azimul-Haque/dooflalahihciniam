@@ -58,9 +58,6 @@
                     {{-- <option value="2">Outside of Dhaka</option> --}}
                   </select>
                   {!! Form::textarea('address', Auth::user()->address, array('class' => 'form-control', 'style' => 'max-height: 100px;')) !!}
-
-                  
-                  <br/><br/>
                 </div>
                 <div class="col-md-6">
                   
