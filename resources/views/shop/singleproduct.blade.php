@@ -62,7 +62,7 @@
                       <div class="breadcrumb__option">
                         <a href="./index.html">{{ $product->title }}</a>
                         <a href="{{ route('product.index') }}">{{ $product->title }}</a>
-                        <span>Product</span>
+                        <span>{{ $product->title }}</span>
                       </div>
                   </div>
               </div>
