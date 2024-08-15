@@ -180,7 +180,7 @@
                         @if($order->deliverylocation == 1020)
                           {{ deliverylocation($order->deliverylocation) }}
                         @else
-                          {{ $order->user->address }}
+                          {{ $order->deliverylocation }}
                         @endif
                       </span>
                       <ul class="list-group" style="margin-bottom: 5px;">
