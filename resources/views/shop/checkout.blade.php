@@ -160,8 +160,7 @@
                               {!! Form::text('fcode', null, array('class' => 'form-control')) !!}
                             </div>
                           </div> --}}
-
-                          {!! Form::submit('Confirm Order', array('class' => 'highlight-button-black-background btn btn-medium no-margin pull-right checkout-btn xs-width-100 xs-text-center', 'style' => 'margin-top:20px;', 'id' => 'checkout-btn')) !!}
+                          {{-- {!! Form::submit('Confirm Order', array('class' => 'highlight-button-black-background btn btn-medium no-margin pull-right checkout-btn xs-width-100 xs-text-center', 'style' => 'margin-top:20px;', 'id' => 'checkout-btn')) !!} --}}
                         
                     </div>
                 </div>
