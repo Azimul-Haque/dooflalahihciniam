@@ -37,7 +37,7 @@
           <div class="row">
               <div class="col-lg-12">
                   <div class="shoping__cart__table">
-                      <table>
+                      <table class="table table-condensed">
                           <thead>
                               <tr>
                                   <th class="shoping__product">Products</th>
