@@ -83,7 +83,7 @@
                 <h4>Top Rated Products</h4>
                 <div class="latest-product__slider owl-carousel">
                     <div class="latest-prdouct__slider__item">
-                        @foreach($wishlists as $wishlist)
+                        @foreach(Auth::user()->wishlists as $wishlist)
                           @php
                               $ptext = $wishlist->title;
                               $pslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ptext));
