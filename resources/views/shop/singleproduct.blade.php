@@ -61,6 +61,10 @@
                       {{-- <h2>Organi Shop</h2> --}}
                       <div class="breadcrumb__option">
                         <a href="{{ route('product.index') }}">Home</a>
+                        @php
+                            $ctext = $product->category->name;
+                            $cslug = \Illuminate\Support\Str::slug(preg_replace('/[^\w\d]+/', '-', $ctext));
+                        @endphp
                         <a href="{{ route('product.index') }}">{{ $product->title }}</a>
                         <span>{{ $product->title }}</span>
                       </div>
