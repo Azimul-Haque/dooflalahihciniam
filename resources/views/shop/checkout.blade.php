@@ -59,7 +59,7 @@
                         @foreach($cart->items as $item)
                         <li >
                           {{-- {{ json_encode($item) }} --}}
-                          {{ $item['item']['title'] }} | <span class="badge">{{ $item['qty'] }}</span>
+                          {{ $item['item']['title'] }} <span class="badge">{{ $item['qty'] }}</span>
                           <span class="right">৳ {{ $item['price'] }}</span>
                         </li>
                         @endforeach
