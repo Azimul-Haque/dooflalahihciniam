@@ -347,7 +347,7 @@ class ProductController extends Controller
         Auth::user()->save();
       }
       
-      dd($cart);
+      // dd($cart);
       try{
         $order = new Order();
         $order->cart = serialize($cart); // save korar somoy serialize kore save korte hobe
