@@ -22,7 +22,7 @@
                             <li><a href="{{ route('index.privacy') }}">Privacy Policy</a></li>
                             <li><a href="{{ route('index.terms') }}">Terms & Conditions</a></li>
                             <li><a href="{{ route('index.refund') }}">Refund & Returns Policy</a></li>
-                            <li><a href="{{ route('product.index' . '/sitemap.xml') }}">Our Sitemap</a></li>
+                            <li><a href="{{ route('product.index') }}'/sitemap.xml'">Our Sitemap</a></li>
                         </ul>
                         <ul>
                             <li><a href="{{ route('user.register') }}">Register</a></li>
