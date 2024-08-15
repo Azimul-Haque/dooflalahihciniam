@@ -49,6 +49,8 @@
                   Contact: {{ Auth::user()->phone }}<br/>
                   Email: {{ Auth::user()->email }}<br/>
                   {{-- <big>Earned points: <b>{{ Auth::user()->points }}</b></big> --}}
+                  {!! Form::label('address', 'Delivery address:') !!}
+                  {!! Form::text('address', Auth::user()->address, array('class' => 'form-control')) !!}
                   <br/><br/>
                 </div>
                 <div class="col-md-6">
@@ -124,8 +126,7 @@
                             </li>
                           </ul>
 
-                          {!! Form::label('address', 'Delivery address:') !!}
-                          {!! Form::text('address', Auth::user()->address, array('class' => 'form-control')) !!}
+                          
 
                           {{-- <div class="row">
                             <div class="col-md-4">
