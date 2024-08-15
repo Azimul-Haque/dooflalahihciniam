@@ -183,8 +183,8 @@
         $('#freePickUpPoint').text('');
       } else if ($('#deliverylocation').val() == 1020) {
         deliveryCharge = 0;
-        $('#freePickUpPoint').text('Peri Pasta or Pizza Burg, Mirpur- 02, Contact no - 01315852563');
-        $('#address').text('Peri Pasta or Pizza Burg, Mirpur- 02, Contact no - 01315852563');
+        $('#freePickUpPoint').text('1.15.3 Yachiyodai Higashi, Yachiyo-shi, Chiba Prefecture 276-0032, Japan');
+        $('#address').text('1.15.3 Yachiyodai Higashi, Yachiyo-shi, Chiba Prefecture 276-0032, Japan');
       } else if ($('#deliverylocation').val() == 2) {
         deliveryCharge = 100;
         $('#freePickUpPoint').text('');
