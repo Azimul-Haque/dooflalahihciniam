@@ -42,7 +42,7 @@
   <!-- Breadcrumb Section End -->
 
   <!-- content section -->
-  <section class="checkout spad">
+  <section class="product spad">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
