@@ -196,6 +196,8 @@
                 </div>
               </div>
             @endforeach
+
+            @include('pagination.default', ['paginator' => $orders])
           </div>
           <div class="col-md-4">
             
