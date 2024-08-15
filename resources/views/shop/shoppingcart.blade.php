@@ -57,7 +57,7 @@
                           <div class="row">
                             <div class="col-lg-6 col-md-5 col-sm-5 col-xs-12">
                               <center>
-                                <div class="btn-group">
+                                <div class="btn-group" style="min-width: 100px;">
                                   <button id="reducebyone{{ $product['item']['id'] }}" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="bottom" title="Reduce Item"><i class="fa fa-minus white-text" aria-hidden="true"></i></button>
                                   <a id="itemQtyInBag{{ $product['item']['id'] }}" class="btn btn-primary btn-sm disabled"><span>{{ $product['qty'] }}</span></a>
                                   <button id="addbyone{{ $product['item']['id'] }}" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="bottom" title="Increase Item"><i class="fa fa-plus white-text" aria-hidden="true"></i></button>
