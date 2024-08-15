@@ -49,7 +49,7 @@
                           </thead>
                           <tbody>
                               <tr>
-                                  <td class="">
+                                  <td class="shoping__cart__item">
                                       <img src="img/cart/cart-1.jpg" alt="">
                                       <h5>Vegetable’s Package</h5>
                                   </td>
