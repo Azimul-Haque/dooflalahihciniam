@@ -143,6 +143,7 @@
                                   var totalPriceGross = $("#totalPriceGross").text();
                                   totalPriceGross = parseInt(totalPriceGross.replace("Total Price: ¥ ", "")) + {{ $product['item']['price'] }};
                                   totalPriceGross = "Total Price: ¥ " + totalPriceGross;
+                                  $("#totalPricesub").text(totalPriceGross);
                                   $("#totalPriceGross").text(totalPriceGross);
                                 }
                             });
