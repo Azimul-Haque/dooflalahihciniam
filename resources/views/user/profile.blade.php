@@ -95,7 +95,7 @@
               </div>
               <div class="card-body">
                 <h4>
-                  <a href="{{ route('warehouse.receiptpdf', [$orders->first()->payment_id, generate_token(100)]) }}" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn pull-right" title="Print Invoice" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a>
+                  <a href="{{ route('warehouse.receiptpdf', [$orders->first()->payment_id, generate_token(100)]) }}" class="highlight-button-dark btn btn-small no-margin-right site-btn pull-right" title="Print Invoice" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a>
                   Order ID: {{ $orders->first()->payment_id }}
                   <br/>
                   Payment Method: {{ payment_method($orders->first()->payment_method) }}<br/>
