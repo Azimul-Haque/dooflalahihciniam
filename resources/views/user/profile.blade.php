@@ -119,11 +119,11 @@
                 <ul class="list-group">
                   <li class="list-group-item">
                     Delivery Charge
-                    <span class="badge">¥ {{ json_encode($orders->first()->cart->deliveryCharge) }}</span>
+                    <span class="badge pull-right">¥ {{ json_encode($orders->first()->cart->deliveryCharge) }}</span>
                   </li>
                   <li class="list-group-item">
                     Discount/ Earned Balance Usage
-                    <span class="badge">¥ {{ json_encode($orders->first()->cart->discount) }}</span>
+                    <span class="badge pull-right">¥ {{ json_encode($orders->first()->cart->discount) }}</span>
                   </li>
                 </ul>
               </div>
