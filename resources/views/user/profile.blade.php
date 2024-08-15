@@ -169,7 +169,7 @@
                 <div id="receiptcollapse{{ $order->id }}" class="card-collapse collapse">
                   <div class="card-body">
                     <h4>
-                      <a href="{{ route('warehouse.receiptpdf', [$order->payment_id, generate_token(100)]) }}" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn pull-right" title="Print Invoice" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a>
+                      <a href="{{ route('warehouse.receiptpdf', [$order->payment_id, generate_token(100)]) }}" class="site-btn pull-right" title="Print Invoice" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a>
                       Order ID: {{ $order->payment_id }}<br/>
                       Payment Method: {{ payment_method($order->payment_method) }}<br/>
                     </h4>
