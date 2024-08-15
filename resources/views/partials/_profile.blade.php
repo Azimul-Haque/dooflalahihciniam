@@ -28,16 +28,16 @@
 		<!-- END SIDEBAR BUTTONS -->
 		<!-- SIDEBAR MENU -->
 		<div class="">
-			<li title="">
+			<span title="">
 				<i class="fa fa-id-card-o"></i> <b>{{ Auth::user()->code }}</b><br/>
-			</li>
-			{{-- <li title="Earned Balance"><i class="fa fa-money"></i> ¥ {{ Auth::user()->points }}</li> --}}
-			<li title="Contact No"><i class="fa fa-phone"></i> {{ Auth::user()->phone }}</li>
-			<li title="Email Address"><i class="fa fa-envelope-o"></i> {{ Auth::user()->email }}</li>
-			<li title="Delivery Address"><i class="fa fa-home"></i> {{ Auth::user()->address }}</li>
-			<li class="text-center">
+			</span>
+			{{-- <span title="Earned Balance"><i class="fa fa-money"></i> ¥ {{ Auth::user()->points }}</span> --}}
+			<span title="Contact No"><i class="fa fa-phone"></i> {{ Auth::user()->phone }}</span>
+			<span title="Email Address"><i class="fa fa-envelope-o"></i> {{ Auth::user()->email }}</span>
+			<span title="Delivery Address"><i class="fa fa-home"></i> {{ Auth::user()->address }}</span>
+			<span class="text-center">
 				<button class="highlight-button-dark btn btn-small" type="button" title="Edit Profile" data-toggle="modal" data-target="#editProfileModal" data-backdrop="static"><i class="fa fa-edit"></i> Edit Profile</button>
-			</li>
+			</span>
 		</div>
 		<!-- END MENU -->
 	</div>
