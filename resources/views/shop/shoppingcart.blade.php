@@ -118,7 +118,7 @@
                       </table>
                   </div>
                 @else
-                  <div class="col-md-10">
+                  <div class="col-md-10 ml-md-auto">
                     <h2>
                       <center>
                         There are no products in your bag! Visit this page by adding our products to your bag. thank you<br/><br/>
