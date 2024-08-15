@@ -61,7 +61,7 @@
                   <tbody>
                     @foreach(Auth::user()->wishlists as $wishlist)
                     <tr>
-                      <td>
+                      <td class="wishlist">
                         <a href="{{ route('product.getsingleproduct', [$wishlist->product->id, generate_token(100)]) }}">
                           {{ $wishlist->product->title }}<br/>
                           <small>{{ $wishlist->created_at->format('M d, Y, h:i A') }}</small>
