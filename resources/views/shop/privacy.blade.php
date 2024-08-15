@@ -1,6 +1,6 @@
 @extends('layouts.ogani')
 
-@section('title', 'Privacy Policy | Al Amana Halal & Global Food')
+@section('title', 'Privacy Policy')
 
 @section('css')
   <style type="text/css">
