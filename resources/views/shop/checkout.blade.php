@@ -41,6 +41,15 @@
           </div> --}}
           <div class="checkout__form">
               <h4>Billing Details</h4>
+              <div class="col-md-6">
+                <h2>Customer: {{ Auth::user()->name }}</h2>
+                ID: {{ Auth::user()->code }}<br/>
+                Contact: {{ Auth::user()->phone }}<br/>
+                Email: {{ Auth::user()->email }}<br/>
+                <big>Earned points: <b>{{ Auth::user()->points }}</b></big>
+                <br/><br/>
+              </div>
+
               <div class="col-md-4">
                 <h2>Customer: {{ Auth::user()->name }}</h2>
                 ID: {{ Auth::user()->code }}<br/>
