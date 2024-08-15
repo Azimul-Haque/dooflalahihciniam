@@ -84,7 +84,7 @@
             @if($orders->first())
             <div class="card panel-success shadow-light">
               <div class="card-header">
-                <h4 class="panel-title">
+                <h4 class="card-title">
                   @if($orders->first()->paymentstatus == 'paid')
                     <i class="fa fa-check" title="Delivered"></i>
                   @elseif($orders->first()->paymentstatus == 'not-paid')
@@ -93,7 +93,7 @@
                   Last Order: {{ $orders->first()->created_at->format('M d, Y, h:i A') }}
                 </h4>
               </div>
-              <div class="panel-body">
+              <div class="card-body">
                 <h4>
                   <a href="{{ route('warehouse.receiptpdf', [$orders->first()->payment_id, generate_token(100)]) }}" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn pull-right" title="Print Invoice" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a>
                   Order ID: {{ $orders->first()->payment_id }}
