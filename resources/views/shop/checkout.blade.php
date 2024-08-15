@@ -51,12 +51,7 @@
                 <br/><br/>
               </div>
               <div class="col-md-6">
-                @foreach($cart->items as $item)
-                <li class="list-group-item">
-                  {{-- {{ json_encode($item) }} --}}
-                  {{ $item['item']['title'] }} | {{ $item['qty'] }}
-                  <span class="right">৳ {{ $item['price'] }}</span>
-                </li>
+                
                 @endforeach
                   <div class="checkout__order">
                       <h4>Your Order</h4>
