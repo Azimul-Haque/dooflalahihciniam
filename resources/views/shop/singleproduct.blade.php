@@ -115,7 +115,7 @@
                               @endfor
                           @endif
                           <span>({{ $product->productreviews->count() }} reviews)</span>
-                          <p class="badge badge-primary">ASDASD</p>
+                          <big><p class="badge badge-primary">ASDASD</p></big>
                       </div>
                       <div class="product__details__price">¥{{ $product->price }} <small style="margin-left: 10px;"><del>¥{{ $product->oldprice }}</del></small></div>
                       <p>{{ $product->shorttext }}</p>
