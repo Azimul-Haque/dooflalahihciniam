@@ -46,7 +46,7 @@
                 ID: {{ Auth::user()->code }}<br/>
                 Contact: {{ Auth::user()->phone }}<br/>
                 Email: {{ Auth::user()->email }}<br/>
-                <big>Earned points: <b>{{ Auth::user()->points }}</b></big>
+                {{-- <big>Earned points: <b>{{ Auth::user()->points }}</b></big> --}}
                 <br/><br/>
               </div>
 
