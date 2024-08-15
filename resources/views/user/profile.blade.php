@@ -183,7 +183,7 @@
                           {{ $order->user->address }}
                         @endif
                       </span>
-                      <ul class="list-group">
+                      <ul class="list-group" style="margin-bottom: 5px;">
                         @foreach($order->cart->items as $item)
                           <li class="list-group-item">
                             <div style="white-space: nowrap; max-width: 150px; overflow: hidden; text-overflow: ellipsis; float: left;" title="{{ $item['item']['title'] }}">
