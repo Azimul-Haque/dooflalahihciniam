@@ -39,174 +39,173 @@
 
   <!-- content section -->
   <section class="checkout spad">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            @if(Auth::check() && Auth::user()->role == 'admin')
-              {{-- @include('partials/shop-sidebar')<br/> --}}
-            @endif
-            
-            @include('partials/_profile') <br/>
+      <div class="row">
+        <div class="col-md-3">
+          @if(Auth::check() && Auth::user()->role == 'admin')
+            {{-- @include('partials/shop-sidebar')<br/> --}}
+          @endif
+          
+          @include('partials/_profile') <br/>
 
-            {{-- wishlist --}}
-            <div class="panel panel-success shadow-light">
-              <div class="panel-heading"><h4 class="panel-title">My WishList</h4></div>
-              <div class="panel-body" style="padding: 0px;">
-                <table class="table table-hover table-condensed table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Product</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    @foreach(Auth::user()->wishlists as $wishlist)
-                    <tr>
-                      <td>
-                        <a href="{{ route('product.getsingleproduct', [$wishlist->product->id, generate_token(100)]) }}">
-                          {{ $wishlist->product->title }}<br/>
-                          <small>{{ $wishlist->created_at->format('M d, Y, h:i A') }}</small>
-                        </a>
-                      </td>
-                    </tr>
-                    @endforeach
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            {{-- wishlist --}}
-          </div>
-          <div class="col-md-9">
-            @if($orders->first())
-            <div class="panel panel-success shadow-light">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  @if($orders->first()->paymentstatus == 'paid')
-                    <i class="fa fa-check" title="Delivered"></i>
-                  @elseif($orders->first()->paymentstatus == 'not-paid')
-                    <i class="fa fa-hourglass-start" title="Yet to deliver"></i>
-                  @endif
-                  Last Order: {{ $orders->first()->created_at->format('M d, Y, h:i A') }}
-                </h4>
-              </div>
-              <div class="panel-body">
-                <h4>
-                  <a href="{{ route('warehouse.receiptpdf', [$orders->first()->payment_id, generate_token(100)]) }}" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn pull-right" title="Print Invoice" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a>
-                  Order ID: {{ $orders->first()->payment_id }}
-                  <br/>
-                  Payment Method: {{ payment_method($orders->first()->payment_method) }}<br/>
-                </h4>
-                Delivery Location:<br/>
-                <span>
-                  @if($orders->first()->deliverylocation == 1020)
-                    {{ deliverylocation($orders->first()->deliverylocation) }}
-                  @else
-                    {{ $orders->first()->user->address }}
-                  @endif
-                </span>
-                <ul class="list-group">
-                  @foreach($orders->first()->cart->items as $item)
-                    <li class="list-group-item">
-                      <div style="float: left;">{{ $item['item']['title'] }}</div> | {{ $item['qty'] }}
-                      <span class="badge">¥ {{ $item['price'] }}</span>
-                    </li>
+          {{-- wishlist --}}
+          <div class="panel panel-success shadow-light">
+            <div class="panel-heading"><h4 class="panel-title">My WishList</h4></div>
+            <div class="panel-body" style="padding: 0px;">
+              <table class="table table-hover table-condensed table-bordered">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @foreach(Auth::user()->wishlists as $wishlist)
+                  <tr>
+                    <td>
+                      <a href="{{ route('product.getsingleproduct', [$wishlist->product->id, generate_token(100)]) }}">
+                        {{ $wishlist->product->title }}<br/>
+                        <small>{{ $wishlist->created_at->format('M d, Y, h:i A') }}</small>
+                      </a>
+                    </td>
+                  </tr>
                   @endforeach
-                </ul>
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    Delivery Charge
-                    <span class="badge">¥ {{ json_encode($orders->first()->cart->deliveryCharge) }}</span>
-                  </li>
-                  <li class="list-group-item">
-                    Discount/ Earned Balance Usage
-                    <span class="badge">¥ {{ json_encode($orders->first()->cart->discount) }}</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="panel-footer panel-footer-custom">
-                <strong>Total Payable <span style="float: right;">¥ {{ $orders->first()->cart->totalPrice }}</span></strong>
-              </div>
-            </div>
-            @else
-            <center>
-              <h2>
-                No order found<br/>
-                <a class="highlight-button btn btn-medium checkout-btn xs-width-100 xs-text-center" href="{{ route('product.index') }}"><i class="fa fa-cart-plus"></i> See Products</a>
-              </h2>
-            </center>
-            @endif
-            <br/>
-            <div class="panel panel-primary shadow-light">
-              <div class="panel-heading">
-                <h4 class="panel-title">Your previous orders</h4>
-              </div>
-              <div class="panel-body">
-                <div class="panel-group" id="accordion">
-                @foreach($orders as $order)
-                  <div class="panel panel-success shadow-light">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#receiptcollapse{{ $order->id }}">
-                          @if($order->paymentstatus == 'paid')
-                            <i class="fa fa-check" title="Delivered"></i>
-                          @elseif($order->paymentstatus == 'not-paid')
-                            <i class="fa fa-hourglass-start" title="Yet to deliver"></i>
-                          @endif
-                          {{ $order->created_at->format('M d, Y, h:i A') }}
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="receiptcollapse{{ $order->id }}" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        <h4>
-                          <a href="{{ route('warehouse.receiptpdf', [$order->payment_id, generate_token(100)]) }}" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn pull-right" title="Print Invoice" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a>
-                          Order ID: {{ $order->payment_id }}<br/>
-                          Payment Method: {{ payment_method($order->payment_method) }}<br/>
-                        </h4>
-                        Delivery Location:<br/>
-                        <span>
-                          @if($order->deliverylocation == 1020)
-                            {{ deliverylocation($order->deliverylocation) }}
-                          @else
-                            {{ $order->user->address }}
-                          @endif
-                        </span>
-                        <ul class="list-group">
-                          @foreach($order->cart->items as $item)
-                            <li class="list-group-item">
-                              <div style="white-space: nowrap; max-width: 150px; overflow: hidden; text-overflow: ellipsis; float: left;" title="{{ $item['item']['title'] }}">
-                                {{ $item['item']['title'] }}
-                              </div> | {{ $item['qty'] }}
-                              <span class="badge">¥ {{ $item['price'] }}</span>
-                            </li>
-                          @endforeach
-                        </ul><ul class="list-group">
-                        <li class="list-group-item">
-                          Delivery Charge
-                          <span class="badge">¥ {{ json_encode($order->cart->deliveryCharge) }}</span>
-                        </li>
-                        <li class="list-group-item">
-                          Discount/ Earned Balance Usage
-                          <span class="badge">¥ {{ json_encode($order->cart->discount) }}</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="panel-footer panel-footer-custom">
-                      <strong>Total Payable <span style="float: right;">¥ {{ $order->cart->totalPrice }}</span></strong>
-                    </div>
-                    </div>
-                  </div>
-                @endforeach
-                <br/>
-                @include('pagination.default', ['paginator' => $orders])
-                </div>
-              </div>
+                </tbody>
+              </table>
             </div>
           </div>
-          <div class="col-md-4">
-            
+          {{-- wishlist --}}
+        </div>
+        <div class="col-md-9">
+          @if($orders->first())
+          <div class="panel panel-success shadow-light">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                @if($orders->first()->paymentstatus == 'paid')
+                  <i class="fa fa-check" title="Delivered"></i>
+                @elseif($orders->first()->paymentstatus == 'not-paid')
+                  <i class="fa fa-hourglass-start" title="Yet to deliver"></i>
+                @endif
+                Last Order: {{ $orders->first()->created_at->format('M d, Y, h:i A') }}
+              </h4>
+            </div>
+            <div class="panel-body">
+              <h4>
+                <a href="{{ route('warehouse.receiptpdf', [$orders->first()->payment_id, generate_token(100)]) }}" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn pull-right" title="Print Invoice" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a>
+                Order ID: {{ $orders->first()->payment_id }}
+                <br/>
+                Payment Method: {{ payment_method($orders->first()->payment_method) }}<br/>
+              </h4>
+              Delivery Location:<br/>
+              <span>
+                @if($orders->first()->deliverylocation == 1020)
+                  {{ deliverylocation($orders->first()->deliverylocation) }}
+                @else
+                  {{ $orders->first()->user->address }}
+                @endif
+              </span>
+              <ul class="list-group">
+                @foreach($orders->first()->cart->items as $item)
+                  <li class="list-group-item">
+                    <div style="float: left;">{{ $item['item']['title'] }}</div> | {{ $item['qty'] }}
+                    <span class="badge">¥ {{ $item['price'] }}</span>
+                  </li>
+                @endforeach
+              </ul>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  Delivery Charge
+                  <span class="badge">¥ {{ json_encode($orders->first()->cart->deliveryCharge) }}</span>
+                </li>
+                <li class="list-group-item">
+                  Discount/ Earned Balance Usage
+                  <span class="badge">¥ {{ json_encode($orders->first()->cart->discount) }}</span>
+                </li>
+              </ul>
+            </div>
+            <div class="panel-footer panel-footer-custom">
+              <strong>Total Payable <span style="float: right;">¥ {{ $orders->first()->cart->totalPrice }}</span></strong>
+            </div>
+          </div>
+          @else
+          <center>
+            <h2>
+              No order found<br/>
+              <a class="highlight-button btn btn-medium checkout-btn xs-width-100 xs-text-center" href="{{ route('product.index') }}"><i class="fa fa-cart-plus"></i> See Products</a>
+            </h2>
+          </center>
+          @endif
+          <br/>
+          <div class="panel panel-primary shadow-light">
+            <div class="panel-heading">
+              <h4 class="panel-title">Your previous orders</h4>
+            </div>
+            <div class="panel-body">
+              <div class="panel-group" id="accordion">
+              @foreach($orders as $order)
+                <div class="panel panel-success shadow-light">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#receiptcollapse{{ $order->id }}">
+                        @if($order->paymentstatus == 'paid')
+                          <i class="fa fa-check" title="Delivered"></i>
+                        @elseif($order->paymentstatus == 'not-paid')
+                          <i class="fa fa-hourglass-start" title="Yet to deliver"></i>
+                        @endif
+                        {{ $order->created_at->format('M d, Y, h:i A') }}
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="receiptcollapse{{ $order->id }}" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <h4>
+                        <a href="{{ route('warehouse.receiptpdf', [$order->payment_id, generate_token(100)]) }}" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn pull-right" title="Print Invoice" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a>
+                        Order ID: {{ $order->payment_id }}<br/>
+                        Payment Method: {{ payment_method($order->payment_method) }}<br/>
+                      </h4>
+                      Delivery Location:<br/>
+                      <span>
+                        @if($order->deliverylocation == 1020)
+                          {{ deliverylocation($order->deliverylocation) }}
+                        @else
+                          {{ $order->user->address }}
+                        @endif
+                      </span>
+                      <ul class="list-group">
+                        @foreach($order->cart->items as $item)
+                          <li class="list-group-item">
+                            <div style="white-space: nowrap; max-width: 150px; overflow: hidden; text-overflow: ellipsis; float: left;" title="{{ $item['item']['title'] }}">
+                              {{ $item['item']['title'] }}
+                            </div> | {{ $item['qty'] }}
+                            <span class="badge">¥ {{ $item['price'] }}</span>
+                          </li>
+                        @endforeach
+                      </ul><ul class="list-group">
+                      <li class="list-group-item">
+                        Delivery Charge
+                        <span class="badge">¥ {{ json_encode($order->cart->deliveryCharge) }}</span>
+                      </li>
+                      <li class="list-group-item">
+                        Discount/ Earned Balance Usage
+                        <span class="badge">¥ {{ json_encode($order->cart->discount) }}</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="panel-footer panel-footer-custom">
+                    <strong>Total Payable <span style="float: right;">¥ {{ $order->cart->totalPrice }}</span></strong>
+                  </div>
+                  </div>
+                </div>
+              @endforeach
+              <br/>
+              @include('pagination.default', ['paginator' => $orders])
+              </div>
+            </div>
           </div>
         </div>
+        <div class="col-md-4">
+          
+        </div>
       </div>
+
       <div class="modal fade" id="editProfileModal" role="dialog">
         <div class="modal-dialog">
           <!-- Modal content-->
