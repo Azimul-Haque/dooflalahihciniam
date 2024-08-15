@@ -82,7 +82,7 @@
           </div>
           <div class="col-md-9">
             @if($orders->first())
-            <div class="card panel-success shadow-light">
+            <div class="card card-success shadow-light">
               <div class="card-header">
                 <h5 class="card-title">
                   @if($orders->first()->paymentstatus == 'paid')
@@ -140,16 +140,16 @@
             </center>
             @endif
             <br/>
-            <div class="panel panel-primary shadow-light">
-              <div class="panel-heading">
-                <h4 class="panel-title">Your previous orders</h4>
+            <div class="card card-primary shadow-light">
+              <div class="card-heading">
+                <h4 class="card-title">Your previous orders</h4>
               </div>
-              <div class="panel-body">
-                <div class="panel-group" id="accordion">
+              <div class="card-body">
+                <div class="card-group" id="accordion">
                 @foreach($orders as $order)
-                  <div class="panel panel-success shadow-light">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
+                  <div class="card card-success shadow-light">
+                    <div class="card-heading">
+                      <h4 class="card-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#receiptcollapse{{ $order->id }}">
                           @if($order->paymentstatus == 'paid')
                             <i class="fa fa-check" title="Delivered"></i>
@@ -160,8 +160,8 @@
                         </a>
                       </h4>
                     </div>
-                    <div id="receiptcollapse{{ $order->id }}" class="panel-collapse collapse">
-                      <div class="panel-body">
+                    <div id="receiptcollapse{{ $order->id }}" class="card-collapse collapse">
+                      <div class="card-body">
                         <h4>
                           <a href="{{ route('warehouse.receiptpdf', [$order->payment_id, generate_token(100)]) }}" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn pull-right" title="Print Invoice" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a>
                           Order ID: {{ $order->payment_id }}<br/>
@@ -195,7 +195,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="panel-footer panel-footer-custom">
+                    <div class="card-footer card-footer-custom">
                       <strong>Total Payable <span style="float: right;">¥ {{ $order->cart->totalPrice }}</span></strong>
                     </div>
                     </div>
