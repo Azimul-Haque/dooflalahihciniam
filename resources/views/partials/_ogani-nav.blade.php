@@ -206,7 +206,7 @@
 
                                 </a>
                             </li>
-                        </ul><br/>
+                        </ul>
                         <div class="header__cart__price">
                             <a href="{{ route('product.shoppingcart') }}">
                                 <span id="navTotalPrice">
