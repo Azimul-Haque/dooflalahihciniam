@@ -38,8 +38,8 @@
 
                     </a>
                 </li>
-            </ul>
-            <div class="header__cart__price"><br/>
+            </ul><br/>
+            <div class="header__cart__price">
                 <span id="navTotalPriceMobile">
                     ¥ @if(Session::has('cart'))
                         {{ Session::get('cart')->totalPrice }}
