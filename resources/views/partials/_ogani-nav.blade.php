@@ -40,7 +40,7 @@
                 </li>
             </ul>
             <div class="header__cart__price">
-                <span id="totalPriceMobile">
+                <span id="navTotalPriceMobile">
                     ¥ @if(Session::has('cart'))
                         {{ Session::get('cart')->totalPrice }}
                     @endif
@@ -209,7 +209,7 @@
                         </ul>
                         <div class="header__cart__price">
                             <a href="{{ route('product.shoppingcart') }}">
-                                <span id="totalPrice">
+                                <span id="navTotalPrice">
                                     ¥ @if(Session::has('cart'))
                                         {{ Session::get('cart')->totalPrice }}
                                     @endif
@@ -288,7 +288,7 @@
                                 </li>
                             </ul>
                             <div class="header__cart__price">
-                                <span id="totalPriceScroll">
+                                <span id="navTotalPriceScroll">
                                     ¥ @if(Session::has('cart'))
                                         {{ Session::get('cart')->totalPrice }}
                                     @endif
