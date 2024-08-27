@@ -38,7 +38,7 @@
 
                     </a>
                 </li>
-            </ul><br/>
+            </ul>
             <div class="header__cart__price">
                 <span id="navTotalPriceMobile">
                     ¥ @if(Session::has('cart'))
