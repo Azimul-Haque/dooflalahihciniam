@@ -296,6 +296,8 @@
                                 <span id="navTotalPriceScroll">
                                     ¥ @if(Session::has('cart'))
                                         {{ Session::get('cart')->totalPrice }}
+                                    @else
+                                    0
                                     @endif
                                 </span>
                             </div>
