@@ -19,7 +19,7 @@
             <ul>
                 {{-- mobile view --}}
                 {{-- mobile view --}}
-                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="{{ route('user.profile', Auth::user()->unique_key) }}#my_wishlist"><i class="fa fa-heart"></i> <span>1</span></a></li>
                 <li>
                     <a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i>
                         <span id="totalInBagMobile">
@@ -173,7 +173,7 @@
                         {{-- normal pc view --}}
                         {{-- normal pc view --}}
                         <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <li><a href="{{ route('user.profile', Auth::user()->unique_key) }}#my_wishlist"><i class="fa fa-heart"></i> <span>1</span></a></li>
                             <li>
                                 <a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i>
                                     <span id="totalInBag">
@@ -238,7 +238,7 @@
                             <ul>
                                 {{-- normal pc view SCROLL --}}
                                 {{-- normal pc view SCROLL --}}
-                                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                                <li><a href="{{ route('user.profile', Auth::user()->unique_key) }}#my_wishlist"><i class="fa fa-heart"></i> <span>1</span></a></li>
                                 <li>
                                     <a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i>
                                         <span id="totalInBagScroll">
