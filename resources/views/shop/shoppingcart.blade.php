@@ -111,6 +111,8 @@
                                     $("#totalPriceGross").text(totalPriceGross);
                                   }
                               });
+
+                              
                             });
                             $("#addbyone{{ $product['item']['id'] }}").click(function(){
                               console.log('Item ID: ' + {{ $product['item']['id'] }});
