@@ -40,6 +40,7 @@
                 </li>
             </ul>
             <div class="header__cart__price">
+                <span>Total: </span>
                 <span id="navTotalPriceMobile">
                     ¥ @if(Session::has('cart'))
                         {{ Session::get('cart')->totalPrice }}
@@ -289,6 +290,7 @@
                                 </li>
                             </ul>
                             <div class="header__cart__price">
+                                <span>Total: </span>
                                 <span id="navTotalPriceScroll">
                                     ¥ @if(Session::has('cart'))
                                         {{ Session::get('cart')->totalPrice }}
