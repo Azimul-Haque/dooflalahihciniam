@@ -113,6 +113,20 @@
                                   }
                               });
 
+                                $.ajax({
+                                    url: "/getcartdata",
+                                    type: "GET",
+                                    data: {},
+                                    success: function (data) {
+                                      var response = data;
+                                      console.log(response);
+                                      $("#navTotalPrice").text('¥' +response);
+                                      $("#navTotalPriceMobile").text('¥' +response);
+                                      $("#navTotalPriceScroll").text('¥' +response);
+                                    }
+                                });
+                              });
+
 
                             });
                             $("#addbyone{{ $product['item']['id'] }}").click(function(){
