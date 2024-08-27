@@ -113,6 +113,10 @@
                                   }
                               });
 
+                              $("#navTotalPrice").text('¥' +response);
+                              $("#navTotalPriceMobile").text('¥' +response);
+                              $("#navTotalPriceScroll").text('¥' +response);
+
 
                             });
                             $("#addbyone{{ $product['item']['id'] }}").click(function(){
