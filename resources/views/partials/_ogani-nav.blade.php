@@ -22,7 +22,9 @@
                 <li>
                     <a href="{{ route('user.profile', Auth::user()->unique_key) }}#my_wishlist"><i class="fa fa-heart"></i> 
                         <span>
-                            
+                            @if(Auth::user())
+
+                            @endif
                         </span>
                     </a>
                 </li>
