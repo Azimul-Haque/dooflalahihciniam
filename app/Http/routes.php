@@ -385,9 +385,9 @@ Route::get('/addtocart/{id}', [
     'as' => 'product.addtocart'
 ]);
 
-Route::get('/addtocart/{id}', [
-    'uses' => 'ProductController@getAddToCart',
-    'as' => 'product.addtocart'
+Route::get('/getcartdata', [
+    'uses' => 'ProductController@getCartData',
+    'as' => 'product.getcartdata'
 ]);
 
 Route::get('/addtocartsingle/{id}/{qty}', [
