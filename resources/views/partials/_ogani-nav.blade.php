@@ -25,7 +25,6 @@
                             <span>{{ Auth::user()->wishlists->count() }}</span>
                         </a>
                     @endif
-                    
                 </li>
                 <li>
                     <a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i>
