@@ -255,13 +255,13 @@
                                 {{-- normal pc view SCROLL --}}
                                 {{-- normal pc view SCROLL --}}
                                 <li>
-                                    <a href="{{ route('user.profile', Auth::user()->unique_key) }}#my_wishlist"><i class="fa fa-heart"></i> 
-                                        <span>
-                                            @if(Auth::user())
-                                                {{ Auth::user()->wishlists->count() }}
-                                            @endif
-                                        </span>
-                                    </a>
+                                    @if(Auth::user())
+                                        <a href="{{ route('user.profile', Auth::user()->unique_key) }}#my_wishlist"><i class="fa fa-heart"></i> 
+                                            <span>{{ Auth::user()->wishlists->count() }}</span>
+                                        </a>
+                                    @else 
+                                        <a href="#"><i class="fa fa-heart"></i> <span></span></a>
+                                    @endif
                                 </li>
                                 <li>
                                     <a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i>
