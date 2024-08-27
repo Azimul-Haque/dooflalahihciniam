@@ -40,14 +40,16 @@
                 </li>
             </ul>
             <div class="header__cart__price">
-                <span>Total: </span>
-                <span id="navTotalPriceMobile">
-                    ¥ @if(Session::has('cart'))
-                        {{ Session::get('cart')->totalPrice }}
-                    @else
-                    0
-                    @endif
-                </span>
+                <a href="{{ route('product.shoppingcart') }}">
+                    <span>Total: </span>
+                    <span id="navTotalPriceMobile">
+                        ¥ @if(Session::has('cart'))
+                            {{ Session::get('cart')->totalPrice }}
+                        @else
+                        0
+                        @endif
+                    </span>
+                </a>
             </div>
         </div>
         {{-- <div class="humberger__menu__widget">
