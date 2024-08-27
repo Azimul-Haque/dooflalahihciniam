@@ -252,7 +252,7 @@
                                       success: function (data) {
                                         var response = data;
                                         console.log(response);
-                                        $("#navTotalPrice").text('¥ ' +re sponse);
+                                        $("#navTotalPrice").text('¥ ' +response);
                                         $("#navTotalPriceMobile").text('¥' +response);
                                         $("#navTotalPriceScroll").text('¥ ' +response);
                                       }
