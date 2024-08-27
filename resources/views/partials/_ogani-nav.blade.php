@@ -22,9 +22,7 @@
                 <li>
                     @if(Auth::user())
                         <a href="{{ route('user.profile', Auth::user()->unique_key) }}#my_wishlist"><i class="fa fa-heart"></i> 
-                            <span>
-                                {{ Auth::user()->wishlists->count() }}
-                            </span>
+                            <span>{{ Auth::user()->wishlists->count() }}</span>
                         </a>
                     @endif
                     
