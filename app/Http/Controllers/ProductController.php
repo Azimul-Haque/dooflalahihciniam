@@ -259,12 +259,9 @@ class ProductController extends Controller
       return 'success';
     }
 
-    public function getCartData() {
-      // this method returns an API response
-      $product = Product::find($id);
-      $oldCart = Session::has('cart') ? Session::get('cart') : null;
-      $cart = new Cart($oldCart);
-      $cart->add($product, $product->id);
+    public function getCartData()
+    {
+      Session::has('cart')  
 
       $request->session()->put('cart', $cart);
       //return redirect()->route('product.index');
