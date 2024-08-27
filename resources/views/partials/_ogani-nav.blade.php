@@ -39,7 +39,13 @@
                     </a>
                 </li>
             </ul>
-            <div class="header__cart__price">item: <span>¥150.00</span></div>
+            <div class="header__cart__price">
+                <span>
+                    ¥ @if(Session::has('cart'))
+                        {{ Session::get('cart')->totalQty }}
+                    @endif
+                </span>
+            </div>
         </div>
         {{-- <div class="humberger__menu__widget">
             <div class="header__top__right__language">
