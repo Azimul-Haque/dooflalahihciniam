@@ -252,32 +252,9 @@
                                       success: function (data) {
                                         var response = data;
                                         console.log(response);
-                                        var totalPrice = parseInt($("#totalPrice").text());
-                                        if(isNaN(totalPrice)) {
-                                          totalPrice = 0;
-                                        } else {
-                                          totalPrice = totalPrice;
-                                        }
-                                        totalPrice = totalPrice + 1;
-                                        $("#totalPrice").text(totalPrice);
-                                        
-                                        var totalPriceMobile = parseInt($("#totalPriceMobile").text());
-                                        if(isNaN(totalPriceMobile)) {
-                                          totalPriceMobile = 0;
-                                        } else {
-                                          totalPriceMobile = totalPriceMobile;
-                                        }
-                                        totalPriceMobile = totalPriceMobile + 1;
-                                        $("#totalPriceMobile").text(totalPriceMobile);
-
-                                        var totalPriceScroll = parseInt($("#totalPriceScroll").text());
-                                        if(isNaN(totalPriceScroll)) {
-                                          totalPriceScroll = 0;
-                                        } else {
-                                          totalPriceScroll = totalPriceScroll;
-                                        }
-                                        totalPriceScroll = totalPriceScroll + 1;
-                                        $("#totalPriceScroll").text(totalPriceScroll);
+                                        $("#totalPrice").text(response);
+                                        $("#totalPriceMobile").text(response);
+                                        $("#totalPriceScroll").text(response);
                                       }
                                   });
                                 });
