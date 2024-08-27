@@ -262,6 +262,7 @@ class ProductController extends Controller
     public function getCartData()
     {
       $cart = Session::has('cart') ? Session::get('cart') : null;
+      dd($cart)
       return $cart;
     }
 
