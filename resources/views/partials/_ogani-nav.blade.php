@@ -24,8 +24,6 @@
                         <span>
                             @if(Auth::user())
                                 {{ Auth::user()->wishlists->count() }}
-                            @else
-
                             @endif
                         </span>
                     </a>
