@@ -253,8 +253,8 @@
                                         var response = data;
                                         console.log(response);
                                         $("#navTotalPrice").text('¥' +response);
-                                        $("#navTotalPriceMobile").text(response);
-                                        $("#navTotalPriceScroll").text(response);
+                                        $("#navTotalPriceMobile").text('¥' +response);
+                                        $("#navTotalPriceScroll").text('¥' +response);
                                       }
                                   });
                                 });
