@@ -154,6 +154,10 @@
                                     $("#totalPriceGross").text(totalPriceGross);
                                   }
                               });
+
+                              $("#navTotalPrice").text('¥' +response);
+                              $("#navTotalPriceMobile").text('¥' +response);
+                              $("#navTotalPriceScroll").text('¥' +response);
                             });
                         });
                       </script>
