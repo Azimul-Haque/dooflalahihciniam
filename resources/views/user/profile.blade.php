@@ -15,6 +15,14 @@
     .wishlist a:hover {
       color: black;
     }
+
+    .modal-backdrop {
+      z-index: 100000 !important;
+    }
+
+    .modal {
+      z-index: 100001 !important;
+    }
   </style>
 @endsection
 
