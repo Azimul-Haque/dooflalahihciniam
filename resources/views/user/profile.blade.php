@@ -250,7 +250,7 @@
               {!! Form::textarea('address', null, array('class' => 'form-control textarea100', 'required' => '')) !!}
 
               {!! Form::label('password', 'Password (If you do not want to change password, leave it blank)') !!}
-              {!! Form::text('password', null, array('class' => 'form-control', 'id' => 'password')) !!}
+              {!! Form::password('password', null, array('class' => 'form-control', 'id' => 'password')) !!}
             </div>
             <div class="modal-footer">
                 <button type="submit" class="site-btn">Update</button>
