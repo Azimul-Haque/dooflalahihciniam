@@ -258,7 +258,17 @@
                             <ul>
                                 {{-- normal pc view SCROLL --}}
                                 {{-- normal pc view SCROLL --}}
-                                <li><a href="{{ route('user.profile', Auth::user()->unique_key) }}#my_wishlist"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                                <li>
+                                    <a href="{{ route('user.profile', Auth::user()->unique_key) }}#my_wishlist"><i class="fa fa-heart"></i> 
+                                        <span>
+                                            @if(Auth::user())
+                                                {{ Auth::user()->wishlists->count() }}
+                                            @else
+
+                                            @endif
+                                        </span>
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i>
                                         <span id="totalInBagScroll">
