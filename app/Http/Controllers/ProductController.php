@@ -261,9 +261,9 @@ class ProductController extends Controller
 
     public function getCartData()
     {
-      $cart = Session::has('cart') ? Session::get('cart') : null;
+      $totalPrice = Session::has('cart') ? Session::get('cart')->totalPrice : null;
       dd($cart->totalPrice);
-      return $cart;
+      return $totalPrice;
     }
 
     public function getAddByOne($id) {
