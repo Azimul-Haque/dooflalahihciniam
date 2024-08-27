@@ -25,13 +25,7 @@
                             <span>{{ Auth::user()->wishlists->count() }}</span>
                         </a>
                     @else 
-                        <a href="{{ route('user.profile', Auth::user()->unique_key) }}#my_wishlist"><i class="fa fa-heart"></i> 
-                            <span>
-                                @if(Auth::user())
-                                    {{ Auth::user()->wishlists->count() }}
-                                @endif
-                            </span>
-                        </a>
+                        <a href="#"><i class="fa fa-heart"></i> <span></span></a>
                     @endif
                 </li>
                 <li>
