@@ -24,6 +24,8 @@
                         <span>
                             @if(Auth::user())
 
+                            @else
+                            
                             @endif
                         </span>
                     </a>
