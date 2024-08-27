@@ -262,7 +262,7 @@ class ProductController extends Controller
     public function getCartData()
     {
       $totalPrice = Session::has('cart') ? Session::get('cart')->totalPrice : 0;
-      dd($totalPrice);
+      // dd($totalPrice);
       return $totalPrice;
     }
 
