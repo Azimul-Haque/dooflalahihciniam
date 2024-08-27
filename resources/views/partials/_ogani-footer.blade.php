@@ -5,7 +5,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="{{ asset('images/logo.png') }}" alt=""></a>
+                            <a href="{{ route('index.index') }}"><img src="{{ asset('images/logo.png') }}" alt=""></a>
                         </div>
                         <ul>
                             <li><b>Address:</b> 1.15.3 Yachiyodai Higashi, Yachiyo-shi, Chiba Prefecture, Japan</li>
