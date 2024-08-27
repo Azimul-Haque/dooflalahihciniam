@@ -39,7 +39,7 @@
                     </a>
                 </li>
             </ul>
-            <div class="header__cart__price">
+            <div class="header__cart__price"><br/>
                 <span id="navTotalPriceMobile">
                     ¥ @if(Session::has('cart'))
                         {{ Session::get('cart')->totalPrice }}
