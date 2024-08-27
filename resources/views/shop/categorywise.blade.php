@@ -252,13 +252,6 @@
                                       success: function (data) {
                                         var response = data;
                                         console.log(response);
-                                        if(response == 'success') {
-                                          if($(window).width() > 768) {
-                                            toastr.success('{{ $product->title }} added to your bag', 'SUCCESS').css('width','400px');
-                                          } else {
-                                            toastr.success('{{ $product->title }} added to your bag', 'SUCCESS').css('width', ($(window).width()-25)+'px');
-                                          }
-                                        }
                                         var totalInBag = parseInt($("#totalInBag").text());
                                         if(isNaN(totalInBag)) {
                                           totalInBag = 0;
