@@ -261,10 +261,10 @@ class ProductController extends Controller
 
     public function getCartData()
     {
-      Session::has('cart')  
+      if(Session::has('cart')) {
 
-      $request->session()->put('cart', $cart);
-      //return redirect()->route('product.index');
+      }
+      
       return 'success';
     }
 
