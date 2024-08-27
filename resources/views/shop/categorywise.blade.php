@@ -252,9 +252,9 @@
                                       success: function (data) {
                                         var response = data;
                                         console.log(response);
-                                        $("#totalPrice").text(response);
-                                        $("#totalPriceMobile").text(response);
-                                        $("#totalPriceScroll").text(response);
+                                        $("#navTotalPrice").text(response);
+                                        $("#navTotalPriceMobile").text(response);
+                                        $("#navTotalPriceScroll").text(response);
                                       }
                                   });
                                 });
