@@ -207,7 +207,15 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="header__cart__price"><a href="{{ route('product.shoppingcart') }}"><span>¥150.00</span></a></div>
+                        <div class="header__cart__price">
+                            <a href="{{ route('product.shoppingcart') }}">
+                                <span>
+                                    ¥ @if(Session::has('cart'))
+                                        {{ Session::get('cart')->totalQty }}
+                                    @endif
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
