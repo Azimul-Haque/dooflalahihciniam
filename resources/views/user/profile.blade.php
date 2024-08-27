@@ -45,7 +45,7 @@
   <section class="product spad">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3" id="my_wishlist">
             @if(Auth::check() && Auth::user()->role == 'admin')
               {{-- @include('partials/shop-sidebar')<br/> --}}
             @endif
