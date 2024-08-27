@@ -95,6 +95,7 @@
                                     var totalInBagMobile = parseInt($("#totalInBagMobile").text()) - 1;
                                     $("#totalInBag").text(totalInBag);
                                     $("#totalInBagMobile").text(totalInBag);
+                                    $("#totalInBagScroll").text(totalInBag);
                                     var itemQtyInBag = parseInt($("#itemQtyInBag{{ $product['item']['id'] }}").text()) - 1;
                                     $("#itemQtyInBag{{ $product['item']['id'] }}").text(itemQtyInBag);
                                     if(itemQtyInBag == 0) {
@@ -112,7 +113,7 @@
                                   }
                               });
 
-                              
+
                             });
                             $("#addbyone{{ $product['item']['id'] }}").click(function(){
                               console.log('Item ID: ' + {{ $product['item']['id'] }});
