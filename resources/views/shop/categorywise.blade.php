@@ -252,32 +252,32 @@
                                       success: function (data) {
                                         var response = data;
                                         console.log(response);
-                                        var totalInBag = parseInt($("#totalInBag").text());
-                                        if(isNaN(totalInBag)) {
-                                          totalInBag = 0;
+                                        var totalPrice = parseInt($("#totalPrice").text());
+                                        if(isNaN(totalPrice)) {
+                                          totalPrice = 0;
                                         } else {
-                                          totalInBag = totalInBag;
+                                          totalPrice = totalPrice;
                                         }
-                                        totalInBag = totalInBag + 1;
-                                        $("#totalInBag").text(totalInBag);
+                                        totalPrice = totalPrice + 1;
+                                        $("#totalPrice").text(totalPrice);
                                         
-                                        var totalInBagMobile = parseInt($("#totalInBagMobile").text());
-                                        if(isNaN(totalInBagMobile)) {
-                                          totalInBagMobile = 0;
+                                        var totalPriceMobile = parseInt($("#totalPriceMobile").text());
+                                        if(isNaN(totalPriceMobile)) {
+                                          totalPriceMobile = 0;
                                         } else {
-                                          totalInBagMobile = totalInBagMobile;
+                                          totalPriceMobile = totalPriceMobile;
                                         }
-                                        totalInBagMobile = totalInBagMobile + 1;
-                                        $("#totalInBagMobile").text(totalInBagMobile);
+                                        totalPriceMobile = totalPriceMobile + 1;
+                                        $("#totalPriceMobile").text(totalPriceMobile);
 
-                                        var totalInBagScroll = parseInt($("#totalInBagScroll").text());
-                                        if(isNaN(totalInBagScroll)) {
-                                          totalInBagScroll = 0;
+                                        var totalPriceScroll = parseInt($("#totalPriceScroll").text());
+                                        if(isNaN(totalPriceScroll)) {
+                                          totalPriceScroll = 0;
                                         } else {
-                                          totalInBagScroll = totalInBagScroll;
+                                          totalPriceScroll = totalPriceScroll;
                                         }
-                                        totalInBagScroll = totalInBagScroll + 1;
-                                        $("#totalInBagScroll").text(totalInBagScroll);
+                                        totalPriceScroll = totalPriceScroll + 1;
+                                        $("#totalPriceScroll").text(totalPriceScroll);
                                       }
                                   });
                                 });
