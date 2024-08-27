@@ -19,7 +19,13 @@
             <ul>
                 {{-- mobile view --}}
                 {{-- mobile view --}}
-                <li><a href="{{ route('user.profile', Auth::user()->unique_key) }}#my_wishlist"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li>
+                    <a href="{{ route('user.profile', Auth::user()->unique_key) }}#my_wishlist"><i class="fa fa-heart"></i> 
+                        <span>
+                            
+                        </span>
+                    </a>
+                </li>
                 <li>
                     <a href="{{ route('product.shoppingcart') }}"><i class="fa fa-shopping-bag"></i>
                         <span id="totalInBagMobile">
