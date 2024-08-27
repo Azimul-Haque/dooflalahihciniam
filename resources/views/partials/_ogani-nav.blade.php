@@ -209,7 +209,8 @@
                         </ul>
                         <div class="header__cart__price">
                             <a href="{{ route('product.shoppingcart') }}">
-                                <span>Total: </span><span id="navTotalPrice">
+                                <span>Total: </span>
+                                <span id="navTotalPrice">
                                     ¥ @if(Session::has('cart'))
                                         {{ Session::get('cart')->totalPrice }}
                                     @endif
