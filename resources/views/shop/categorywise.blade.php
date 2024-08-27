@@ -246,7 +246,7 @@
                                   });
 
                                   $.ajax({
-                                      url: "/addtocart/{{ $product->id }}",
+                                      url: "/getcartdata",
                                       type: "GET",
                                       data: {},
                                       success: function (data) {
