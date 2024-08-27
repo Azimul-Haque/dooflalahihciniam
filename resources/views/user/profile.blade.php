@@ -52,7 +52,7 @@
             
             @include('partials/_profile') <br/>
 
-            <div class="latest-product__text">
+            <div class="latest-product__text" id="my_wishlist">
                 <h4>My Wishlist</h4>
                 <div class="latest-product__slider owl-carousel">
                     <div class="latest-prdouct__slider__item">
