@@ -42,7 +42,7 @@
             <div class="header__cart__price">
                 <span>
                     ¥ @if(Session::has('cart'))
-                        {{ Session::get('cart')->totalQty }}
+                        {{ Session::get('cart')->totalPrice }}
                     @endif
                 </span>
             </div>
@@ -211,7 +211,7 @@
                             <a href="{{ route('product.shoppingcart') }}">
                                 <span>
                                     ¥ @if(Session::has('cart'))
-                                        {{ Session::get('cart')->totalQty }}
+                                        {{ Session::get('cart')->totalPrice }}
                                     @endif
                                 </span>
                             </a>
@@ -290,7 +290,7 @@
                             <div class="header__cart__price">
                                 <span>
                                     ¥ @if(Session::has('cart'))
-                                        {{ Session::get('cart')->totalQty }}
+                                        {{ Session::get('cart')->totalPrice }}
                                     @endif
                                 </span>
                             </div>
