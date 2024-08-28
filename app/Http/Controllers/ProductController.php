@@ -90,8 +90,13 @@ class ProductController extends Controller
                                 ->orWhere("code", 'LIKE', '%' . $search_param . '%')
                                 ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
                                 ->orWhere("price", 'LIKE', '%' . $search_param . '%')
-                                ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%');
-                                
+                                ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%')
+                                ->orWhereHas('category', function ($q) use ($search_param) {
+                                    $q->where('name', 'like', '%' . $search_param . '%');
+                                })
+                                ->orWhereHas('subcategory', function ($q) use ($search_param) {
+                                    $q->where('name', 'like', '%' . $search_param . '%');
+                                });
                       })
                       ->orderBy('id', 'desc')
                       ->get();
