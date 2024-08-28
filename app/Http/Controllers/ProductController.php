@@ -105,7 +105,7 @@ class ProductController extends Controller
                   
       $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
-      return view('shop.search', compact('products'))
+      return view('shop.search')
                   ->withLatestproducts($latestproducts)
                   ->withSearchparam($search_param);
     }
