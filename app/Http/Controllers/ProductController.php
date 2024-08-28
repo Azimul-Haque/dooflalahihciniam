@@ -87,7 +87,7 @@ class ProductController extends Controller
 
       $products = Product::query()
         ->where(function ($query) use ($searchParam) {
-            $query->where('name', 'like', '%' . $searchParam . '%')
+            $query->where('title', 'like', '%' . $searchParam . '%')
                   ->orWhere('price', 'like', '%' . $searchParam . '%')
                   ->orWhereHas('category', function ($q) use ($searchParam) {
                       $q->where('name', 'like', '%' . $searchParam . '%');
