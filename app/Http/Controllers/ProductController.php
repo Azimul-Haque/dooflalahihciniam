@@ -77,6 +77,7 @@ class ProductController extends Controller
 
     public function searchProducts($search_param) 
     {
+      
       // $products = Product::where("title", 'LIKE', '%' . $search_param . '%')
       //                    ->orWhere("code", 'LIKE', '%' . $search_param . '%')
       //                    ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
@@ -85,14 +86,7 @@ class ProductController extends Controller
       //                    ->orderBy('id', 'desc')
       //                    ->paginate(10);
 
-      $products = Product::where('title', 'like', '%' . $search_param . '%')
-                        ->orWhere("code", 'LIKE', '%' . $search_param . '%')
-                        ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
-                        ->orWhere("price", 'LIKE', '%' . $search_param . '%')
-                        ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%')
-                        ->whereHas('category', function ($q) use ($search_param) {
-                            $q->where('name', 'like', '%' . $search_param . '%');
-                        })
+      $products = Product::
                         ->whereHas('subcategory', function ($q) use ($search_param) {
                             $q->where('name', 'like', '%' . $search_param . '%');
                         })
