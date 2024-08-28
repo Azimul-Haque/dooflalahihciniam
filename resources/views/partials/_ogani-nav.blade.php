@@ -349,7 +349,7 @@
                                     <span class="arrow_carrot-down"></span>
                                 </div> --}}
                                 <input type="text" placeholder="What do yo u need?">
-                                <button class="site-btn">SEARCH</button>
+                                <a class="site-btn">SEARCH</a>
                             </form>
                         </div>
                         <div class="hero__search__phone call-to-this-number">
