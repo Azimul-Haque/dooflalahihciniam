@@ -100,11 +100,9 @@ class ProductController extends Controller
           });
 
           // Search by subcategory name
-          if ($request->filled('subcategory_name')) {
-              $query->whereHas('subcategory', function ($q) use ($request) {
-                  $q->where('name', 'like', '%' . $request->subcategory_name . '%');
-              });
-          }
+          $query->whereHas('subcategory', function ($q) use ($search_param) {
+              $q->where('name', 'like', '%' . $search_param . '%');
+          });
 
           // Get the results
           $products = $query->get();
