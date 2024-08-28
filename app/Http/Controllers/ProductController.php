@@ -104,8 +104,10 @@ class ProductController extends Controller
       if ($searchParam) {
           $productQuery->where(function ($query) use ($searchParam) {
               $query->where('title', 'like', '%' . $searchParam . '%')
-                    ->orWhere('price', 'like', '%' . $searchParam . '%')
-                    ->orWhere('oldprice', 'like', '%' . $searchParam . '%');
+                    ->orWhere("code", 'LIKE', '%' . $search_param . '%')
+                    ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
+                    ->orWhere("price", 'LIKE', '%' . $search_param . '%')
+                    ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%');
           });
       }
 
