@@ -350,7 +350,7 @@
                                 </div> --}}
                                 {{-- <input type="text" placeholder="What do yo u need?"> --}}
                                 <input type="text" class="form-control" name="searchParam" id="searchParam" placeholder="What do yo u need?" @if(!empty($searchparam)) value="{{ $searchparam }}" @endif>
-                                <button class="site-btn" id="searchBtn"><i class="fa fa-search" style="margin-left: 20px;"></i>  SEARCH</button>
+                                <button class="site-btn" id="searchBtn"><i class="fa fa-search" style="margin-right: 20px;"></i>  SEARCH</button>
                             </form>
                         </div>
                         <div class="hero__search__phone call-to-this-number">
