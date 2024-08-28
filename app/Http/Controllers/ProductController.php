@@ -86,21 +86,21 @@ class ProductController extends Controller
       //                    ->paginate(10);
 
       $products = Product::query()
-        ->where(function ($query) use ($search_param) {
-            $query->where('title', 'like', '%' . $search_param . '%')
-                  ->orWhere("code", 'LIKE', '%' . $search_param . '%')
-                  ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
-                  ->orWhere("price", 'LIKE', '%' . $search_param . '%')
-                  ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%')
-                  ->orWhereHas('category', function ($q) use ($search_param) {
-                      $q->where('name', 'like', '%' . $search_param . '%');
-                  })
-                  ->orWhereHas('subcategory', function ($q) use ($search_param) {
-                      $q->where('name', 'like', '%' . $search_param . '%');
-                  });
-        })
-        ->orderBy('id', 'desc')
-        ->paginate(10);
+                      ->where(function ($query) use ($search_param) {
+                          $query->where('title', 'like', '%' . $search_param . '%')
+                                ->orWhere("code", 'LIKE', '%' . $search_param . '%')
+                                ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
+                                ->orWhere("price", 'LIKE', '%' . $search_param . '%')
+                                ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%')
+                                ->orWhereHas('category', function ($q) use ($search_param) {
+                                    $q->where('name', 'like', '%' . $search_param . '%');
+                                })
+                                ->orWhereHas('subcategory', function ($q) use ($search_param) {
+                                    $q->where('name', 'like', '%' . $search_param . '%');
+                                });
+                      })
+                      ->orderBy('id', 'desc')
+                      ->paginate(10);
 
           // $query = Product::query();
 
