@@ -20,6 +20,11 @@ Route::get('/shop', [
     'as' => 'product.shop'
 ]);
 
+Route::get('/search', [
+    'uses' => 'ProductController@getShop',
+    'as' => 'product.shop'
+]);
+
 Route::get('/category/{id}/{random_string}', [
     'uses' => 'ProductController@getCategoryWise',
     'as' => 'product.categorywise'
