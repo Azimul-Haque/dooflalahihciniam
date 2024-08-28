@@ -95,12 +95,12 @@ class ProductController extends Controller
                 ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%');
 
           // Search by category name
-          $query->whereHas('categories', function ($q) use ($search_param) {
+          $query->whereHas('category', function ($q) use ($search_param) {
               $q->where('name', 'like', '%' . $search_param . '%');
           });
 
           // Search by subcategory name
-          $query->whereHas('subcategories', function ($q) use ($search_param) {
+          $query->whereHas('subcategory', function ($q) use ($search_param) {
               $q->where('name', 'like', '%' . $search_param . '%');
           });
 
