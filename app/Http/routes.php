@@ -22,7 +22,7 @@ Route::get('/shop', [
 
 Route::get('/search/{search}', [
     'uses' => 'ProductController@searchProducts',
-    'as' => 'product.shop'
+    'as' => 'product.searchproducts'
 ]);
 
 Route::get('/category/{id}/{random_string}', [
