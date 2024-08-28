@@ -131,7 +131,7 @@
                       <div class="product__details__quantity">
                           <div class="quantity">
                               <div class="pro-qty">
-                                  <input type="text" id="productQty" min="1" max="{{ $product->stock }}" value="1">
+                                  <input type="text" id="productQty" min="1" max="{{ $product->stock }}" value="1" readonly>
                               </div>
                           </div>
                       </div>
