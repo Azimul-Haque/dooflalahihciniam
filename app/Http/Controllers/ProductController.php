@@ -133,7 +133,7 @@ class ProductController extends Controller
       $currentPage = Paginator::resolveCurrentPage();
       $perPage = 10;
       $currentItems = $allProducts->slice(($currentPage - 1) * $perPage, $perPage)->values();
-      $paginatedProducts = new LengthAwarePaginator(
+      $products = new LengthAwarePaginator(
           $currentItems,
           $allProducts->count(),
           $perPage,
