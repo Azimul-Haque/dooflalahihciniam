@@ -86,8 +86,7 @@ class ProductController extends Controller
       //                    ->orderBy('id', 'desc')
       //                    ->paginate(10);
 
-      $products = Product::
-                        ->whereHas('subcategory', function ($q) use ($search_param) {
+      $products = Product::whereHas('subcategory', function ($q) use ($search_param) {
                             $q->where('name', 'like', '%' . $search_param . '%');
                         })
                         ->orderBy('id', 'desc')
