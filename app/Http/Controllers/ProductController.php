@@ -104,7 +104,7 @@ class ProductController extends Controller
                         //     $q->where('name', 'like', '%' . $search_param . '%');
                         // })
                         ->orderBy('id', 'desc')
-                        ->get();
+                        ->paginate(10);
 
           // dd($products);
                   
