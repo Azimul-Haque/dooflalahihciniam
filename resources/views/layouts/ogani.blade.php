@@ -104,6 +104,8 @@
           $('[title]').tooltip();
       });
 
+
+      // search codes for the search box
       $('#searchBtn').click(function() {
         var searchParam = $('#searchParam').val();
         if(isEmptyOrSpaces(searchParam)) {
