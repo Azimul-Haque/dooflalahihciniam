@@ -85,8 +85,7 @@ class ProductController extends Controller
       //                    ->orderBy('id', 'desc')
       //                    ->paginate(10);
 
-      $products = Product::query()
-                      ->where(function ($query) use ($search_param) {
+      $products = Product::where(function ($query) use ($search_param) {
                           $query->where('title', 'like', '%' . $search_param . '%')
                                 ->orWhere("code", 'LIKE', '%' . $search_param . '%')
                                 ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
