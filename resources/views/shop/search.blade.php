@@ -164,7 +164,7 @@
                             </div>
                             <div class="col-lg-4 col-md-4">
                                 <div class="filter__found">
-                                    <h6><span>{{ $products->count() }}</span> Products found</h6>
+                                    <h6><span>{{ $products->count() }}</span> Products found with the keyword ""</h6>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-3">
