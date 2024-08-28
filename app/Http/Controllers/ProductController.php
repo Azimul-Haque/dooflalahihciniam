@@ -90,16 +90,16 @@ class ProductController extends Controller
                         ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
                         ->orWhere("price", 'LIKE', '%' . $search_param . '%')
                         ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%')
-                        ->with('categories', function ($q) use ($search_param) {
+                        ->WhereHas('category', function ($q) use ($search_param) {
                             $q->where('name', 'like', '%' . $search_param . '%');
                         })
-                        ->with('subcategories', function ($q) use ($search_param) {
+                        ->WhereHas('subcategory', function ($q) use ($search_param) {
                             $q->where('name', 'like', '%' . $search_param . '%');
                         })
                         ->orderBy('id', 'desc')
                         ->get();
 
-          dd($products);
+          dd(compact('products'));
                   
       $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
