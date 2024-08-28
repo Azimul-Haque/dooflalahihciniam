@@ -85,27 +85,27 @@ class ProductController extends Controller
       //                    ->orderBy('id', 'desc')
       //                    ->paginate(10);
 
-          $query = Product::query();
+          // $query = Product::query();
 
-          // Search by product name or price
-          $query->where("title", 'LIKE', '%' . $search_param . '%')
-                ->orWhere("code", 'LIKE', '%' . $search_param . '%')
-                ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
-                ->orWhere("price", 'LIKE', '%' . $search_param . '%')
-                ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%');
+          // // Search by product name or price
+          // $query->where("title", 'LIKE', '%' . $search_param . '%')
+          //       ->orWhere("code", 'LIKE', '%' . $search_param . '%')
+          //       ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
+          //       ->orWhere("price", 'LIKE', '%' . $search_param . '%')
+          //       ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%');
 
-          // Search by category name
-          $query->whereHas('category', function ($q) use ($search_param) {
-              $q->where('name', 'like', '%' . $search_param . '%');
-          });
+          // // Search by category name
+          // $query->whereHas('category', function ($q) use ($search_param) {
+          //     $q->where('name', 'like', '%' . $search_param . '%');
+          // });
 
-          // Search by subcategory name
-          $query->whereHas('subcategory', function ($q) use ($search_param) {
-              $q->where('name', 'like', '%' . $search_param . '%');
-          });
+          // // Search by subcategory name
+          // $query->whereHas('subcategory', function ($q) use ($search_param) {
+          //     $q->where('name', 'like', '%' . $search_param . '%');
+          // });
 
-          // Get the results
-          $products = $query->paginate(10);
+          // // Get the results
+          // $products = $query->paginate(10);
 
           dd($products);
                   
