@@ -101,15 +101,13 @@ class ProductController extends Controller
       $productQuery = Product::query();
       
       // Directly search products
-      if ($searchParam) {
-          $productQuery->where(function ($query) use ($searchParam) {
-              $query->where('title', 'like', '%' . $searchParam . '%')
-                    ->orWhere("code", 'LIKE', '%' . $search_param . '%')
-                    ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
-                    ->orWhere("price", 'LIKE', '%' . $search_param . '%')
-                    ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%');
-          });
-      }
+      $productQuery->where(function ($query) use ($searchParam) {
+            $query->where('title', 'like', '%' . $searchParam . '%')
+                  ->orWhere("code", 'LIKE', '%' . $search_param . '%')
+                  ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
+                  ->orWhere("price", 'LIKE', '%' . $search_param . '%')
+                  ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%');
+        });
 
       // Get the initial set of products
       $directProducts = $productQuery->get();
