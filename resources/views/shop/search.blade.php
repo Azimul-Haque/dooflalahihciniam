@@ -153,7 +153,7 @@
                     </div> --}}
                     <div class="filter__item">
                         <div class="row">
-                            <div class="col-lg-4 col-md-5">
+                            <div class="col-lg-2 col-md-5">
                                 {{-- <div class="filter__sort">
                                     <span>Sort By</span>
                                     <select>
@@ -162,12 +162,12 @@
                                     </select>
                                 </div> --}}
                             </div>
-                            <div class="col-lg-4 col-md-4">
+                            <div class="col-lg-8 col-md-4">
                                 <div class="filter__found">
                                     <h6><span>{{ $products->count() }}</span> Products found with the keyword @if(!empty($searchparam)) <strong>"{{ $searchparam }}"</strong> @endif</h6>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-3">
+                            <div class="col-lg-2 col-md-3">
                                {{--  <div class="filter__option">
                                     <span class="icon_grid-2x2"></span>
                                     <span class="icon_ul"></span>
