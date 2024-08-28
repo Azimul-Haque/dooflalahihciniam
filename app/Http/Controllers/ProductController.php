@@ -75,7 +75,7 @@ class ProductController extends Controller
                   ->withLatestproducts($latestproducts);
     }
 
-    public function searchProducts($search_param) 
+    public function searchProducts($request, $search_param) 
     {
 
       // $products = Product::where("title", 'LIKE', '%' . $search_param . '%')
