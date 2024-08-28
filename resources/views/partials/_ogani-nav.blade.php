@@ -349,7 +349,7 @@
                                     <span class="arrow_carrot-down"></span>
                                 </div> --}}
                                 {{-- <input type="text" placeholder="What do yo u need?"> --}}
-                                <input type="text" class="form-control" name="searchParam" id="searchParam" placeholder="What do yo u need?" @if(!empty($searchparam)) value="{{ $searchparam }}" @endif>
+                                <input type="text" name="searchParam" id="searchParam" placeholder="What do yo u need?" @if(!empty($searchparam)) value="{{ $searchparam }}" @endif>
                                 <button class="site-btn" id="searchBtn"><i class="fa fa-search" style="margin-right: 5px;"></i>  SEARCH</button>
                             </form>
                         </div>
