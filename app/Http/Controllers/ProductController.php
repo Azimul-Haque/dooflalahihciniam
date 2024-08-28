@@ -91,7 +91,7 @@ class ProductController extends Controller
                         ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
                         ->orWhere("price", 'LIKE', '%' . $search_param . '%')
                         ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%')
-                        ->with(['category' => function ($query) {
+                        ->with(['category' => function ($query) use ($search_param) {
                              // $query->orderBy('created_at', 'desc');
                              $query->where('payment_status', '=', 1);
                              $query->where('is_archieved', '=', 0);
