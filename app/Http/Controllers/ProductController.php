@@ -94,10 +94,6 @@ class ProductController extends Controller
                 ->orWhere("price", 'LIKE', '%' . $search_param . '%')
                 ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%');
 
-          if ($request->filled('product_price')) {
-              $query->where('price', $request->product_price);
-          }
-
           // Search by category name
           if ($request->filled('category_name')) {
               $query->whereHas('category', function ($q) use ($request) {
