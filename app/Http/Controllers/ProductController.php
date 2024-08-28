@@ -128,9 +128,9 @@ class ProductController extends Controller
       $allProducts = $directProducts->merge($categoryProducts)->merge($subcategoryProducts)->unique('id');
 
       // Paginate the results
-      $paginatedProducts = $allProducts->forPage($request->input('page', 1), 10);
+      $products = $allProducts->forPage($request->input('page', 1), 10);
 
-          // dd($products);
+      dd($products);
                   
       $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
