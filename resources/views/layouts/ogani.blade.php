@@ -106,6 +106,7 @@
 
 
       // search codes for the search box
+      // search codes for the search box
       $('#searchBtn').click(function() {
         var searchParam = $('#searchParam').val();
         if(isEmptyOrSpaces(searchParam)) {
