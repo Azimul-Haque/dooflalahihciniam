@@ -99,6 +99,7 @@ class ProductController extends Controller
                       $q->where('name', 'like', '%' . $search_param . '%');
                   });
         })
+        ->orderBy('id', 'desc')
         ->paginate(10);
 
           // $query = Product::query();
