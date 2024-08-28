@@ -92,10 +92,7 @@ class ProductController extends Controller
                         ->orWhere("price", 'LIKE', '%' . $search_param . '%')
                         ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%')
                         ->with(['category' => function ($query) use ($search_param) {
-                             // $query->orderBy('created_at', 'desc');
-                             $query->where('payment_status', '=', 1);
-                             $query->where('is_archieved', '=', 0);
-                             $query->where('payment_category', 1);  // 1 means monthly, 0 for membership
+                             $q->where('name', 'like', '%' . $search_param . '%');
                          }])  
                         // ->whereHas('category', function ($q) use ($search_param) {
                         //     $q->where('name', 'like', '%' . $search_param . '%');
