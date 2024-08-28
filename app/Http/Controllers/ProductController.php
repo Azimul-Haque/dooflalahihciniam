@@ -99,7 +99,7 @@ class ProductController extends Controller
                         ->orderBy('id', 'desc')
                         ->get();
 
-          dd($products);
+          dd(compact('products'));
                   
       $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
