@@ -436,7 +436,7 @@
               toastr.warning('Write something on search box!', 'WARNING').css('width', ($(window).width()-25)+'px');
             }
           } else {
-            window.location.href = '/warehouse/products/search/' + searchParam;
+            window.location.href = '/search/' + searchParam;
           }
         })
         // on enter search
