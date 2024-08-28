@@ -128,8 +128,18 @@ class ProductController extends Controller
       $allProducts = $directProducts->merge($categoryProducts)->merge($subcategoryProducts)->unique('id');
 
       // Paginate the results
-      $products = $allProducts->forPage($request->input('page', 1), 10);
-
+      // $products = $allProducts->forPage($request->input('page', 1), 10);
+      // Convert the merged collection to a LengthAwarePaginator
+      $currentPage = Paginator::resolveCurrentPage();
+      $perPage = 10;
+      $currentItems = $allProducts->slice(($currentPage - 1) * $perPage, $perPage)->values();
+      $paginatedProducts = new LengthAwarePaginator(
+          $currentItems,
+          $allProducts->count(),
+          $perPage,
+          $currentPage,
+          ['path' => Paginator::resolveCurrentPath()]
+      );
       // dd($products);
                   
       $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
