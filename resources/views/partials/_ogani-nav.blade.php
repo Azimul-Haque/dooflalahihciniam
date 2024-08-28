@@ -343,14 +343,14 @@
                 <div class="col-lg-9">
                     <div class="hero__search">
                         <div class="hero__search__form">
-                            {{-- <form action="#">
-                                <div class="hero__search__categories">
+                            <form action="#">
+                                {{-- <div class="hero__search__categories">
                                     All Categories
                                     <span class="arrow_carrot-down"></span>
-                                </div>
-                            </form> --}}
-                            <input type="text" placeholder="What do yo u need?">
-                            <button type="submit" class="site-btn">SEARCH</button>
+                                </div> --}}
+                                <input type="text" placeholder="What do yo u need?">
+                                <button type="submit" class="site-btn">SEARCH</button>
+                            </form>
                         </div>
                         <div class="hero__search__phone call-to-this-number">
                             <a class="hero__search__phone__icon" href="tel:+81 090-1703-9984" style="">
