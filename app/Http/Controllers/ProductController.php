@@ -86,12 +86,13 @@ class ProductController extends Controller
 
       return view('warehouse.produtcs')
                   ->withProducts($products)
-                  ->withSearchparam($search_param);
+                  
       $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
       return view('shop.shop')
                   ->withProducts($products)
-                  ->withLatestproducts($latestproducts);
+                  ->withLatestproducts($latestproducts)
+                  ->withSearchparam($search_param);
     }
 
     public function getIndexAdhoc() {
