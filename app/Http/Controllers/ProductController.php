@@ -130,7 +130,7 @@ class ProductController extends Controller
       // Paginate the results
       $products = $allProducts->forPage($request->input('page', 1), 10);
 
-      dd($products);
+      // dd($products);
                   
       $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
