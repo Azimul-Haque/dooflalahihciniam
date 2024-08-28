@@ -84,6 +84,34 @@ class ProductController extends Controller
                          ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%')
                          ->orderBy('id', 'desc')
                          ->paginate(10);
+
+      $query = Product::query();
+
+          // Search by product name or price
+          if ($request->filled('product_name')) {
+              $query->where('name', 'like', '%' . $request->product_name . '%');
+          }
+
+          if ($request->filled('product_price')) {
+              $query->where('price', $request->product_price);
+          }
+
+          // Search by category name
+          if ($request->filled('category_name')) {
+              $query->whereHas('category', function ($q) use ($request) {
+                  $q->where('name', 'like', '%' . $request->category_name . '%');
+              });
+          }
+
+          // Search by subcategory name
+          if ($request->filled('subcategory_name')) {
+              $query->whereHas('subcategory', function ($q) use ($request) {
+                  $q->where('name', 'like', '%' . $request->subcategory_name . '%');
+              });
+          }
+
+          // Get the results
+          $products = $query->get();
                   
       $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
