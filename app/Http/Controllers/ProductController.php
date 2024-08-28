@@ -83,9 +83,6 @@ class ProductController extends Controller
                          // ->orWhere("price", 'LIKE', '%' . $search_param . '%')
                          ->orderBy('id', 'desc')
                          ->paginate(10);
-
-      return view('warehouse.produtcs')
-                  ->withProducts($products)
                   
       $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
