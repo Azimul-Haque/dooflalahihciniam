@@ -131,7 +131,7 @@
                       <div class="product__details__quantity">
                           <div class="quantity">
                               <div class="pro-qty">
-                                  <input type="text" id="productQty" max="" min="1" value="1">
+                                  <input type="text" id="productQty" max="{{ $product->price }}" min="1" value="1">
                               </div>
                           </div>
                       </div>
