@@ -124,7 +124,7 @@ class ProductController extends Controller
           // // Get the results
           // $products = $query->paginate(10);
 
-          dd($products);
+          // dd($products);
                   
       $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
