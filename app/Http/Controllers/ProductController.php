@@ -77,7 +77,7 @@ class ProductController extends Controller
 
     public function searchProducts($search_param) 
     {
-      
+
       // $products = Product::where("title", 'LIKE', '%' . $search_param . '%')
       //                    ->orWhere("code", 'LIKE', '%' . $search_param . '%')
       //                    ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
@@ -92,7 +92,7 @@ class ProductController extends Controller
                         ->orderBy('id', 'desc')
                         ->get();
 
-          dd(compact('products'));
+          dd($products);
                   
       $latestproducts = Product::orderBy('id', 'desc')->where('isAvailable', 1)->get()->take(6);
 
