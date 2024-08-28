@@ -95,40 +95,40 @@ class ProductController extends Controller
       //                   ->paginate(10);
 
 
-      $searchParam = $request->input('search_param');
+      $searchParam = $search_param;
 
-          // Initialize the query for products
-          $productQuery = Product::query();
-          
-          // Directly search products
-          if ($searchParam) {
-              $productQuery->where(function ($query) use ($searchParam) {
-                  $query->where('title', 'like', '%' . $searchParam . '%')
-                        ->orWhere('price', 'like', '%' . $searchParam . '%')
-                        ->orWhere('oldprice', 'like', '%' . $searchParam . '%');
-              });
-          }
+      // Initialize the query for products
+      $productQuery = Product::query();
+      
+      // Directly search products
+      if ($searchParam) {
+          $productQuery->where(function ($query) use ($searchParam) {
+              $query->where('title', 'like', '%' . $searchParam . '%')
+                    ->orWhere('price', 'like', '%' . $searchParam . '%')
+                    ->orWhere('oldprice', 'like', '%' . $searchParam . '%');
+          });
+      }
 
-          // Get the initial set of products
-          $directProducts = $productQuery->get();
+      // Get the initial set of products
+      $directProducts = $productQuery->get();
 
-          // Get categories matching the search param
-          $categories = Category::where('name', 'like', '%' . $searchParam . '%')->pluck('id');
-          
-          // Get products belonging to those categories
-          $categoryProducts = Product::whereIn('category_id', $categories)->get();
+      // Get categories matching the search param
+      $categories = Category::where('name', 'like', '%' . $searchParam . '%')->pluck('id');
+      
+      // Get products belonging to those categories
+      $categoryProducts = Product::whereIn('category_id', $categories)->get();
 
-          // Get subcategories matching the search param
-          $subcategories = Subcategory::where('name', 'like', '%' . $searchParam . '%')->pluck('id');
-          
-          // Get products belonging to those subcategories
-          $subcategoryProducts = Product::whereIn('subcategory_id', $subcategories)->get();
+      // Get subcategories matching the search param
+      $subcategories = Subcategory::where('name', 'like', '%' . $searchParam . '%')->pluck('id');
+      
+      // Get products belonging to those subcategories
+      $subcategoryProducts = Product::whereIn('subcategory_id', $subcategories)->get();
 
-          // Merge all products and remove duplicates
-          $allProducts = $directProducts->merge($categoryProducts)->merge($subcategoryProducts)->unique('id');
+      // Merge all products and remove duplicates
+      $allProducts = $directProducts->merge($categoryProducts)->merge($subcategoryProducts)->unique('id');
 
-          // Paginate the results
-          $paginatedProducts = $allProducts->forPage($request->input('page', 1), 10);
+      // Paginate the results
+      $paginatedProducts = $allProducts->forPage($request->input('page', 1), 10);
 
           // dd($products);
                   
