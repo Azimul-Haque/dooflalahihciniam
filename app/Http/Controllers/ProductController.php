@@ -88,13 +88,11 @@ class ProductController extends Controller
           $query = Product::query();
 
           // Search by product name or price
-          if ($request->filled('search_param')) {
-              $query->where("title", 'LIKE', '%' . $search_param . '%')
-                    ->orWhere("code", 'LIKE', '%' . $search_param . '%')
-                    ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
-                    ->orWhere("price", 'LIKE', '%' . $search_param . '%')
-                    ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%');
-          }
+          $query->where("title", 'LIKE', '%' . $search_param . '%')
+                ->orWhere("code", 'LIKE', '%' . $search_param . '%')
+                ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
+                ->orWhere("price", 'LIKE', '%' . $search_param . '%')
+                ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%');
 
           if ($request->filled('product_price')) {
               $query->where('price', $request->product_price);
