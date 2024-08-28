@@ -86,14 +86,14 @@ class ProductController extends Controller
       //                    ->paginate(10);
 
       $products = Product::query()
-        ->where(function ($query) use ($searchParam) {
-            $query->where('title', 'like', '%' . $searchParam . '%')
-                  ->orWhere('price', 'like', '%' . $searchParam . '%')
-                  ->orWhereHas('category', function ($q) use ($searchParam) {
-                      $q->where('name', 'like', '%' . $searchParam . '%');
+        ->where(function ($query) use ($search_param) {
+            $query->where('title', 'like', '%' . $search_param . '%')
+                  ->orWhere('price', 'like', '%' . $search_param . '%')
+                  ->orWhereHas('category', function ($q) use ($search_param) {
+                      $q->where('name', 'like', '%' . $search_param . '%');
                   })
-                  ->orWhereHas('subcategory', function ($q) use ($searchParam) {
-                      $q->where('name', 'like', '%' . $searchParam . '%');
+                  ->orWhereHas('subcategory', function ($q) use ($search_param) {
+                      $q->where('name', 'like', '%' . $search_param . '%');
                   });
         })
         ->paginate(10);
