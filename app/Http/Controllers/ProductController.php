@@ -81,6 +81,7 @@ class ProductController extends Controller
                          ->orWhere("code", 'LIKE', '%' . $search_param . '%')
                          ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
                          ->orWhere("price", 'LIKE', '%' . $search_param . '%')
+                         ->orWhere("oldprice", 'LIKE', '%' . $search_param . '%')
                          ->orderBy('id', 'desc')
                          ->paginate(10);
                   
