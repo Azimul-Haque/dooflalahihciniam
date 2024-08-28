@@ -343,7 +343,7 @@
                 <div class="col-lg-9">
                     <div class="hero__search">
                         <div class="hero__search__form">
-                            <form>
+                            {{-- <form> --}}
                                 {{-- <div class="hero__search__categories">
                                     All Categories
                                     <span class="arrow_carrot-down"></span>
@@ -351,7 +351,7 @@
                                 {{-- <input type="text" placeholder="What do yo u need?"> --}}
                                 <input type="text" name="searchParam" id="searchParam" placeholder="What do yo u need?" @if(!empty($searchparam)) value="{{ $searchparam }}" @endif>
                                 <button class="site-btn" id="searchBtn"><i class="fa fa-search" style="margin-right: 5px;"></i> SEARCH</button>
-                            </form>
+                            {{-- </form> --}}
                         </div>
                         <div class="hero__search__phone call-to-this-number">
                             <a class="hero__search__phone__icon" href="tel:+81 090-1703-9984" style="">
