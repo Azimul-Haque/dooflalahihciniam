@@ -17,7 +17,7 @@
                     <h2>Mainichi Halal Food Shop</h2>
                     <div class="breadcrumb__option">
                         <a href="{{ route('product.index') }}">Home</a>
-                        <span>Shop</span>
+                        <span>Search Products</span>
                     </div>
                 </div>
             </div>
