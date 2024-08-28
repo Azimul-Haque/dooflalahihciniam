@@ -98,7 +98,7 @@ class ProductController extends Controller
                         ->whereHas('subcategory', function ($q) use ($search_param) {
                             $q->where('name', 'like', '%' . $search_param . '%');
                         })
-                        ->orderBy('id', 'desc')
+                        // ->orderBy('id', 'desc')
                         ->get();
 
           dd(compact('products'));
