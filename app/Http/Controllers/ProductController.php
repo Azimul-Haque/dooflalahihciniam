@@ -75,6 +75,20 @@ class ProductController extends Controller
                   ->withLatestproducts($latestproducts);
     }
 
+    public function searchProducts($search_param) 
+    {
+      $products = Product::where("title", 'LIKE', '%' . $search_param . '%')
+                         ->orWhere("code", 'LIKE', '%' . $search_param . '%')
+                         ->orWhere("shorttext", 'LIKE', '%' . $search_param . '%')
+                         // ->orWhere("price", 'LIKE', '%' . $search_param . '%')
+                         ->orderBy('id', 'desc')
+                         ->paginate(10);
+
+      return view('warehouse.produtcs')
+                  ->withProducts($products)
+                  ->withSearchparam($search_param);
+    }
+
     public function getIndexAdhoc() {
       
       return redirect()->route('product.index');
