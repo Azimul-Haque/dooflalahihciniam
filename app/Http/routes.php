@@ -20,7 +20,7 @@ Route::get('/shop', [
     'as' => 'product.shop'
 ]);
 
-Route::get('/search', [
+Route::get('/search/{search}', [
     'uses' => 'ProductController@getShop',
     'as' => 'product.shop'
 ]);
