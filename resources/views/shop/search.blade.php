@@ -1,6 +1,6 @@
 @extends('layouts.ogani')
 
-@section('title', 'Shop')
+@section('title', 'Search Products')
 
 @section('css')
 
