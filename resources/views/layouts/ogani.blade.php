@@ -103,6 +103,31 @@
           $('[data-toggle="tooltip"]').tooltip();   
           $('[title]').tooltip();
       });
+
+      $('#searchBtn').click(function() {
+        var searchParam = $('#searchParam').val();
+        if(isEmptyOrSpaces(searchParam)) {
+          if($(window).width() > 768) {
+            toastr.warning('Write something on search box!', 'WARNING').css('width', '400px');
+          } else {
+            toastr.warning('Write something on search box!', 'WARNING').css('width', ($(window).width()-25)+'px');
+          }
+        } else {
+          window.location.href = '/search/' + searchParam;
+        }
+      })
+      // on enter search
+      var input = document.getElementById("searchParam");
+      input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+         event.preventDefault();
+         document.getElementById("searchBtn").click();
+        }
+      });
+      // on enter search
+      function isEmptyOrSpaces(str){
+          return str === null || str.match(/^ *$/) !== null;
+      }
     </script>
 
 
